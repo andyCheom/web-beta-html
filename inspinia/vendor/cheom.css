@@ -1,0 +1,81 @@
+/* Customizing 20180301 */
+.ibox-heading {
+  background-color: #e0e8f5;
+  border: 1px;
+}
+
+.ibox-title .label {
+  margin-top: 4px;
+}
+
+.index_language {
+	display:inline-block;
+	border:1px solid #ddd;
+	background:#eee;
+	padding:3px 5px;
+	color:#333;
+	margin:0px 2px 0px;
+}
+
+.ibox-number {
+  background: none;
+  border: none;
+}
+
+.ibox-search {
+  background-color: #f5f5f5;
+}
+
+.panel-body > ul {
+	padding-left:20px;
+}
+
+.panel-body > ul > li{
+	line-height: 2;
+}
+
+.tabs-container .nav-search {
+  margin-bottom: 8px;
+}
+
+.table-bordered > tbody > tr > th {
+  background-color: #F5F5F6;
+  border-bottom-width: 1px;
+}
+
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+  opacity: 0;
+  z-index: 1;
+  padding-bottom: 0px;
+}
+
+.float-e-margins .btn {
+  margin-bottom: 0px;
+}
+
+
+.table-borderless > thead > tr > td,
+.table-borderless > tbody > tr > td,
+.table-borderless > tfoot > tr > td,
+.table-borderless > thead > tr > th,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > th {
+  border: none;
+}

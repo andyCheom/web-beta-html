@@ -1,0 +1,4120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- 드래그 앤 드롭 -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll 왼쪽 메뉴 고정 -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- 개발함수 -->
+<script src="inspinia/js/bsScript.js"></script>
+<!-- C3 Chart -->
+<link href="inspinia/css/plugins/c3/c3.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/d3/d3.min.js"></script>
+<script src="inspinia/js/plugins/c3/c3.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="/images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="/images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+							
+							
+						
+					
+						
+					
+						
+					
+					<li class="active"><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class="active"><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class=""><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+							<strong>대량메일 > 이메일</strong>
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5>title.compose.input</h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong>title.compose.input</strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<form id="input" class="form-horizontal" action="/compose/insert" method="post" enctype="multipart/form-data">
+				<input id="id" name="id" type="hidden" value=""/>
+				<input id="state" name="state" type="hidden" value=""/>
+				<input id="campaignBasicInfo.id" name="campaignBasicInfo.id" type="hidden" value=""/>
+				<input id="campaignGoalResult.id" name="campaignGoalResult.id" type="hidden" value=""/>
+				<input id="campaignSend.id" name="campaignSend.id" type="hidden" value=""/>
+				<input id="campaignMail.id" name="campaignMail.id" type="hidden" value=""/>
+				<input id="campaignMail.type" name="campaignMail.type" type="hidden" value=""/>
+				<input id="campaignMail.fileName" name="campaignMail.fileName" type="hidden" value=""/>
+				<input id="campaignMail.fileNameAlias" name="campaignMail.fileNameAlias" type="hidden" value=""/>
+				<input id="campaignFilter.id" name="campaignFilter.id" type="hidden" value=""/>
+				<input id="campaignStatistics.id" name="campaignStatistics.id" type="hidden" value=""/>
+				<div class="ibox-title">
+					<h5>
+						캠페인 정보 설정
+					</h5>
+				</div>
+				<div class="ibox-content">
+					<table class="table table-bordered">
+						<tr>
+							<th class="col-sm-2">캠페인제목</th>
+							<td>
+								<div class="col-sm-5">
+									<input id="campaignTitle" name="campaignTitle" class="form-control" type="text" value=""/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>메모</th>
+							<td>
+								<div class="col-sm-5">
+									<input id="explanation" name="explanation" class="form-control" type="text" value=""/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>그룹</th>
+							<td>
+								<div class="col-sm-5">
+									<select class="form-control" name="campaignGroupId" id="campaignGroupId">
+										
+											<option value="14" >dld (Default Group)</option>
+										
+											<option value="10" >dlfma (Default Group)</option>
+										
+											<option value="13" >dlfma (Default Group)</option>
+										
+											<option value="9" >dlfmadlqslek (Default Group)</option>
+										
+											<option value="2" >manager (Default Group)</option>
+										
+											<option value="8" >testtest (Default Group)</option>
+										
+											<option value="1" >디폴트 그룹</option>
+										
+											<option value="4" >박지연 (Default Group)</option>
+										
+											<option value="5" >송건우 (Default Group)</option>
+										
+											<option value="6" >웹취약점테스트계정01 (Default Group)</option>
+										
+											<option value="7" >웹취약점테스트계정02 (Default Group)</option>
+										
+											<option value="3" >이건우 (Default Group)</option>
+										
+											<option value="11" >이름 (Default Group)</option>
+										
+											<option value="12" >이름 (Default Group)</option>
+										
+											<option value="15" >이름 (Default Group)</option>
+										
+									</select>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div class="ibox float-e-margins collapsed hidden">
+						<div class="ibox-title">
+							<h5>추가 정보 설정</h5>
+							<div class="ibox-tools">
+								<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
+								</a>
+							</div>
+						</div>
+						<div class="ibox-content">
+							캠페인 추가 정보
+							<table class="table table-hover">
+								<tr>
+									<th>신청 부서명</th>
+									<td><input id="campaignBasicInfo.requestDept" name="campaignBasicInfo.requestDept" class="form-control" type="text" value=""/></td>
+									<th>신청자 이름</th>
+									<td><input id="campaignBasicInfo.requester" name="campaignBasicInfo.requester" class="form-control" type="text" value=""/></td>
+								</tr>
+								<tr>
+									<th>내선 번호</th>
+									<td><input id="campaignBasicInfo.extension" name="campaignBasicInfo.extension" class="form-control" type="text" value=""/></td>
+									<th>휴대폰 번호</th>
+									<td><input id="campaignBasicInfo.mobile" name="campaignBasicInfo.mobile" class="form-control" type="text" value=""/></td>
+								</tr>
+								<tr>
+									<th>E-mail 주소</th>
+									<td colspan="3"><input id="campaignBasicInfo.email" name="campaignBasicInfo.email" class="form-control" type="text" value=""/></td>
+								</tr>
+								<tr>
+									<th>타켓 정보 / 기타 메모</th>
+									<td colspan="3"><input id="campaignBasicInfo.targetInfo" name="campaignBasicInfo.targetInfo" class="form-control" type="text" value=""/></td>
+								</tr>
+							</table>
+							캠페인 목표/성과
+							<table class="table table-hover">
+								<tr>
+									<th>성과 수집기간</th>
+									<td colspan="3">
+										<div class="input-group input-daterange" id="datepicker">
+											<input id="campaignGoalResult.resultFromDate" name="campaignGoalResult.resultFromDate" class="form-control" type="text" value=""/>
+											<span class="input-group-addon">-</span>
+											<input id="campaignGoalResult.resultToDate" name="campaignGoalResult.resultToDate" class="form-control" type="text" value=""/>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>현황</th>
+									<td><input id="campaignGoalResult.state" name="campaignGoalResult.state" class="form-control" type="text" value=""/></td>
+									<th>설명</th>
+									<td><input id="campaignGoalResult.stateDesc" name="campaignGoalResult.stateDesc" class="form-control" type="text" value=""/></td>
+								</tr>
+								<tr>
+									<th>목표</th>
+									<td><input id="campaignGoalResult.goal" name="campaignGoalResult.goal" class="form-control" type="text" value=""/></td>
+									<th>설명</th>
+									<td><input id="campaignGoalResult.goalDesc" name="campaignGoalResult.goalDesc" class="form-control" type="text" value=""/></td>
+								</tr>
+								<tr>
+									<th>성과</th>
+									<td><input id="campaignGoalResult.result" name="campaignGoalResult.result" class="form-control" type="text" value=""/></td>
+									<th>설명</th>
+									<td><input id="campaignGoalResult.resultDesc" name="campaignGoalResult.resultDesc" class="form-control" type="text" value=""/></td>
+								</tr>
+								<tr>
+									<th>달성률</th>
+									<td><input id="campaignGoalResult.achievementRate" name="campaignGoalResult.achievementRate" class="form-control" type="text" value=""/></td>
+									<th>증감율</th>
+									<td><input id="campaignGoalResult.incDecRate" name="campaignGoalResult.incDecRate" class="form-control" type="text" value=""/></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="ibox-title">
+					<h5>
+						발송 대상자 그룹
+					</h5>
+				</div>
+				
+				<div class="ibox-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div style="height: 55px">
+								<input type="checkbox" name="row" class="hidden" />
+								<div class="col-sm-12">
+									
+								</div>
+							</div>
+							<table class="table table-bordered">
+								<thead>
+									<tr class="active">
+
+										<th class="col-sm-1">삭제</th>
+										<th>이름</th>
+										<th class="col-sm-1">발송</th>
+										<th class="col-sm-2">예상 인원수</th>
+										<th class="col-sm-2">타켓팅 방법</th>
+									</tr>
+								</thead>
+								<tbody id="t_body">
+									
+									
+									
+								</tbody>
+							</table>
+						</div>
+						<div class="col-sm-6">
+							<div class="row" style="height: 55px">
+								<div class="col-sm-6 text-right">
+									<div class="radio radio-inline">
+										<input type="radio" name="keytype" id="keytype1" value="1" checked onclick="getTargets(0)" /> <label for="keytype1"><strong>1년</strong></label>
+									</div>
+									<div class="radio radio-inline">
+										<input type="radio" name="keytype" id="keytype2" value="2" onclick="getTargets(0)" /> <label for="keytype2"><strong>전체</strong></label>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="input-group">
+										<input type="text" name="keyword" id="keyword" class="form-control input-sm" size="5" /> <span class="input-group-btn">
+											<button type="button" class="btn btn-sm btn-primary" onclick="getTargets(0)">
+												검색
+											</button>
+										</span>
+									</div>
+								</div>
+							</div>
+							<table class="table table-bordered" id="list">
+								<thead>
+									<tr class="active">
+										<th class="col-sm-1">번호</th>
+										<th class="col-sm-1">추가</th>
+										<th class="col-sm-1">발송</th>
+										<th>이름</th>
+										<th class="col-sm-2">예상 인원수</th>
+										<th class="col-sm-2">타켓팅 방법</th>
+									</tr>
+								</thead>
+								<tbody id="tt_body">
+								</tbody>
+							</table>
+							<div class="row" style="height: 55px">
+								<div class="col-sm-12 text-center">
+									<button type="button" class="btn btn-sm btn-primary" id="arrowFirst" onclick="getTargets(-2)">
+										<i class="fa fa-angle-double-left"></i>
+									</button>
+									<button type="button" class="btn btn-sm btn-primary" id="arrowPrevious" onclick="getTargets(-1)">
+										<i class="fa fa-angle-left"></i>
+									</button>
+									<span id="current">0</span>
+									<button type="button" class="btn btn-sm btn-primary" id="arrowNext" onclick="getTargets(1)">
+										<i class="fa fa-angle-right"></i>
+									</button>
+									<button type="button" class="btn btn-sm btn-primary" id="arrowLast" onclick="getTargets(-3)">
+										<i class="fa fa-angle-double-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ibox-title">
+					<h5>
+						발송 내용 입력
+					</h5>
+				</div>
+				<div class="ibox-content">
+					<div class="row">
+						<div class="col-sm-12">
+							<table class="table table-bordered">
+								<tr>
+									<th class="col-sm-2">인코딩</th>
+									<td>
+										<div class="col-sm-2">
+											<select id="campaignMail.langub" name="campaignMail.langub" class="form-control">
+												<option value="kr">
+													한국어
+												</option>
+												<option value="cn">
+													중국어
+												</option>
+												<option value="jp">
+													일본어
+												</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>발신 도메인</th>
+									<td>
+										<div class="col-sm-4">
+											
+												<div class="radio">
+													<input id="heloDomainIdxForeign0" name="heloDomainIdxForeign" data-verify="Y" data-domain="wvs.mailclouds.kr" type="radio" value="2"/>
+													<label for="heloDomainIdxForeign0">
+														(1) [postfix] wvs.mailclouds.kr | [postfix] wvs.mailclouds.kr
+														
+															<span style="color:green; font-weight:bold; margin-left:5px;">v 인증됨</span>
+														
+														
+													</label>
+													
+														(기본)
+													
+												</div>
+											
+												<div class="radio">
+													<input id="heloDomainIdxForeign1" name="heloDomainIdxForeign" data-verify="N" data-domain="wvs.mailclouds.kr" type="radio" value="1"/>
+													<label for="heloDomainIdxForeign1">
+														(2) [java] wvs.mailclouds.kr | [java] wvs.mailclouds.kr
+														
+														
+															<span style="color:red; font-weight:bold; margin-left:5px;">x 확인필요</span>
+														
+													</label>
+													
+												</div>
+											
+											
+											<input id="domain" name="domain" type="hidden" value=""/>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>보내는 사람 이름</th>
+									<td>
+										<div class="col-sm-4">
+											<input id="campaignMailsenderAlias" name="campaignMail.senderAlias" class="form-control" type="text" value="devopts"/>
+										</div>
+										<div class="col-sm-2">
+											<select id="select_campaignMail_senderAlias" onchange="addalias('campaignMailsenderAlias', this.value)" class="form-control">
+												<option value="">치환</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>보내는 사람 이메일</th>
+									<td>
+										<div class="col-sm-4">
+											<input id="campaignMailsender" name="campaignMail.sender" class="form-control" type="text" value="andy@cheom.net"/>
+										</div>
+										<div class="col-sm-2">
+											<select id="select_campaignMail_sender" onchange="addalias('campaignMailsender', this.value)" class="form-control">
+												<option value="">치환</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>받는 사람 이름</th>
+									<td>
+										<div class="col-sm-4">
+											<input id="campaignMail_receiverAlias" name="campaignMail.receiverAlias" class="form-control" type="text" value=""/>
+										</div>
+										<div class="col-sm-2">
+											<select id="select_campaignMail_receiverAlias" onchange="addalias('campaignMail_receiverAlias', this.value)" class="form-control">
+												<option value="">치환</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>제목</th>
+									<td>
+										<div class="col-sm-8">
+											<input id="campaignMail_title" name="campaignMail.title" class="form-control" type="text" value=""/>
+											<div class="checkbox checkbox-inline">
+												<input type="checkbox" id="emailTitleCommercial" value="(광고)" class="styled" onclick="prependCommercial(this)"> <label for="emailTitleCommercial">"(광고)" 표시하기</label>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<select id="select_campaignMail_title" onchange="addalias('campaignMail_title', this.value)" class="form-control">
+												<option value="">치환</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>메일 내용 가져오기</th>
+									<td>
+										<div class="col-sm-4">
+											<select class="form-control" name="campaignmail" id="campaignmail" onchange="changecontent('email', 'template', this)">
+												<option></option>
+												
+													<option value="158">d</option>
+												
+													<option value="157">me6 통합 모니터링 테스트 2번째</option>
+												
+													<option value="156">me6 통합 모니터링 테스트</option>
+												
+													<option value="155">제목</option>
+												
+													<option value="154">제목</option>
+												
+													<option value="153">제목</option>
+												
+													<option value="151">test1</option>
+												
+													<option value="150">test1</option>
+												
+													<option value="149">test1</option>
+												
+													<option value="148">test1</option>
+												
+													<option value="147">test1</option>
+												
+													<option value="146">test1</option>
+												
+													<option value="144">test1</option>
+												
+													<option value="143">test1</option>
+												
+													<option value="142">test1</option>
+												
+													<option value="140">test1</option>
+												
+													<option value="139">test1</option>
+												
+													<option value="138">test1</option>
+												
+													<option value="115">test1</option>
+												
+													<option value="114">test1</option>
+												
+													<option value="113">test1</option>
+												
+													<option value="106">제목</option>
+												
+													<option value="103">제목</option>
+												
+													<option value="102">제목</option>
+												
+													<option value="101">제목</option>
+												
+													<option value="100">제목</option>
+												
+													<option value="99">예약 발송테스트6</option>
+												
+													<option value="98">발송테스트5</option>
+												
+													<option value="97">발송테스트4</option>
+												
+													<option value="96">발송테스트3</option>
+												
+													<option value="95">발송테스트2</option>
+												
+													<option value="94">발송테스트1</option>
+												
+													<option value="93">제목</option>
+												
+													<option value="92">제목</option>
+												
+													<option value="91">제목</option>
+												
+													<option value="90"> 대량메일 테스트 제목입니다</option>
+												
+													<option value="89">테스트 메일 제목gildong</option>
+												
+													<option value="88">발신자 없는 메일</option>
+												
+													<option value="87">제목</option>
+												
+													<option value="86"> 메일 제목</option>
+												
+													<option value="85">주소록 정보 없음</option>
+												
+													<option value="84">주소록 제목으로 발송</option>
+												
+													<option value="83">기존 주소록으로 발송</option>
+												
+													<option value="82">기존 주소록으로 발송</option>
+												
+													<option value="81">기존 주소록으로 발송</option>
+												
+													<option value="80">기존 주소록으로 발송</option>
+												
+													<option value="79">테스트 메일 제목gildong</option>
+												
+													<option value="78">제목</option>
+												
+													<option value="77">제목</option>
+												
+													<option value="74">테스트 메일 제목gildong</option>
+												
+													<option value="73">테스트 메일 제목gildong</option>
+												
+													<option value="72">제목</option>
+												
+													<option value="71"> 메일 제목</option>
+												
+													<option value="70">주소록 정보 없음</option>
+												
+													<option value="69">기존 주소록으로 발송</option>
+												
+													<option value="68">기존 주소록으로 발송</option>
+												
+													<option value="67">테스트 메일 제목gildong</option>
+												
+													<option value="66">테스트 메일 제목gildong</option>
+												
+													<option value="65">테스트 메일 제목gildong</option>
+												
+													<option value="64">1.9MB 정상 테스트</option>
+												
+													<option value="63"> 메일 제목</option>
+												
+													<option value="62">주소록 정보 없음</option>
+												
+													<option value="61">기존 주소록으로 발송</option>
+												
+													<option value="60">기존 주소록으로 발송</option>
+												
+													<option value="59">기존 주소록으로 발송</option>
+												
+													<option value="58">테스트 메일 제목gildong</option>
+												
+													<option value="57">테스트 메일 제목</option>
+												
+													<option value="55">제목</option>
+												
+													<option value="54">제목</option>
+												
+													<option value="53">제목</option>
+												
+													<option value="52">제목</option>
+												
+													<option value="51">제목</option>
+												
+													<option value="50">제목</option>
+												
+													<option value="49">제목</option>
+												
+													<option value="48">제목</option>
+												
+													<option value="47">제목</option>
+												
+													<option value="46">제목</option>
+												
+													<option value="45">제목</option>
+												
+													<option value="44">제목</option>
+												
+													<option value="43">제목</option>
+												
+													<option value="42">제목</option>
+												
+													<option value="41">제목</option>
+												
+													<option value="40">제목</option>
+												
+													<option value="39">제목</option>
+												
+													<option value="38">제목</option>
+												
+													<option value="37">제목</option>
+												
+													<option value="36">제목</option>
+												
+													<option value="35">제목</option>
+												
+													<option value="34">제목</option>
+												
+													<option value="33">제목</option>
+												
+													<option value="32">제목</option>
+												
+													<option value="31">제목</option>
+												
+													<option value="30">제목</option>
+												
+													<option value="29">제목</option>
+												
+													<option value="28">제목</option>
+												
+													<option value="27">제목</option>
+												
+													<option value="26">제목</option>
+												
+													<option value="25">제목</option>
+												
+													<option value="24">제목</option>
+												
+													<option value="23">제목</option>
+												
+													<option value="22">제목</option>
+												
+													<option value="21">제목</option>
+												
+													<option value="20">제목</option>
+												
+													<option value="19">2025-10-30 wvs 주소록 테스트</option>
+												
+													<option value="18">2025-10-28 wvs 주소록 발송 테스트</option>
+												
+													<option value="17">2025-10-21 wvs발송 </option>
+												
+													<option value="16">wvs 20251020 발송 테스트</option>
+												
+													<option value="15">보안테스트</option>
+												
+													<option value="14">wvs - 20250925 - 2차 메일</option>
+												
+													<option value="13">wvs - 20250928 - 1만 메일</option>
+												
+													<option value="12">wvs - 20250927 - 3만 메일</option>
+												
+													<option value="11">wvs - 20250926 - 10만 메일</option>
+												
+													<option value="10">wvs - 20250925 2차 메일</option>
+												
+													<option value="9">wvs - 20250925 1차 메일</option>
+												
+													<option value="8">마이메일러 발송테스트</option>
+												
+													<option value="7">2025-09-25 wvs 발송</option>
+												
+													<option value="6">2025-09-29 wvs발송 </option>
+												
+													<option value="5">2025-09-28 wvs발송 </option>
+												
+													<option value="4"> 2025-09-27 발송 현황</option>
+												
+													<option value="3"> 2025-09-26 발송 현황</option>
+												
+													<option value="2"> 2025-09-25 발송 현황</option>
+												
+													<option value="1">2025-09-24 wvs 발송</option>
+												
+											</select>
+										</div>
+										<div class="col-sm-4">
+											<select class="form-control" name="templatemail" id="templatemail" onchange="changecontent('template', 'email', this)">
+												<option></option>
+												
+													<option value="3">대량메일 템플릿 테스트</option>
+												
+											</select>
+										</div>
+										<div class="col-sm-4 input-group">
+											<input type="text" name="url" id="url" class="form-control input-sm"> <span class="input-group-btn">
+												<button type="button" class="btn btn-sm btn-primary" onclick="urlcontent()">
+													하이퍼 링크
+												</button>
+											</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>치환 항목</th>
+									<td>
+										<div class="col-sm-12">
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$email]')" id="onetoone1" disabled>[EMAIL]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$name]')" id="onetoone2" disabled>[NAME]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$mobile]')" id="onetoone3" disabled>[MOBILE]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc1]')" id="onetoone4" disabled>[ETC1]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc2]')" id="onetoone5" disabled>[ETC2]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc3]')" id="onetoone6" disabled>[ETC3]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc4]')" id="onetoone7" disabled>[ETC4]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc5]')" id="onetoone8" disabled>[ETC5]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc6]')" id="onetoone9" disabled>[ETC6]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc7]')" id="onetoone10" disabled>[ETC7]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc8]')" id="onetoone11" disabled>[ETC8]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc9]')" id="onetoone12" disabled>[ETC9]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc10]')" id="onetoone13" disabled>[ETC10]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc11]')" id="onetoone14" disabled>[ETC11]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc12]')" id="onetoone15" disabled>[ETC12]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc13]')" id="onetoone16" disabled>[ETC13]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$etc14]')" id="onetoone17" disabled>[ETC14]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$text1]')" id="onetoone18" disabled>[TEXT1]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$text2]')" id="onetoone19" disabled>[TEXT2]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="onetooneInsert('[$text3]')" id="onetoone20" disabled>[TEXT3]</button>&nbsp;
+											
+										</div>
+									</td>
+								</tr>
+							</table>
+							<!-- 슬라이드 스타일 시작 -->
+							<div class="ibox float-e-margins" style="display: flex;">
+								<div style="padding: 0; background-color: #F3F3F4; width: 100%; overflow: hidden;">
+									<!--여기서부터 슬라이드 시작-->
+									<div class="swiper-container" style="overflow: hidden;">
+
+										<div class="swiper-wrapper" style="height: 270px; margin: 10px; display: flex;">
+
+											<div id="template-html" class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+												<div style="margin: 15px; width: 138px; height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);">
+													<div>
+														<img width="60" height="60" src="/images/plus.svg">
+													</div>
+												</div>
+												<div style="height: 50px; margin-bottom: 15px;">
+													<span>직접 입력</span> <span><img width="13" height="13" src="/images/question.svg"></span>
+												</div>
+											</div>
+											<div id="template-template" class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+												<div style="margin: 15px; width: 138px; height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);">
+													<div>
+														<img width="60" height="60" src="/images/plus.svg">
+													</div>
+												</div>
+												<div style="height: 50px; margin-bottom: 15px;">
+													<span>빈 템플릿</span>
+												</div>
+											</div>
+											
+												<div id="template-2" class="template-items swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+													<div style="margin: 15px; width: 138px; height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025); justify-content: center;">
+														<a style="width: 100%; height: 100%;"> <img style="width: 100%; height: 100%; object-fit: contain;" src="/images/template/tempimage02.png">
+														</a>
+													</div>
+													<div style="height: 50px; margin-bottom: 15px;">
+														<span>신제품 샘플</span>
+													</div>
+												</div>
+											
+												<div id="template-1" class="template-items swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+													<div style="margin: 15px; width: 138px; height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025); justify-content: center;">
+														<a style="width: 100%; height: 100%;"> <img style="width: 100%; height: 100%; object-fit: contain;" src="/images/template/tempimage01.png">
+														</a>
+													</div>
+													<div style="height: 50px; margin-bottom: 15px;">
+														<span>1단+1단+2단 템플릿</span>
+													</div>
+												</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 슬라이드 스타일 시작 -->
+							<div class="editor_wrapper">
+								<div class="panel__top">
+									<div class="panel__buttons panel__devices gjs-one-bg gjs-two-color">
+										<div class="button_desktop gjs-pn-btn fa fa-desktop gjs-two-color" data-title="테스크탑"></div>
+										<div class="button_tablet gjs-pn-btn fa fa-tablet gjs-two-color" data-title="태블릿"></div>
+										<div class="button_phone gjs-pn-btn fa fa-mobile gjs-two-color" data-title="핸드폰"></div>
+									</div>
+									<div class="panel__buttons panel__controller gjs-one-bg gjs-two-color">
+										<div class="button_visible gjs-pn-btn fa fa-square-o gjs-two-color" data-title="컴포넌트 보기"></div>
+										
+										
+										<div class="button_undo gjs-pn-btn fa fa-undo gjs-two-color" data-title="이전 작업"></div>
+										<div class="button_repeat gjs-pn-btn fa fa-repeat gjs-two-color" data-title="이후 작업"></div>
+									</div>
+								</div>
+								<div class="editor-row">
+									<div id="blocks" class="panel__left">
+										<div class="block-container"></div>
+									</div>
+									<div class="editor-canvas">
+										<div id="gjs" style="position: relative;"></div>
+									</div>
+									<div class="panel__right">
+										<div class="traits-container"></div>
+										<div class="styles-container"></div>
+									</div>
+								</div>
+							</div>
+							<div class="summernote"></div>
+							<textarea id="mailcontent" name="campaignMail.content" class="hidden">
+</textarea>
+							<br>
+							<table class="table table-bordered note-editor">
+							</table>
+							<table class="table table-bordered">
+								<tr>
+									<th class="col-sm-2">수신 동의 문구<br>
+										<div class="checkbox checkbox-inline">
+											<input type="checkbox" name="campaignMail.bottomReceiveCheck" id="campaignMailbottomReceiveCheck" value="1" class="styled"  /> <label for="campaignMailbottomReceiveCheck">삽입</label>
+										</div></th>
+									<td>
+										<div class="col-sm-12">
+											<textarea id="campaignMailbottomReceiveText" name="campaignMail.bottomReceiveText" style="width: 100%; resize: none" rows="5">
+본 메일은 발송일 기준 수신 동의 하신 분들에게 발송되는 메일입니다.</textarea>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>수신 거부 문구<br>
+										<div class="checkbox checkbox-inline">
+											<input type="checkbox" name="campaignMail.bottomRejectCheck" id="campaignMailbottomRejectCheck" value="1" class="styled"  /> <label for="campaignMail.bottomRejectCheck">삽입</label>
+										</div></th>
+									<td>
+										<div class="col-sm-12">
+											
+											자동생성 수신거부 링크명
+											:
+											
+												<button type="button" class="btn btn-xs btn-success" onclick="insertRejectText('[수신거부]')">[수신거부]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-success" onclick="insertRejectText('[Refusal]')">[Refusal]</button>&nbsp;
+											
+												<button type="button" class="btn btn-xs btn-success" onclick="insertRejectText('[Unsubscribe]')">[Unsubscribe]</button>&nbsp;
+											
+											<br> <br>
+											<textarea id="campaignMailbottomRejectText" name="campaignMail.bottomRejectText" style="width: 100%; resize: none" rows="5">
+광고 수신을 원하지 않으시면, 여기 [수신거부]를 눌러 주십시오. </textarea>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>발신자 정보<br>
+										<div class="checkbox checkbox-inline">
+											<input type="checkbox" name="campaignMail.bottomSenderCheck" id="campaignMailbottomSenderCheck" value="1" class="styled"  /> <label for="campaignMail_bottomSenderCheck">삽입</label>
+										</div></th>
+									<td>
+										<div class="col-sm-12">
+											<textarea id="campaignMailbottomSenderText" name="campaignMail.bottomSenderText" style="width: 100%; resize: none" rows="5">
+서울 강남 xx동 xxx-xx 번지 ○○○ (주) 대표전화 : 02-xxx-xxxx
+이메일 : webmaster@○○○.com </textarea>
+										</div>
+									</td>
+								</tr>
+								
+								
+								
+								
+									<tr>
+										<th>첨부파일1</th>
+										<td>
+											<div class="col-sm-8">
+												<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+													<div class="form-control" data-trigger="fileinput">
+														<i class="fa fa-file fileinput-exists"></i> <span class="fileinput-filename"></span>
+													</div>
+													<span class="input-group-addon btn btn-primary btn-file"> <span class="fileinput-new">선택</span> <span class="fileinput-exists">변경</span> <input type="file" name="files" id="campaignMailfileContents1" />
+													</span> <a href="#" class="input-group-addon btn btn-primary fileinput-exists" data-dismiss="fileinput">삭제</a>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<a href="javascript:download('', '')"></a>
+											</div>
+										</td>
+									</tr>
+								
+								
+									<tr>
+										<th>첨부파일2</th>
+										<td>
+											<div class="col-sm-8">
+												<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+													<div class="form-control" data-trigger="fileinput">
+														<i class="fa fa-file fileinput-exists"></i> <span class="fileinput-filename"></span>
+													</div>
+													<span class="input-group-addon btn btn-primary btn-file"> <span class="fileinput-new">선택</span> <span class="fileinput-exists">변경</span> <input type="file" name="files" id="campaignMailfileContents2" />
+													</span> <a href="#" class="input-group-addon btn btn-primary fileinput-exists" data-dismiss="fileinput">삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+								
+									<tr>
+										<th>첨부파일3</th>
+										<td>
+											<div class="col-sm-8">
+												<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+													<div class="form-control" data-trigger="fileinput">
+														<i class="fa fa-file fileinput-exists"></i> <span class="fileinput-filename"></span>
+													</div>
+													<span class="input-group-addon btn btn-primary btn-file"> <span class="fileinput-new">선택</span> <span class="fileinput-exists">변경</span> <input type="file" name="files" id="campaignMailfileContents3" />
+													</span> <a href="#" class="input-group-addon btn btn-primary fileinput-exists" data-dismiss="fileinput">삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+								
+									<tr>
+										<th>첨부파일4</th>
+										<td>
+											<div class="col-sm-8">
+												<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+													<div class="form-control" data-trigger="fileinput">
+														<i class="fa fa-file fileinput-exists"></i> <span class="fileinput-filename"></span>
+													</div>
+													<span class="input-group-addon btn btn-primary btn-file"> <span class="fileinput-new">선택</span> <span class="fileinput-exists">변경</span> <input type="file" name="files" id="campaignMailfileContents4" />
+													</span> <a href="#" class="input-group-addon btn btn-primary fileinput-exists" data-dismiss="fileinput">삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+								
+									<tr>
+										<th>첨부파일5</th>
+										<td>
+											<div class="col-sm-8">
+												<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+													<div class="form-control" data-trigger="fileinput">
+														<i class="fa fa-file fileinput-exists"></i> <span class="fileinput-filename"></span>
+													</div>
+													<span class="input-group-addon btn btn-primary btn-file"> <span class="fileinput-new">선택</span> <span class="fileinput-exists">변경</span> <input type="file" name="files" id="campaignMailfileContents5" />
+													</span> <a href="#" class="input-group-addon btn btn-primary fileinput-exists" data-dismiss="fileinput">삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+								
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="ibox-title">
+					<h5>
+						수신 거부자 제외 설정
+					</h5>
+				</div>
+				<div class="ibox-content">
+					<div class="row">
+						<div class="col-sm-12">
+							<table class="table table-bordered">
+								<tr>
+									<th class="col-sm-2">수신 거부 필터링</th>
+									<td>
+										<div class="col-sm-5">
+											<select id="rejectType" name="rejectType" class="form-control">
+
+
+
+												<option value="2">
+													캠페인 그룹별 수신 거부자 및 영구 실패자 제외
+												</option>
+												<option value="1">
+													시스템 전체 수신 거부자 및 영구 실패자 제외
+												</option>
+												<option value="3">
+													전체 대상자 발송 (제외 없음)
+												</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="col-sm-2"></th>
+									<td>
+										<div class="col-sm-10">
+											Q. 매니저 그룹 전체 수신 거부자 제외란?<br>&nbsp;&nbsp;&nbsp;A.  매니저 그룹에 속한 전체 수신 거부자 제외<br>Q. 캠페인 그룹별 수신 거부자 제외란?<br>&nbsp;&nbsp;&nbsp;A.  수신 거부자 목록에 등록된 캠페인별 수신거부 대상자<br>Q. 시스템 전체 수신 거부자 제외란?<br>&nbsp;&nbsp;&nbsp;A.  메일 시스템에 등록된 전체 수신 거부 대상자 제외<br>&nbsp;&nbsp;&nbsp;※ Admin 계정에서 등록된 수신 거부자도 제외 발송되며, 수신 거부된 이메일 주소는 Admin 계정만 확인 가능합니다.<br>Q. 영구 실패자란 제외란?<br>&nbsp;&nbsp;&nbsp;A.  영구 실패자 목록에 등록된 전체 대상자로 존재하지 않는 도메인과 이메일 주소가 포함됩니다.
+										</div>
+									</td>
+								</tr>
+								<tr class="hidden">
+									<th>발송량 필터링 <input id="campaignFilter.isFiltering" name="campaignFilter.isFiltering" type="checkbox" value="YES"/><input type="hidden" name="_campaignFilter.isFiltering" value="on"/>
+									</th>
+									<td>최근 <select id="campaignFilter.filterType" name="campaignFilter.filterType">
+											<option value="month">한달</option>
+											<option value="week">한주</option>
+										</select> 간 <select id="campaignFilter.filterCount" name="campaignFilter.filterCount">
+											
+												<option value="1">1</option>
+											
+												<option value="2">2</option>
+											
+												<option value="3">3</option>
+											
+												<option value="4">4</option>
+											
+												<option value="5">5</option>
+											
+												<option value="6">6</option>
+											
+												<option value="7">7</option>
+											
+												<option value="8">8</option>
+											
+												<option value="9">9</option>
+											
+												<option value="10">10</option>
+											
+										</select> 회 이상 발송한 대상자를 필터링
+									</td>
+								</tr>
+								<tr class="hidden">
+									<th>오픈 필터링 <input id="campaignFilter.isFilteringUnopen" name="campaignFilter.isFilteringUnopen" type="checkbox" value="Y"/><input type="hidden" name="_campaignFilter.isFilteringUnopen" value="on"/>
+									</th>
+									<td>최근 <select id="campaignFilter.unopenType" name="campaignFilter.unopenType">
+											<option value="M">한달</option>
+											<option value="W">한주</option>
+										</select> 간 미오픈 대상자를 필터링
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="ibox-title">
+					<h5>
+						발송 설정
+					</h5>
+				</div>
+				<div class="ibox-content">
+					<div class="row">
+						<div class="col-sm-12">
+							<table class="table table-bordered">
+								<tr>
+									<th class="col-sm-2">발송 방법</th>
+									<td>
+										<div class="col-sm-12">
+											<div>
+												<div class="radio radio-inline">
+													<input id="campaignSend_sendType1" name="campaignSend.sendType" type="radio" value="1" checked="checked"/>
+													<label for="campaignSend_sendType1">즉시 발송</label>
+												</div>
+												<div class="radio radio-inline">
+													<input id="campaignSend_sendType2" name="campaignSend.sendType" checked="checked" type="radio" value="2"/>
+													<label for="campaignSend_sendType2">예약 발송</label>
+												</div>
+												<div class="hidden">
+													<input id="campaignSend_sendType3" name="campaignSend.sendType" type="radio" value="0"/><label for="campaignSend_sendType3">반복 발송</label>
+												</div>
+											</div>
+											<div id="sendtype2" style="display: none">
+												
+												
+												
+												
+												
+												
+												<input name="campaignSend.sendDateYYYY" id="campaignSend.sendDateYYYY" size="5" value="2026" />
+												년
+												<select id="campaignSend.sendDateMM" name="campaignSend.sendDateMM">
+													
+														
+														
+															
+														
+														<option selected="selected" value="1">1</option>
+													
+														
+														
+														<option value="2">2</option>
+													
+														
+														
+														<option value="3">3</option>
+													
+														
+														
+														<option value="4">4</option>
+													
+														
+														
+														<option value="5">5</option>
+													
+														
+														
+														<option value="6">6</option>
+													
+														
+														
+														<option value="7">7</option>
+													
+														
+														
+														<option value="8">8</option>
+													
+														
+														
+														<option value="9">9</option>
+													
+														
+														
+														<option value="10">10</option>
+													
+														
+														
+														<option value="11">11</option>
+													
+														
+														
+														<option value="12">12</option>
+													
+												</select>
+												월
+												<select id="campaignSend.sendDatedd" name="campaignSend.sendDatedd">
+													
+														
+														
+														<option value="1">1</option>
+													
+														
+														
+														<option value="2">2</option>
+													
+														
+														
+														<option value="3">3</option>
+													
+														
+														
+														<option value="4">4</option>
+													
+														
+														
+														<option value="5">5</option>
+													
+														
+														
+														<option value="6">6</option>
+													
+														
+														
+														<option value="7">7</option>
+													
+														
+														
+														<option value="8">8</option>
+													
+														
+														
+														<option value="9">9</option>
+													
+														
+														
+														<option value="10">10</option>
+													
+														
+														
+														<option value="11">11</option>
+													
+														
+														
+														<option value="12">12</option>
+													
+														
+														
+														<option value="13">13</option>
+													
+														
+														
+														<option value="14">14</option>
+													
+														
+														
+														<option value="15">15</option>
+													
+														
+														
+														<option value="16">16</option>
+													
+														
+														
+														<option value="17">17</option>
+													
+														
+														
+														<option value="18">18</option>
+													
+														
+														
+														<option value="19">19</option>
+													
+														
+														
+														<option value="20">20</option>
+													
+														
+														
+														<option value="21">21</option>
+													
+														
+														
+														<option value="22">22</option>
+													
+														
+														
+															
+														
+														<option selected="selected" value="23">23</option>
+													
+														
+														
+														<option value="24">24</option>
+													
+														
+														
+														<option value="25">25</option>
+													
+														
+														
+														<option value="26">26</option>
+													
+														
+														
+														<option value="27">27</option>
+													
+														
+														
+														<option value="28">28</option>
+													
+														
+														
+														<option value="29">29</option>
+													
+														
+														
+														<option value="30">30</option>
+													
+														
+														
+														<option value="31">31</option>
+													
+												</select>
+												일
+												<select id="campaignSend.sendDateHH" name="campaignSend.sendDateHH">
+													
+														
+														
+														<option value="0">0</option>
+													
+														
+														
+														<option value="1">1</option>
+													
+														
+														
+														<option value="2">2</option>
+													
+														
+														
+														<option value="3">3</option>
+													
+														
+														
+														<option value="4">4</option>
+													
+														
+														
+														<option value="5">5</option>
+													
+														
+														
+														<option value="6">6</option>
+													
+														
+														
+														<option value="7">7</option>
+													
+														
+														
+														<option value="8">8</option>
+													
+														
+														
+														<option value="9">9</option>
+													
+														
+														
+														<option value="10">10</option>
+													
+														
+														
+															
+														
+														<option selected="selected" value="11">11</option>
+													
+														
+														
+														<option value="12">12</option>
+													
+														
+														
+														<option value="13">13</option>
+													
+														
+														
+														<option value="14">14</option>
+													
+														
+														
+														<option value="15">15</option>
+													
+														
+														
+														<option value="16">16</option>
+													
+														
+														
+														<option value="17">17</option>
+													
+														
+														
+														<option value="18">18</option>
+													
+														
+														
+														<option value="19">19</option>
+													
+														
+														
+														<option value="20">20</option>
+													
+														
+														
+														<option value="21">21</option>
+													
+														
+														
+														<option value="22">22</option>
+													
+														
+														
+														<option value="23">23</option>
+													
+												</select>
+												시
+												<select id="campaignSend.sendDatemm" name="campaignSend.sendDatemm">
+													
+														
+														
+														<option value="0">0</option>
+													
+														
+														
+														<option value="1">1</option>
+													
+														
+														
+															
+														
+														<option selected="selected" value="2">2</option>
+													
+														
+														
+														<option value="3">3</option>
+													
+														
+														
+														<option value="4">4</option>
+													
+														
+														
+														<option value="5">5</option>
+													
+														
+														
+														<option value="6">6</option>
+													
+														
+														
+														<option value="7">7</option>
+													
+														
+														
+														<option value="8">8</option>
+													
+														
+														
+														<option value="9">9</option>
+													
+														
+														
+														<option value="10">10</option>
+													
+														
+														
+														<option value="11">11</option>
+													
+														
+														
+														<option value="12">12</option>
+													
+														
+														
+														<option value="13">13</option>
+													
+														
+														
+														<option value="14">14</option>
+													
+														
+														
+														<option value="15">15</option>
+													
+														
+														
+														<option value="16">16</option>
+													
+														
+														
+														<option value="17">17</option>
+													
+														
+														
+														<option value="18">18</option>
+													
+														
+														
+														<option value="19">19</option>
+													
+														
+														
+														<option value="20">20</option>
+													
+														
+														
+														<option value="21">21</option>
+													
+														
+														
+														<option value="22">22</option>
+													
+														
+														
+														<option value="23">23</option>
+													
+														
+														
+														<option value="24">24</option>
+													
+														
+														
+														<option value="25">25</option>
+													
+														
+														
+														<option value="26">26</option>
+													
+														
+														
+														<option value="27">27</option>
+													
+														
+														
+														<option value="28">28</option>
+													
+														
+														
+														<option value="29">29</option>
+													
+														
+														
+														<option value="30">30</option>
+													
+														
+														
+														<option value="31">31</option>
+													
+														
+														
+														<option value="32">32</option>
+													
+														
+														
+														<option value="33">33</option>
+													
+														
+														
+														<option value="34">34</option>
+													
+														
+														
+														<option value="35">35</option>
+													
+														
+														
+														<option value="36">36</option>
+													
+														
+														
+														<option value="37">37</option>
+													
+														
+														
+														<option value="38">38</option>
+													
+														
+														
+														<option value="39">39</option>
+													
+														
+														
+														<option value="40">40</option>
+													
+														
+														
+														<option value="41">41</option>
+													
+														
+														
+														<option value="42">42</option>
+													
+														
+														
+														<option value="43">43</option>
+													
+														
+														
+														<option value="44">44</option>
+													
+														
+														
+														<option value="45">45</option>
+													
+														
+														
+														<option value="46">46</option>
+													
+														
+														
+														<option value="47">47</option>
+													
+														
+														
+														<option value="48">48</option>
+													
+														
+														
+														<option value="49">49</option>
+													
+														
+														
+														<option value="50">50</option>
+													
+														
+														
+														<option value="51">51</option>
+													
+														
+														
+														<option value="52">52</option>
+													
+														
+														
+														<option value="53">53</option>
+													
+														
+														
+														<option value="54">54</option>
+													
+														
+														
+														<option value="55">55</option>
+													
+														
+														
+														<option value="56">56</option>
+													
+														
+														
+														<option value="57">57</option>
+													
+														
+														
+														<option value="58">58</option>
+													
+														
+														
+														<option value="59">59</option>
+													
+												</select>
+												분
+											</div>
+											<div id="sendtype0" style="display: none">
+												<select id="campaignSend.sendType0" name="campaignSend.sendType0">
+													<option value="3">
+														Daily
+													</option>
+													<option value="4">
+														매주
+													</option>
+													<option value="5">
+														매월
+													</option>
+													<option value="6">
+														매년
+													</option>
+													<option value="7">
+														매특정요일
+													</option>
+												</select>
+												<input id="campaignSend.repeatDay" name="campaignSend.repeatDay" type="checkbox" value="2"/><input type="hidden" name="_campaignSend.repeatDay" value="on"/>
+												월
+												<input id="campaignSend.repeatDay" name="campaignSend.repeatDay" type="checkbox" value="3"/><input type="hidden" name="_campaignSend.repeatDay" value="on"/>
+												화
+												<input id="campaignSend.repeatDay" name="campaignSend.repeatDay" type="checkbox" value="4"/><input type="hidden" name="_campaignSend.repeatDay" value="on"/>
+												수
+												<input id="campaignSend.repeatDay" name="campaignSend.repeatDay" type="checkbox" value="5"/><input type="hidden" name="_campaignSend.repeatDay" value="on"/>
+												목
+												<input id="campaignSend.repeatDay" name="campaignSend.repeatDay" type="checkbox" value="6"/><input type="hidden" name="_campaignSend.repeatDay" value="on"/>
+												금
+												<input id="campaignSend.repeatDay" name="campaignSend.repeatDay" type="checkbox" value="7"/><input type="hidden" name="_campaignSend.repeatDay" value="on"/>
+												토
+												<input id="campaignSend.repeatDay" name="campaignSend.repeatDay" type="checkbox" value="1"/><input type="hidden" name="_campaignSend.repeatDay" value="on"/>
+												일
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>통계</th>
+									<td>
+										<div class="col-sm-12">
+											<div>
+												발송일로부터
+												<div class="radio radio-inline">
+													<input id="campaignStatistics.periodType1" name="campaignStatistics.periodType" type="radio" value="1"/>
+													<label for="campaignStatistics.periodType1"> 1일</label>
+												</div>
+											</div>
+											<div>
+												<span style="opacity: 0">발송일로부터</span>
+												<div class="radio radio-inline">
+													<input id="campaignStatistics.periodType2" name="campaignStatistics.periodType" type="radio" value="2" checked="checked"/>
+													<label for="campaignStatistics.periodType2">1주일</label>
+												</div>
+											</div>
+											<div>
+												<span style="opacity: 0">발송일로부터</span>
+												<div class="radio radio-inline">
+													<input id="campaignStatistics.periodType3" name="campaignStatistics.periodType" type="radio" value="3"/>
+													<label for="campaignStatistics.periodType3">한 달</label>
+												</div>
+											</div>
+											<div class="hidden">
+												<span style="opacity: 0">발송일로부터</span>
+												<input id="campaignStatistics.periodType4" name="campaignStatistics.periodType" type="radio" value="4"/>
+												특정일
+												
+												
+												
+												
+												
+												
+												<input name="sendDate.year" id="sendDate.year" value="" />
+												년
+												<select name="sendDate.month" id="sendDate.month">
+													
+														
+														
+														<option value="1" label="1"  />
+													
+														
+														
+														<option value="2" label="2"  />
+													
+														
+														
+														<option value="3" label="3"  />
+													
+														
+														
+														<option value="4" label="4"  />
+													
+														
+														
+														<option value="5" label="5"  />
+													
+														
+														
+														<option value="6" label="6"  />
+													
+														
+														
+														<option value="7" label="7"  />
+													
+														
+														
+														<option value="8" label="8"  />
+													
+														
+														
+														<option value="9" label="9"  />
+													
+														
+														
+														<option value="10" label="10"  />
+													
+														
+														
+														<option value="11" label="11"  />
+													
+														
+														
+														<option value="12" label="12"  />
+													
+												</select>
+												월
+												<select name="sendDate.day" id="sendDate.day">
+													
+														
+														
+														<option value="1" label="1"  />
+													
+														
+														
+														<option value="2" label="2"  />
+													
+														
+														
+														<option value="3" label="3"  />
+													
+														
+														
+														<option value="4" label="4"  />
+													
+														
+														
+														<option value="5" label="5"  />
+													
+														
+														
+														<option value="6" label="6"  />
+													
+														
+														
+														<option value="7" label="7"  />
+													
+														
+														
+														<option value="8" label="8"  />
+													
+														
+														
+														<option value="9" label="9"  />
+													
+														
+														
+														<option value="10" label="10"  />
+													
+														
+														
+														<option value="11" label="11"  />
+													
+														
+														
+														<option value="12" label="12"  />
+													
+														
+														
+														<option value="13" label="13"  />
+													
+														
+														
+														<option value="14" label="14"  />
+													
+														
+														
+														<option value="15" label="15"  />
+													
+														
+														
+														<option value="16" label="16"  />
+													
+														
+														
+														<option value="17" label="17"  />
+													
+														
+														
+														<option value="18" label="18"  />
+													
+														
+														
+														<option value="19" label="19"  />
+													
+														
+														
+														<option value="20" label="20"  />
+													
+														
+														
+														<option value="21" label="21"  />
+													
+														
+														
+														<option value="22" label="22"  />
+													
+														
+														
+														<option value="23" label="23"  />
+													
+														
+														
+														<option value="24" label="24"  />
+													
+														
+														
+														<option value="25" label="25"  />
+													
+														
+														
+														<option value="26" label="26"  />
+													
+														
+														
+														<option value="27" label="27"  />
+													
+														
+														
+														<option value="28" label="28"  />
+													
+														
+														
+														<option value="29" label="29"  />
+													
+														
+														
+														<option value="30" label="30"  />
+													
+														
+														
+														<option value="31" label="31"  />
+													
+												</select>
+												일
+											</div>
+											<div class="hidden">
+												발송 결과
+												<div class="radio radio-inline">
+													<input id="campaignStatistics.openType1" name="campaignStatistics.openType" type="radio" value="O"/>
+													<label for="campaignStatistics.openType1">공개</label>
+												</div>
+												<div class="radio radio-inline">
+													<input id="campaignStatistics.openType2" name="campaignStatistics.openType" type="radio" value="X" checked="checked"/>
+													<label for="campaignStatistics.openType2">비공개</label>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>중복 메일 발송</th>
+									<td>
+										<div class="col-sm-12">
+											<div class="radio radio-inline">
+												<input id="duplicationYn1" name="duplicationYn" type="radio" value="N" checked="checked"/>
+												<label for="duplicationYn1">중복 제거</label>
+											</div>
+											<div class="radio radio-inline">
+												<input id="duplicationYn2" name="duplicationYn" type="radio" value="Y"/>
+												<label for="duplicationYn2">중복 허용</label>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>발송 우선 순위</th>
+									<td>
+										<div class="col-sm-12">
+											<div class="radio radio-inline">
+												<input id="priority1" name="priority" type="radio" value="1"/>
+												<label for="priority1">상</label>
+											</div>
+											<div class="radio radio-inline">
+												<input id="priority2" name="priority" type="radio" value="2" checked="checked"/>
+												<label for="priority2">중</label>
+											</div>
+											<div class="radio radio-inline">
+												<input id="priority3" name="priority" type="radio" value="3"/>
+												<label for="priority3">하</label>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="hidden">
+									<th>메일 발송 모드</th>
+									<td><input id="sendType1" name="sendType" type="radio" value="O" checked="checked"/><label for="sendType1">실제발송</label> <input id="sendType2" name="sendType" type="radio" value=""/><label for="sendType2">가상발송</label></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+					<div class="ibox-content">
+						<div class="row">
+							<div class="col-sm-4"></div>
+							<div class="col-sm-4 text-center"></div>
+							<div class="col-sm-4 text-right">
+								<button type="submit" class="btn btn-sm btn-primary" id="next">
+									다음
+								</button>
+							</div>
+						</div>
+					</div>
+				
+				<input type="hidden" name="targetselectedarray" value="" />
+			<div>
+</div></form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="verificationPopup" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">
+					<span id="v_domain" style="font-weight:bold;"></span> 
+					<span class="label label-danger" style="margin-left: 10px;">x 확인필요</span>
+				</h4>
+			</div>
+			<div class="modal-body">
+				<h5>인증 안내</h5>
+				<table class="table table-striped table-bordered text-center" style="font-size: 13px;">
+					<thead>
+						<tr>
+							<th class="text-center" style="width: 10%;">상태</th>
+							<th class="text-center" style="width: 10%;">Type</th>
+							<th class="text-center" style="width: 30%;">Name (Host)</th>
+							<th class="text-center">Value</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Mock Data for Demo -->
+						<tr>
+							<td><span class="label label-success">인증됨</span></td>
+							<td>A</td>
+							<td>@</td>
+							<td>1.234.56.78</td>
+						</tr>
+						<tr>
+							<td><span class="label label-success">인증됨</span></td>
+							<td>TXT</td>
+							<td>@</td>
+							<td>v=spf1 include:spf.mymailer.co.kr ~all</td>
+						</tr>
+						<tr>
+							<td><span class="label label-default">확인 중</span></td>
+							<td>CNAME</td>
+							<td>dkim._domainkey</td>
+							<td>dkim.mymailer.co.kr</td>
+						</tr>
+						<tr>
+							<td><span class="label label-success">인증됨</span></td>
+							<td>TXT</td>
+							<td>_dmarc</td>
+							<td>v=DMARC1; p=none;</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="alert alert-danger" style="margin-bottom: 0;">
+					<p><i class="fa fa-exclamation-triangle"></i> 발신 도메인이 인증되지 않아 도달률이 떨어질 수 있으며, 메일 수신 거부 또는 차단이 발생할 수 있습니다.</p>
+					<p style="margin-top: 5px;">해당 위험을 인지한 상태에서 발송을 진행하며, 관련 문의나 이슈에 대해 서비스 제공자에게 책임을 요구하지 않겠습니다.</p>
+				</div>
+			</div>
+			<div class="modal-footer" style="text-align: center;">
+				<button type="button" class="btn btn-default btn-lg" data-dismiss="modal">취소 (도메인 인증하기)</button>
+				<button type="button" class="btn btn-danger btn-lg" onclick="forceSubmit()">동의하고 발송 진행</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/inspinia/vendor/plugins/swiper/swiper-bundle.min.js"></script>
+ <script>
+$(document).ready(function(){
+	$("#verificationPopup").modal('show');
+});
+</script>
+
+<script src="/inspinia/js/plugins/grapesjs/grapesjs.min.js"></script>
+<script src="/inspinia/js/plugins/grapesjs/grapesjs-preset-newsletter.min.js"></script>
+<script src="/inspinia/vendor/plugins/ckeditor/ckeditor.js"></script>
+<script src="/inspinia/js/plugins/grapesjs/grapesjs-plugin-ckeditor.min_0.0.10_.js"></script>
+<script src="/inspinia/js/plugins/grapesjs/ko.js"></script>
+<script src="/inspinia/js/plugins/juice.4.1.1/juice.4.1.1.js"></script>
+<script src="/inspinia/js/plugins/grapesjs/custom_editor.js"></script>
+<link href="/inspinia/css/plugins/grapesjs/grapesjs.css" rel="stylesheet" />
+<link href="/inspinia/css/plugins/grapesjs/grapesjs-preset-newsletter.css" rel="stylesheet" />
+<link href="/inspinia/css/plugins/grapesjs/custom_grapesjs.css" rel="stylesheet">
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$("#sendtype2").slideDown("slow");
+		$("#sendtype0").slideUp("slow");
+	});
+
+	window.onpageshow = function(event) {
+		if ( event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+			location.reload();
+		}
+	}
+	
+	function load() {
+
+		$(".input-daterange").datepicker({
+			keyboardNavigation : false,
+			forceParse : false,
+			autoclose : true,
+			language : "ko"
+		});
+
+		$("#campaignmail").select2({
+			placeholder : "이전 캠페인 선택",
+			allowClear : true,
+			width : "100%"
+		});
+
+		$("#templatemail").select2({
+			placeholder : "파일 템플릿 선택",
+			allowClear : true,
+			width : "100%"
+		});
+
+		$(".summernote").summernote({
+			lang : "ko-KR",
+			height : 300,
+		    toolbar: [
+		        ['style', ['style']],
+		        ['font', ['bold', 'underline', 'clear']],
+		        ['fontname', ['fontname']],
+		        ['fontsize', ['fontsize']],
+		        ['color', ['color']],
+		        ['para', ['ul', 'ol', 'paragraph']],
+		        ['table', ['table']],
+		        ['insert', ['link', 'picture']],
+		        ['view', ['codeview', 'help']]
+			],
+			
+			callbacks : {
+				onImageUpload: function(files, editor, welEditable) {
+					for (var i = files.length - 1; i >= 0; i--) {
+						sendFile(files[i], this);
+					}
+				},
+				onPaste: function (e) {
+					const clipboardData = (e.originalEvent || e).clipboardData;
+					const items = clipboardData.items;
+
+					for (let i = 0; i < items.length; i++) {
+						if (items[i].type.indexOf("image") !== -1) {
+							e.preventDefault();
+							//alert('클립보드 이미지 붙여넣기는 허용되지 않습니다.');
+							return false;
+						}
+					}
+        		}
+			},
+			
+	        popover: {
+	            image: [
+	                ['custom', ['imageAttributes']],
+	                ['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
+	                ['float', ['floatLeft', 'floatRight', 'floatNone']],
+	                ['remove', ['removeMedia']]
+	            ],
+	        },
+	        imageAttributes:{
+	            icon:'<i class="note-icon-link"/>',
+	            removeEmpty: true, // true = remove attributes | false = leave empty if present
+	            disableUpload: true // true = don't display Upload Options | Display Upload Options
+	        },
+		    tableClassName: function() {
+		        $(this).attr('cellpadding', 12).attr('cellspacing', 1).attr('border', 1).css('borderCollapse', 'collapse');
+		        $(this).find('td').css('padding-top', '5px').css('padding-left', '15px').css('padding-bottom', '5px').css('padding-right', '15px');
+		    }
+		});
+		
+		var mailcontent = $("#mailcontent").val();
+		mailcontent = mailcontent.replaceAll("<style", "<title");
+		mailcontent = mailcontent.replaceAll("/style>", "/title>");
+		$(".summernote").summernote("code", mailcontent);
+
+		window.value = new Array();
+		window.t_body = document.getElementById("t_body");
+		window.tt_body = document.getElementById("tt_body");
+		window.value.push();
+
+		changealiases();
+
+		$("#campaignGroupId").select2({
+			placeholder : "캠페인 그룹",
+			allowClear : true,
+			width : "100%"
+		});
+		
+		// 발신 도메인 확인하기
+		if( $("input:radio[name='heloDomainIdxForeign']").length == 0 ) {
+
+			// 발신 도메인이 없으면
+			$.toast({
+				text : "발신 도메인을 먼저 입력해 주세요!",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+		} else {
+			
+			// 발신 도메인이 있으면
+			if( $("input:radio[name='heloDomainIdxForeign']:checked").val() == null ) {
+				
+				// 아직 선택 되어있지 않으면 첫번째 것으로 선택하기
+				$("input:radio[name='heloDomainIdxForeign']").eq(0).prop("checked", true);
+			}
+			
+			if( "" == "" ) {
+				
+				helodomain();
+			}
+		}
+		
+		jQuery.validator.addMethod("checkboxtarget", function(value, element) {
+			return (window.t_body.rows.length > 0);
+		});
+
+		jQuery.validator.addMethod("mailcontent", function(value, element) {
+			
+			if( $(".editor_wrapper").css("display") === "none" ){
+				return !$(".summernote").summernote("isEmpty");
+			} else {
+				
+				let html = editor.getInlinedHtml();
+				return html != "" && html.length > 0;
+			}
+		});
+		
+		jQuery.validator.addMethod("eng_num_dash", function(value, element) {
+			return this.optional(element) || /^[0-9\d-+\s]+$/.test(value);
+		});
+
+		$("#input").validate({
+			debug: false,
+			ignore : "*:not([name])",
+			rules : {
+				campaignTitle : {
+					required : true
+				},
+				explanation : {
+					required : false
+				},
+				campaignGroupId : {
+					required : true
+				},
+				row : {
+					checkboxtarget : true
+				},
+				"campaignBasicInfo.extension" : {
+					eng_num_dash : true
+				},
+				"campaignBasicInfo.email" : {
+					email : true
+				},
+				"campaignBasicInfo.mobile" : {
+					eng_num_dash : true
+				},
+				"campaignGoalResult.resultFromDate" : {
+					dateISO : true,
+					rangelength : [ 10, 10 ]
+				},
+				"campaignGoalResult.resultToDate" : {
+					dateISO : true,
+					rangelength : [ 10, 10 ]
+				},
+				"campaignGoalResult.achievementRate" : {
+					number : true
+				},
+				"campaignGoalResult.incDecRate" : {
+					number : true
+				},
+				"campaignMail.senderAlias" : {
+					required : true
+				},
+				heloDomainIdxForeign : {
+					required : true
+				},
+				"campaignMail.sender" : {
+					required : true
+				},
+				"campaignMail.receiverAlias" : {
+					required : true
+				},
+				"campaignMail.title" : {
+					required : true
+				}
+			},
+			messages : {
+				campaignTitle : {
+					required : "제목을 입력해 주세요!"
+				},
+				explanation : {
+					required : "설명을 입력해 주세요!"
+				},
+				campaignGroupId : {
+					required : "캠페인 그룹을 선택해 주세요!"
+				},
+				row : {
+					checkboxtarget : function() {
+
+						$.toast({
+							text : "주소록을 선택해 주세요!",
+							position : "bottom-right",
+							stack : 2,
+							icon : "info"
+						});
+					}
+				},
+				"campaignBasicInfo.extension" : {
+					eng_num_dash : "전화번호를 입력해 주세요!"
+				},
+				"campaignBasicInfo.email" : {
+					email : "이메일 형식이 아닙니다!"
+				},
+				"campaignBasicInfo.mobile" : {
+					eng_num_dash : "전화번호를 입력해 주세요!"
+				},
+				"campaignGoalResult.resultFromDate" : {
+					dateISO : "잘못 된 날짜 형식입니다!",
+					rangelength : "잘못 된 날짜 형식입니다!"
+				},
+				"campaignGoalResult.resultToDate" : {
+					dateISO : "잘못 된 날짜 형식입니다!",
+					rangelength : "잘못 된 날짜 형식입니다!"
+				},
+				"campaignGoalResult.achievementRate" : {
+					number : "숫자만 입력해 주세요!"
+				},
+				"campaignGoalResult.incDecRate" : {
+					number : "숫자만 입력해 주세요!"
+				},
+				"campaignMail.senderAlias" : {
+					required : "보내는 사람 이름을 입력해 주세요!"
+				},
+				heloDomainIdxForeign : {
+					required : "발신 도메인을 먼저 입력해 주세요!"
+				},
+				"campaignMail.sender" : {
+					required : "보내는 사람 이메일을 입력해 주세요!"
+				},
+				"campaignMail.receiverAlias" : {
+					required : "받는 사람 이름을 입력해 주세요!"
+				},
+				"campaignMail.title" : {
+					required : "제목을 입력해 주세요!"
+				}
+			},
+			submitHandler : function(form) {
+				
+			submitHandler : function(form) {
+				
+				var selectedDomain = $("input[name='heloDomainIdxForeign']:checked");
+				var selectedDomainValue = selectedDomain.data('domain');
+				var verifyStatus = selectedDomain.data('verify');
+				var senderEmail = $("#campaignMailsender").val();
+				
+				// 1. Domain Mismatch Check
+				if (selectedDomainValue && senderEmail) {
+					var senderDomain = senderEmail.split('@')[1];
+					if (senderDomain != selectedDomainValue) {
+						if ($("#domainMismatchError").length == 0) {
+							$("#campaignMailsender").after('<div id="domainMismatchError" style="color:red; margin-top:5px;">선택한 발신도메인과 발신도메인이 일치하지 않습니다.</div>');
+						}
+						$("#domainMismatchError").show();
+						$("input[name='heloDomainIdxForeign']").first().focus();
+						$('html, body').animate({
+							scrollTop: $("input[name='heloDomainIdxForeign']").offset().top - 100
+						}, 500);
+						return false;
+					} else {
+						$("#domainMismatchError").hide();
+					}
+				}
+				
+				// 2. Verification Status Check
+				if (verifyStatus == 'N') {
+					$("#v_domain").text(selectedDomainValue);
+					$("#verificationPopup").modal('show');
+					return false;
+				}
+
+				// 주소록 이메일 보내기 가능한지 미리 확인하기
+				$.ajax({
+					type : "post",
+					url : "/compose/ajax/target/count",
+					data : $("#input").serialize(),
+					dataType : "json",
+					success : function(response) {
+
+						var result = JSON.parse(JSON.stringify(response));
+						if (result.result == "1") {
+
+							editor.getModel().set('changesCount', 0);
+							$("#next").prop("disabled", true);
+			
+							if( $(".editor_wrapper").css("display") === "none" ){
+								$("#mailcontent").val($(".summernote").summernote("code"));
+							} else {
+								$("#mailcontent").val(editor.getInlinedHtml());
+							}
+							
+							form.submit();
+						} else {
+							
+							var count = result.count;
+
+							$.toast({
+								text : '1회 '+count+'통까지 발송 가능합니다.',
+								position : "bottom-right",
+								stack : false,
+								icon : "warning"
+							});
+						}
+					},
+					error : function(jqXHR, textStatus, errorThrown) {
+
+						console.log(jqXHR.status);
+						console.log(jqXHR.statusText);
+						console.log(jqXHR.responseText);
+						console.log(jqXHR.readyState);
+
+						$.toast({
+							text : "통신 중 오류가 발생하였습니다!",
+							position : "bottom-right",
+							stack : false,
+							icon : "error"
+						});
+					}
+				});
+			}
+		});
+		
+		$("input[id^='campaignMailfileContents']").change(function(){
+			
+			if( $(this).val() != "" ) {
+				
+				var mimeType = $(this).prop("files")[0];
+
+				
+				
+
+				var contentTypes = ["APPLICATION/VND.MICROSOFT.PORTABLE-EXECUTABLE",  ""];
+				var extensions = ["TXT", "CSV", "XLS", "XLSX", "PDF", "BMP", "GIF", "JPG", "JPEG", "PNG", "HWP", "PDF", "PPT", "PPTX",  ""];
+
+				if( $.inArray(mimeType.type.toUpperCase(), contentTypes) > -1 ) {
+
+					$.toast({
+						text : "제한된 파일입니다!",
+						position : "bottom-right",
+						icon : "info"
+					});
+					$(this).val("");
+					return;
+				}
+				
+				var extention = $(this).val().split(".").pop().toUpperCase();
+				
+				// 올릴 수 없는 파일
+				if( $.inArray(extention, extensions) == -1 ){
+
+					$.toast({
+						text : "제한된 파일입니다!",
+						position : "bottom-right",
+						icon : "info"
+					});
+					$(this).val("");
+				} else if( this.files[0].size == 0 ) { // 크기가 0인 파일
+
+					$.toast({
+						text : "파일에 문제가 있습니다.\n파일을 확인해주세요!",
+						position : "bottom-right",
+						icon : "info"
+					});
+					$(this).val("");
+				} else {
+					
+					var filesize = this.files[0].size;
+					var maxsize = 1024 * 1000 * 0;
+					if( maxsize == 0 ) {
+						maxsize = 1024 * 1000 * 30;
+					}
+					if( filesize > maxsize ) {
+
+						$.toast({
+							text : "파일 용량이 " + ( maxsize / ( 1024 * 1000 ) ) + "메가를 초과 하였습니다!",
+							position : "bottom-right",
+							icon : "info"
+						});
+						$(this).val("");
+					}
+				}
+			}
+		});
+		
+		$("#campaignSend_sendType1").click(function() {
+
+			$("#sendtype2").slideUp("slow");
+			$("#sendtype0").slideUp("slow");
+		});
+		
+		$("#campaignSend_sendType2").click(function() {
+
+			$("#sendtype2").slideDown("slow");
+			$("#sendtype0").slideUp("slow");
+		});
+		
+		$("#campaignSend_sendType3").click(function() {
+
+			$("#sendtype2").slideDown("slow");
+			$("#sendtype0").slideDown("slow");
+		});
+
+		// 초기화면에 note-editor를 띄우기 위한 설정
+		document.querySelector(".editor_wrapper").style.display = "none"
+		// 나중에 작성 창에 값을 불러와서 저장하기 위한 설정
+		editor.setHtml(document.querySelector("#mailcontent").innerText)
+
+		window.page = 1;
+		
+		getTargets(0);
+		
+		click_init();
+		
+	//	$(".fileinput-exists").hide();
+	}
+	
+	window.onpageshow = function(event) {
+	
+		if ( event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+			location.reload();
+		}
+	}
+	
+	function download(filename, filenameAlias) {
+
+		location.href = "/email/file?filename=" + encodeURI(filename) + "&filenameAlias=" + filenameAlias;
+	}
+
+	function targetlist() {
+
+		$.ajax({
+			type : "post",
+			url : "/compose/ajax/email/compose1",
+			data : {
+				id : $("#id").val()
+			},
+			dataType : "json",
+			success : function(response) {
+
+				var result = JSON.parse(JSON.stringify(response));
+				if (result.result == "1") {
+
+					$("#input").submit();
+				} else {
+
+					$.toast({
+						text : "오류가 발생하였습니다!",
+						position : "bottom-right",
+						stack : false,
+						icon : "error"
+					});
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+
+				$.toast({
+					text : "통신 중 오류가 발생하였습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+
+	function addDataToChart(id, idx, name, count, type, userId) {
+
+		index = window.value.indexOf(idx);
+		var ochk = "";
+		var xchk = "";
+		
+		if($("#send"+idx).val()=="O"){
+			ochk = "selected";
+		} else if($("#send"+idx).val()=="X"){
+			xchk = "selected";
+		}
+		if (index == -1) {
+			window.value.push(idx);
+			var cell = window.t_body.insertRow(window.t_body.rows.length);
+			cell.id = "add" + idx;
+// 			var cell0 = cell.insertCell(0);
+// 			cell0.style.textAlign = "left";
+// 			cell0.innerHTML = id;
+			var cell0 = cell.insertCell(0);
+			cell0.style.textAlign = "left";
+			cell0.innerHTML = "<button type=\"button\" class=\"btn btn-danger btn-xs\" onclick=\"addDataToChart('" + id + "', '" + idx + "', '', '', '', '')\">삭제</button>";
+			var cell1 = cell.insertCell(1);
+			cell1.innerHTML = name;
+			var cell2 = cell.insertCell(2);
+			cell2.style.textAlign = "left";
+			cell2.innerHTML = '<input type="hidden" name="target" value="'+ idx +'"/><select  name="targetselected" onchange="countEmail('+idx+')"><option '+ochk+' value="O">발송</option><option '+xchk+' value="X">제외</option></select>';
+			var cell3 = cell.insertCell(3);
+			cell3.style.textAlign = "left";
+			cell3.innerHTML = Number(count).toLocaleString();
+			var cell4 = cell.insertCell(4);
+			cell4.style.textAlign = "left";
+			cell4.innerHTML = type;
+
+			
+			
+			if($('input:checkbox[id=row'+idx+']').is(":checked") == true){
+				if('devopts' != userId){
+					var result = confirm("선택한 주소록은 다른 사용자가 작성한 주소록입니다. \n추가하시겠습니까 ?");
+					if(result == true){
+						$("#add" + idx).addClass("hidden");
+					} else {
+						window.value.splice(index, 1);
+						$("#add" + idx).remove();
+						$("#preadd" + idx).remove();
+						$("#row" + idx).prop("checked", false);
+					}
+					
+				}	
+			}
+			
+		} else {
+
+			window.value.splice(index, 1);
+			$("#add" + idx).remove();
+			$("#preadd" + idx).remove();
+			$("#row" + idx).prop("checked", false);
+		}
+		
+		countEmail(idx);
+		changealiases();
+		
+		
+	}
+
+	// 주소록 이메일 보내기 가능한지 미리 확인하기 및 몇개인지 가져오기
+	function countEmail(idx) {
+		$.ajax({
+			type : "post",
+			url : "/compose/ajax/target/count",
+			data : $("#input").serialize(),
+			dataType : "json",
+			success : function(response) {
+
+				var result = JSON.parse(JSON.stringify(response));
+				if (result.result == "1") {
+
+					$("#add" + idx).removeClass("hidden");
+
+					// 전체 이메일 수 보여주기
+					$("#sum").text(Number(result.sum).toLocaleString());
+					// 전체 이메일 수 비율 보여주기
+					var ratio = Number(Number(result.sum)/Number('0')*100).toFixed(0);
+					$("#ratio").text(ratio);
+					// bar 움직이기
+					$("#bar").css("width", ratio + "%");
+					// bar 색상 바꾸기
+					$("#bar").removeClass("progress-bar-warning progress-bar-danger");
+					if( ratio < 70 ) {
+						
+					} else if( ratio < 90 ) {
+						$("#bar").addClass("progress-bar-warning");
+					} else {
+						$("#bar").addClass("progress-bar-danger");
+					}
+				} else {
+					
+					window.value.splice(idx, 1);
+					$("#add" + idx).remove();
+					$("#preadd" + idx).remove();
+					$("#row" + idx).prop("checked", false);
+					
+					var count = result.count;
+
+					$.toast({
+						text : '1회 '+count+'통까지 발송 가능합니다.',
+						position : "bottom-right",
+						stack : false,
+						icon : "warning"
+					});
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+
+				$.toast({
+					text : "통신 중 오류가 발생하였습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+	// 주소록 이메일 보내기 가능한지 미리 확인하기 및 몇개인지 가져오기
+	function changecontent(type, reset, object) {
+		
+		if (object.value != "") {
+			$.toast({
+				text : "잠시만 기다려 주세요!<br>첨부파일은 메일발송 시 다시 첨부하여 발송해주셔야합니다!",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+
+			
+			$.ajax({
+				type : "post",
+				url : "/" + type + "/ajax/email/template",
+				data : {
+					id : object.value,
+					searchType : type
+				},
+				dataType : "json",
+				success : function(response) {
+
+					var result = JSON.parse(JSON.stringify(response));
+					if (result.result == "1") {
+						
+						$(".summernote").summernote("code", result.content);
+						$("#campaignMailbottomReceiveText").val(result.receiveText);
+						$("#campaignMailbottomRejectText").val(result.rejectText);
+						$("#campaignMailbottomSenderText").val(result.senderText);
+						
+						$("#campaignMailbottomReceiveCheck").attr('checked', result.receiveChk == 1 ? false : true);
+						$("#campaignMailbottomRejectCheck").attr('checked', result.rejectChk == 1 ? false : true);
+						$("#campaignMailbottomSenderCheck").attr('checked', result.senderChk == 1 ? false : true);
+						
+					} else {
+						$.toast({
+							text : "오류가 발생하였습니다!",
+							position : "bottom-right",
+							stack : false,
+							icon : "error"
+						});
+					}
+				},
+				error : function(jqXHR, textStatus, errorThrown) {
+
+					console.log(jqXHR.status);
+					console.log(jqXHR.statusText);
+					console.log(jqXHR.responseText);
+					console.log(jqXHR.readyState);
+					
+					$.toast({
+						text : "통신 중 오류가 발생하였습니다!",
+						position : "bottom-right",
+						stack : false,
+						icon : "error"
+					});
+				}
+			});
+		}
+	}
+
+	function changealiases() {
+		
+		if( window.value == "" ) {
+
+			$("#select_campaignMail_senderAlias").find("option").remove();
+			$("#select_campaignMail_sender").find("option").remove();
+			$("#select_campaignMail_receiverAlias").find("option").remove();
+			$("#select_campaignMail_title").find("option").remove();
+			//$("#select_content").html("");
+			$("button[id^=onetoone]").attr("disabled", true);
+
+			$("#select_campaignMail_senderAlias").append('<option value="">치환</option>');
+			$("#select_campaignMail_sender").append('<option value="">치환</option>');
+			$("#select_campaignMail_receiverAlias").append('<option value="">치환</option>');
+			$("#select_campaignMail_title").append('<option value="">치환</option>');
+			return;
+		}
+
+		if( window.value != "" ) {
+
+			$.ajax({
+				type : "post",
+				url : "/compose/ajax/onetoone/aliases",
+				data : {
+					click : window.value.join(",")
+				},
+				dataType : "json",
+				success : function(response) {
+
+					var result = JSON.parse(JSON.stringify(response));
+					if (result.result == "1") {
+
+						$("#select_campaignMail_senderAlias").find("option").remove();
+						$("#select_campaignMail_sender").find("option").remove();
+						$("#select_campaignMail_receiverAlias").find("option").remove();
+						$("#select_campaignMail_title").find("option").remove();
+						//$("#select_content").html("");
+						$("button[id^=onetoone]").attr("disabled", true);
+
+						$("#select_campaignMail_senderAlias").append('<option value="">치환</option>');
+						$("#select_campaignMail_sender").append('<option value="">치환</option>');
+						$("#select_campaignMail_receiverAlias").append('<option value="">치환</option>');
+						$("#select_campaignMail_title").append('<option value="">치환</option>');
+						
+						var alias = result.aliases.split(",");
+						var content = "";
+						for( var i = 0; i < alias.length; i++ ) {
+
+							$("#select_campaignMail_senderAlias").append('<option value="' + alias[i].split("\|")[1] + '">' + alias[i].split("\|")[2] + '</option>');
+							$("#select_campaignMail_sender").append('<option value="' + alias[i].split("\|")[1] + '">' + alias[i].split("\|")[2] + '</option>');
+							$("#select_campaignMail_receiverAlias").append('<option value="' + alias[i].split("\|")[1] + '">' + alias[i].split("\|")[2] + '</option>');
+							$("#select_campaignMail_title").append('<option value="' + alias[i].split("\|")[1] + '">' + alias[i].split("\|")[2] + '</option>');
+							
+							$("#onetoone" + alias[i].split("\|")[0]).attr("disabled", false);
+							//content += "<a href=\"javascript:onetooneInsert('" + alias[i].split("\|")[0] + "')\">" + alias[i].split("\|")[1] + "</a>&nbsp;&nbsp;";
+						}
+						//$("#select_content").html(content);
+
+					} else {
+						
+						$.toast({
+							text : "오류가 발생하였습니다!",
+							position : "bottom-right",
+							stack : false,
+							icon : "error"
+						});
+					}
+				},
+				error : function(jqXHR, textStatus, errorThrown) {
+
+					console.log(jqXHR.status);
+					console.log(jqXHR.statusText);
+					console.log(jqXHR.responseText);
+					console.log(jqXHR.readyState);
+					
+					$.toast({
+						text : "통신 중 오류가 발생하였습니다!",
+						position : "bottom-right",
+						stack : false,
+						icon : "error"
+					});
+				}
+			});
+		}
+	}
+	
+	function onetooneInsert(value) {
+
+		if( $(".editor_wrapper").css("display") === "none" ){
+
+			$(".summernote").summernote("insertText", value);	
+		} else {
+
+			var tempElem = document.createElement("textarea");
+			tempElem.value = value;
+			document.body.appendChild(tempElem);
+			
+			tempElem.select();
+			document.execCommand("copy");
+			document.body.removeChild(tempElem);
+
+			$.toast({
+				text : "복사 되었습니다!\n붙여넣기 가능합니다!",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+		}
+	}
+	
+	function addalias(id, value) {
+		
+		$("#" + id).val($("#" + id).val() + value);
+	}
+	
+	function urlcontent() {
+
+		if ($("#url").val() == "") {
+			
+			$.toast({
+				text : "가져올 인터넷 주소를 입력해 주세요!",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+		} else {
+
+			$.toast({
+				text : "잠시만 기다려 주세요!",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+
+			$.ajax({
+				type : "post",
+				url : "/compose/urlcontent",
+				data : { url : $("#url").val() },
+				success : function(response) {
+					
+					if( response == "" ) {
+
+						$.toast({
+							text : "통신 중 오류가 발생하였습니다!",
+							position : "bottom-right",
+							stack : false,
+							icon : "error"
+						});
+					} else {
+
+						$(".summernote").summernote("code", response);					
+					}
+				},
+				error : function(jqXHR, textStatus, errorThrown) {
+
+					console.log(jqXHR.status);
+					console.log(jqXHR.statusText);
+					console.log(jqXHR.responseText);
+					console.log(jqXHR.readyState);
+					
+					$.toast({
+						text : "통신 중 오류가 발생하였습니다!",
+						position : "bottom-right",
+						stack : false,
+						icon : "error"
+					});
+				}
+			});
+		}
+	}
+	
+	function sendFile(file, element) {
+		
+		var form_data = new FormData();
+		form_data.append("file", file);
+		var mimeType = file["type"];
+		form_data.append("heloDomainIdxForeign", $("input:radio[name='heloDomainIdxForeign']:checked").val());
+
+		if (mimeType.split('/')[0] == 'image') {
+			
+			$.ajax({
+				type : "post",
+				url : "/compose/ajax/file/upload",
+				data : form_data,
+				cache : false,
+				contentType : false,
+				enctype : "multipart/form-data",
+				processData : false,
+				success : function(response) {
+					var result = JSON.parse(JSON.stringify(response));
+					
+					if( result.result == "1" ) {
+
+						if(ck_flag) {
+							// summernote 사용시 image처리
+
+							$(element).summernote("editor.insertImage", result.host+"/email/image?filename=" + result.filename);
+						}
+						// grapesjs 사용시 image처리
+						editor.AssetManager.add(result.host+"/email/image?filename=" + result.filename);
+					} else {
+
+						$.toast({
+							text : "이미지 업로드에 오류가 발생 하였습니다!",
+							position : "bottom-right",
+							stack : false,
+							icon : "error"
+						});
+					}
+					
+					form_data = null;
+				}
+			});
+		} else {
+
+			form_data = null;
+
+			$.toast({
+				text : "유효한 파일이 아닙니다!",
+				position : "bottom-right",
+				stack : false,
+				icon : "error"
+			});
+		}
+	}
+	
+	// 발신 도메인 정보 가져오기
+	function helodomain() {
+
+		$.ajax({
+			type : "post",
+			url : "/helodomain/ajax",
+			data : {
+				heloDomainIdx : $("input:radio[name='heloDomainIdxForeign']:checked").val()
+			},
+			success : function(response) {
+
+				var result = JSON.parse(JSON.stringify(response));
+				if (result.result == "1") {
+
+					$("#domain").val(result.domain);
+				} else {
+					
+					$.toast({
+						text : "발신 도메인을 추가해 주세요!",
+						position : "bottom-right",
+						stack : false,
+						icon : "info"
+					});
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+				
+				$.toast({
+					text : "통신 중 오류가 발생하였습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+	// 발신 도메인 정보 가져오기
+	
+	function email(idx, count) {
+
+    	if( count == "0" || count == "" ) {
+    		
+			$.toast({
+				text : "출력 가능한 데이터가 없습니다!",
+				position : "bottom-right",
+				stack : false,
+				icon : "warning"
+			});
+    	} else {
+    		
+			window.open("/target/email/" + idx + "/1", "_blank");
+    	}
+	}
+	
+	function setContentFoot(object) {
+		
+		if( $(object).is(":checked") ) {
+
+			$("#contentfoot").show();
+			$("#campaignMailcontentFoot").val($("#contentfoot").html());
+		} else {
+
+			$("#contentfoot").hide();
+			$("#campaignMailcontentFoot").val("");
+		}
+	}
+	
+	function insertRejectText(text) {
+		
+		$("#campaignMailbottomRejectText").val($("#campaignMailbottomRejectText").val() + text);
+	}
+	
+	// 주소록 가져오기
+	function getTargets(page) {
+		
+		if( Math.abs(page) == 1 ) {
+			
+			window.page += page;
+		} else if( page ==  -2 ) {
+			
+			window.page = 1;
+		} else if( page ==  -3 ) {
+
+			window.page = window.last;
+		} else {
+			
+			window.page = 1;
+		}
+		
+		$.ajax({
+			type : "post",
+			url : "/compose/ajax/target/list",
+			data : {
+				id: window.page,
+				campaignGroupId : $("#keytype").val(),
+				campaignTitle : $("#keyword").val()
+			},
+			success : function(response) {
+
+				var result = JSON.parse(JSON.stringify(response));
+				
+				var pagemaker = result.pageMaker;
+				var rows = pagemaker.number;
+				$("#current").text(pagemaker.page + " / " + pagemaker.last);
+				var i = 0;
+				
+				if( window.page == 1 ) {
+					$("#arrowFirst").prop("disabled", true);
+					$("#arrowPrevious").prop("disabled", true);
+				} else {
+					$("#arrowFirst").prop("disabled", false);
+					$("#arrowPrevious").prop("disabled", false);
+				}
+				
+				if( window.page == pagemaker.last ) {
+					$("#arrowNext").prop("disabled", true);
+				} else {
+					$("#arrowNext").prop("disabled", false);
+				}
+				
+				if( window.page == pagemaker.last ) {
+					$("#arrowLast").prop("disabled", true);
+				} else {
+					$("#arrowLast").prop("disabled", false);
+				}
+				
+				window.last = pagemaker.last;
+				
+				$("#tt_body").children().remove();
+				
+				var list = new Array();
+				for (prop in result) {
+					
+					if( prop != "pageMaker" ) {
+						
+						var target = result[prop];
+						
+						list[prop.substring(6, prop.length)] = target;
+					}
+				}
+				
+				for (prop in list) {
+					
+					var target = list[i];
+					var cell = window.tt_body.insertRow(window.tt_body.rows.length);
+					var cell0 = cell.insertCell(0);
+					cell0.style.textAlign = "left";
+					cell0.innerHTML = rows - i;
+					var cell1 = cell.insertCell(1);
+					cell1.style.textAlign = "left";
+					var index = window.value.indexOf(target.targetId);
+					var checkbox = "";
+					if( index == -1 ) { // 없으면
+						checkbox = "";
+					} else { // 있으면
+						checkbox = "checked";
+					}
+					cell1.innerHTML = '<div class="checkbox" style="margin: 0; padding: 0px 0px 0px 20px"><input type="checkbox" name="row" id="row' + target.targetId + '" onclick="addDataToChart(\'' + ( rows - i ) + '\', \'' + target.targetId + '\', \'' + target.name.replace("'","\\'") + '\', \'' + target.rsCount + '\', \'' + target.type + '\', \'' + target.userId + '\')" ' + ( target.rsCount == 0 ? 'disabled' : '' ) + ' ' + checkbox + '><label for="alldel"></label></div>'					
+					var cell2 = cell.insertCell(2);
+					cell2.style.textAlign = "left";
+					cell2.innerHTML = '<input type="hidden" name="" value="'+target.targetId+'"/><select id="send'+target.targetId+'" name=""\><option selected value="O">발송</option><option value="X">제외</option></select>';
+					var cell3 = cell.insertCell(3);
+					cell3.innerHTML = target.name;
+					var cell4 = cell.insertCell(4);
+					cell4.style.textAlign = "left";
+					cell4.innerHTML = '<button type="button" class="btn btn-xs btn-outline ' + ( target.rsCount == 0 || target.rsCount == "null" ? 'btn-warning' : 'btn-success' ) + '" onclick="email(\'' + target.targetId + '\', \'' + target.rsCount + '\')"><i class="fa fa-search"></i>&nbsp;&nbsp;' + Number(target.rsCount).toLocaleString() + '</button>';
+					var cell5= cell.insertCell(5);
+					cell5.style.textAlign = "left";
+					if( target.type == "import" ) {
+						cell5.innerHTML = target.importType;
+					} else {
+						cell5.innerHTML = target.type;
+					}
+					
+					
+					i++;
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+				
+				$.toast({
+					text : "통신 중 오류가 발생하였습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+	// 주소록 가져오기
+	
+	// 광고 문구 제목에 삽입하기
+	function prependCommercial(object) {
+		
+		if( $(object).is(":checked") ) {
+			$("#campaignMail_title").val("(광고) " + $("#campaignMail_title").val());
+		} else {
+			$("#campaignMail_title").val($("#campaignMail_title").val().replace("(광고)", ""));
+		}
+	}
+	// 광고 문구 제목에 삽입하기
+
+	// 템플릿
+	let ck_flag = true;
+	
+	//swiper 사용법 찾아보면 잘나와있음
+	var swiper = new Swiper(".swiper-container", {
+		slidesPerView: 'auto',
+		spaceBetween: 30,
+		slidesOffsetAfter : 20,
+		freeMode: true,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+	});
+
+	let choosen_list = $(".swiper-slide");
+
+	// 이전에 선택했던 editor를 알기위한 변수
+	let clicked_dom;
+
+	function handleClick(event){
+
+		let editor_ck = document.querySelectorAll(".note-editor")[0] // ck text와 수신동의 문구 포함된 table 이 note-eidtor 클래스 가지고 있다.
+		let editor_ck_text = document.querySelector(".note-editable"); // ckeditor 글자 써지는곳
+		let editor_gjs_wrapper = document.querySelector(".editor_wrapper");
+		let editor_gjs_items = document.querySelectorAll(".template-items");
+
+		// ck
+		if( this.id === "template-html" ){
+
+			// 처음 => ck , temp => ck
+			if(typeof clicked_dom === "undefined" || clicked_dom.id === "template-template"){
+				editor_ck.style.display = ""
+				$(".summernote").summernote("code", editor.getInlinedHtml());
+				editor_gjs_wrapper.style.display = "none"
+				editor.setHtml("") // editor 내부 초기화
+				// item => ck
+			}else if(clicked_dom.classList.contains("template-items")){
+				editor_ck.style.display = ""
+				$(".summernote").summernote("code", editor.getInlinedHtml());
+				editor_gjs_wrapper.style.display = "none"
+				editor.setHtml("") // editor 내부 초기화
+				// ck => ck
+			}else if(clicked_dom.classList.id === "template-html"){
+
+			}
+
+			ck_flag = true
+			// temp
+		} else if(this.id === "template-template"){
+
+// 			// 처음
+// 			if(typeof clicked_dom === "undefined"){
+
+// 				// item => temp
+// 			}else if(clicked_dom.classList.contains("template-items")){
+// 				if(confirm("작성하셨던 템플릿이 초기화됩니다.")){
+// 					editor.setHtml("")
+// 				}else{
+// 					return
+// 				}
+// 				// ck => temp
+// 			}else if(clicked_dom.id === "template-html"){
+// 				editor_ck.style.display = "none"
+
+// 				editor.setHtml(editor_ck_text.innerHTML)
+
+// 				$(".summernote").summernote("code", "");
+
+// 				editor_gjs_wrapper.style.display = ""
+// 				// temp => temp
+// 			}else if(clicked_dom.id === "template-template"){
+
+// 			}
+			if(confirm("작성하셨던 템플릿을 초기화 하시겠습니까?")){
+				editor_ck.style.display = "none"
+					editor.setHtml("")
+					$(".summernote").summernote("code", "");
+					editor_gjs_wrapper.style.display = ""
+			}else{
+				return
+			}
+
+			ck_flag = false
+
+			// item
+		} else{
+			// 처음 => item
+			if(typeof clicked_dom === "undefined"){
+				editor_ck.style.display = "none"
+				editor_gjs_wrapper.style.display = ""
+				load_template(this)
+			}
+			// item => item
+			else if(clicked_dom.classList.contains("template-items")){
+				if(confirm("다른 템플릿으로 옮겨갈경우 수정한 내용이 초기화 될 수 있습니다.\n이동하시겠습니까?")){
+					editor_ck.style.display = "none"
+					editor_gjs_wrapper.style.display = ""
+					load_template(this)
+				}
+				// ck => item, temp=> item
+			}else if(clicked_dom.id === "template-html" || clicked_dom.id === "template-template"){
+				if(confirm("작성하시고 계신 템플릿이 다른 템플릿으로 대체 됩니다.\n이동하시겠습니까?")){
+					editor_ck.style.display = "none"
+					editor_gjs_wrapper.style.display = ""
+					load_template(this)
+				}
+			}
+
+			ck_flag = false
+		}
+
+		if (event.target.classList.contains("clicked")){
+			event.target.classList.remove("clicked");
+		}else {
+			for (let i=0;i<choosen_list.length;i++){
+				choosen_list[i].classList.remove("clicked");
+			}
+		}
+
+		this.classList.add("clicked")
+
+		clicked_dom = document.querySelector('.clicked');
+
+	}
+
+	function click_init(){
+		for(let i=0;i<choosen_list.length;i++){
+			choosen_list[i].addEventListener('click', handleClick)
+		}
+
+
+	}
+
+	// assetmanager에 template사진들을 넣어주기
+	function getAssetsToManager() {
+		
+		// let target = `html...`
+		let assetList = editor.AssetManager.getAll().models.map((it)=>it.attributes.src);
+		let target = editor.getInlinedHtml();
+		let reg = /src="([^\s]*)"|src='([^\s]*)'|url\("([^\s]*)"\)|url\('([^\s]*)'\)/g;
+		let urlList = [];
+
+		let l = true
+		while(l){
+			let m = reg.exec(target);
+			l = m != null;
+			if(l){
+				// 0은 원본이라 무시.
+				for(let i = 1; i < m.length; i++){
+					let url = m[i]
+					if(url){
+						if(assetList.indexOf(url) > -1){
+							continue;
+						}
+						urlList.push(m[i]);
+					}
+				}
+			}
+		}
+
+		urlList.forEach(e=>{
+			editor.AssetManager.add(e);
+		})
+	}
+
+	function load_template(that) {
+		
+		let id = that.id.substr(9);
+		let body = {
+			"id":id
+		}
+		
+		$.ajax({
+			type: "post",
+			url: "/template/ajax/template/file",
+			data : JSON.stringify(body),
+			dataType: "json",
+			contentType: "application/json; charset=utf-8",
+			success: function(response){
+
+				let result = JSON.parse(JSON.stringify(response));
+				editor.setHtml(result.template.templateFile);
+				getAssetsToManager();
+				
+				$.toast({
+					text : "템플릿 로드 하였습니다.",
+					position : "bottom-right",
+					stack : false,
+					icon : "info"
+				});
+			}, error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+
+				$.toast({
+					text : "템플릿을 로드하지 못했습니다.",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+	// 템플릿
+	
+	function forceSubmit() {
+		$("#verificationPopup").modal('hide');
+		// Bypass jQuery validation and submit directly
+		document.getElementById("input").submit();
+	}
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

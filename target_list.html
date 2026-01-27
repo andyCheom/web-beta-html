@@ -1,0 +1,1760 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+							
+							
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class="active"><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class="active"><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class=""><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+							<strong>주소록 &gt; 전체 주소록</strong>
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5>title.target.list</h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong>title.target.list</strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-content">
+				<form id="pagemaker.pageCriteria" name="search" action="/target/list/1" method="get">
+					<input id="pageCriteria.rows" name="pageCriteria.rows" type="hidden" value="10"/>
+					<div class="row">
+						<div class="col-sm-3">
+							
+						</div>
+						<div class="col-sm-3">
+							
+						</div>
+						<div class="col-sm-3">
+							<div class="input-group input-daterange" id="datepicker">
+								<input id="pageCriteria.startdate" name="pageCriteria.startdate" class="form-control input-sm" type="text" value="2025-01-22"/>
+								<span class="input-group-addon">-</span>
+								<input id="pageCriteria.enddate" name="pageCriteria.enddate" class="form-control input-sm" type="text" value="2026-01-22"/>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="input-group">
+								<input id="pageCriteria.likeWord" name="pageCriteria.likeWord" class="form-control input-sm" type="text" value=""/>
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-sm btn-primary" onclick="onSearch()">
+										검색
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				<div>
+</div></form>
+			</div>
+			<div class="ibox-content">
+				<div class="table-responsive">
+					<form id="input" name="input" action="/target/list/1" method="post">
+						<input type="hidden" name="rows" id="rows" value="10" />
+						<input type="hidden" name="kind" id="kind" value="" />
+						<input type="hidden" name="check" id="check" value="0" />
+						<input type="hidden" name="id" id="id" />
+						<div class="col-sm-6" style="padding-left: 0px">
+							<select id="action" onchange="actionSelect(this.value)">
+								<option value="" label="선택" />
+								
+									<option value="merge" label="그룹 병합하기" />
+								
+									<option value="copy" label="복사하기" />
+								
+									<option value="correction" label="이메일 오타수정" />
+								
+									<option value="delete" label="삭제하기" />
+								
+							</select>
+						</div>
+						<div class="col-sm-6 text-right" style="padding-right: 0px">
+							<select id="pageCriteria.rows" name="pageCriteria.rows" onchange="rowchange(this)">
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+							</select>
+						</div>
+						<table class="table table-hover">
+							<thead>
+								<tr class="active">
+									<th>
+										<div class="checkbox checkbox-warning inline" style="margin: 0">
+											<input type="checkbox" name="alldel" id="alldel" value="0"><label for="alldel"></label>
+										</div>
+									</th>
+									<th>번호</th>
+									<th>작성자</th>
+									<th>타겟ID</th>
+									<th>이름</th>
+									<th>예상 인원수</th>
+									<th>등록 방법</th>
+									<th>등록일시</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+									<input type="hidden" name="title176" id="title176" value="모니터링 쉘 발송 테스트">
+									<input type="hidden" name="type176" id="type176" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del43" value="176"><label for="del43"></label>
+											</div>
+										</td>
+										<td>43</td>
+										<td>admin(su)</td>
+										<td>176</td>
+										<td><a href="javascript:insert('176')">모니터링 쉘 발송 테스트</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count176" onclick="email('176', '2')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count176">2</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2026-01-21 15:41</td>
+									</tr>
+								
+									<input type="hidden" name="title175" id="title175" value="인보이스 ygh 주소록">
+									<input type="hidden" name="type175" id="type175" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del42" value="175"><label for="del42"></label>
+											</div>
+										</td>
+										<td>42</td>
+										<td>admin(su)</td>
+										<td>175</td>
+										<td><a href="javascript:insert('175')">인보이스 ygh 주소록</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count175" onclick="email('175', '2')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count175">2</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2026-01-16 14:56</td>
+									</tr>
+								
+									<input type="hidden" name="title173" id="title173" value="ghyang 주소록">
+									<input type="hidden" name="type173" id="type173" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del41" value="173"><label for="del41"></label>
+											</div>
+										</td>
+										<td>41</td>
+										<td>양금희</td>
+										<td>173</td>
+										<td><a href="javascript:insert('173')">ghyang 주소록</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count173" onclick="email('173', '3')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count173">3</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2026-01-12 10:58</td>
+									</tr>
+								
+									<input type="hidden" name="title172" id="title172" value="manager 주소록">
+									<input type="hidden" name="type172" id="type172" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del40" value="172"><label for="del40"></label>
+											</div>
+										</td>
+										<td>40</td>
+										<td>Manager</td>
+										<td>172</td>
+										<td><a href="javascript:insert('172')">manager 주소록</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count172" onclick="email('172', '1')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count172">1</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2026-01-12 10:39</td>
+									</tr>
+								
+									<input type="hidden" name="title170" id="title170" value="2">
+									<input type="hidden" name="type170" id="type170" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del39" value="170"><label for="del39"></label>
+											</div>
+										</td>
+										<td>39</td>
+										<td>admin(su)</td>
+										<td>170</td>
+										<td><a href="javascript:insert('170')">2</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count170" onclick="email('170', '3')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count170">3</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2026-01-09 13:46</td>
+									</tr>
+								
+									<input type="hidden" name="title154" id="title154" value="testtest">
+									<input type="hidden" name="type154" id="type154" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del38" value="154"><label for="del38"></label>
+											</div>
+										</td>
+										<td>38</td>
+										<td>admin(su)</td>
+										<td>154</td>
+										<td><a href="javascript:insert('154')">testtest</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count154" onclick="email('154', '152')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count154">152</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2026-01-06 13:16</td>
+									</tr>
+								
+									<input type="hidden" name="title150" id="title150" value="발송테스트123123">
+									<input type="hidden" name="type150" id="type150" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del37" value="150"><label for="del37"></label>
+											</div>
+										</td>
+										<td>37</td>
+										<td>admin(su)</td>
+										<td>150</td>
+										<td><a href="javascript:insert('150')">발송테스트123123</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count150" onclick="email('150', '1')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count150">1</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2025-12-26 13:20</td>
+									</tr>
+								
+									<input type="hidden" name="title149" id="title149" value="발송테스트222222">
+									<input type="hidden" name="type149" id="type149" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del36" value="149"><label for="del36"></label>
+											</div>
+										</td>
+										<td>36</td>
+										<td>admin(su)</td>
+										<td>149</td>
+										<td><a href="javascript:insert('149')">발송테스트222222</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count149" onclick="email('149', '10')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count149">10</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2025-12-24 13:32</td>
+									</tr>
+								
+									<input type="hidden" name="title147" id="title147" value="[MERGE]">
+									<input type="hidden" name="type147" id="type147" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del35" value="147"><label for="del35"></label>
+											</div>
+										</td>
+										<td>35</td>
+										<td>admin(su)</td>
+										<td>147</td>
+										<td><a href="javascript:insert('147')">[MERGE]</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count147" onclick="email('147', '7')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count147">7</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2025-12-21 19:51</td>
+									</tr>
+								
+									<input type="hidden" name="title146" id="title146" value="[MERGE]">
+									<input type="hidden" name="type146" id="type146" value="file">
+									<tr>
+										<td>
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="del34" value="146"><label for="del34"></label>
+											</div>
+										</td>
+										<td>34</td>
+										<td>admin(su)</td>
+										<td>146</td>
+										<td><a href="javascript:insert('146')">[MERGE]</a></td>
+										<td>
+											<button type="button" class="btn btn-xs btn-outline btn-success" id="count146" onclick="email('146', '7')">
+												<i class="fa fa-search"></i>&nbsp;&nbsp; <span id="count146">7</span>
+											</button>
+										</td>
+										<td>import&nbsp;(file)
+												
+											
+										</td>
+										<td>2025-12-21 18:51</td>
+									</tr>
+								
+							</tbody>
+						</table>
+					<div>
+</div></form>
+				</div>
+			</div>
+			<div class="ibox-content">
+				<div class="row">
+					<div class="col-sm-2 text-center"></div>
+					<div class="col-sm-8 text-center">
+						
+							<div class="btn-group">
+								<!-- 첫 페이지 -->
+								
+								<!-- 앞 페이지 -->
+								
+									
+									
+										<button type="button" class="btn btn-sm btn-white disabled">
+											<i class="fa fa-angle-left"></i>
+										</button>
+									
+								
+								<!-- 페이지 번호 -->
+								
+									<button type="button" class="btn btn-sm btn-white active" onclick="go('1?pageCriteria.rows=10&pageCriteria.date&pageCriteria.startdate=2025-01-22&pageCriteria.enddate=2026-01-22')">1</button>
+								
+									<button type="button" class="btn btn-sm btn-white " onclick="go('2?pageCriteria.rows=10&pageCriteria.date&pageCriteria.startdate=2025-01-22&pageCriteria.enddate=2026-01-22')">2</button>
+								
+									<button type="button" class="btn btn-sm btn-white " onclick="go('3?pageCriteria.rows=10&pageCriteria.date&pageCriteria.startdate=2025-01-22&pageCriteria.enddate=2026-01-22')">3</button>
+								
+									<button type="button" class="btn btn-sm btn-white " onclick="go('4?pageCriteria.rows=10&pageCriteria.date&pageCriteria.startdate=2025-01-22&pageCriteria.enddate=2026-01-22')">4</button>
+								
+									<button type="button" class="btn btn-sm btn-white " onclick="go('5?pageCriteria.rows=10&pageCriteria.date&pageCriteria.startdate=2025-01-22&pageCriteria.enddate=2026-01-22')">5</button>
+								
+								<!-- 뒷 페이지 -->
+								
+									
+									
+										<button type="button" class="btn btn-sm btn-white disabled">
+											<i class="fa fa-angle-right"></i>
+										</button>
+									
+								
+								<!-- 마지막 페이지 -->
+								
+							</div>
+						
+					</div>
+					<div class="col-sm-2 text-right">
+						<button type="button" class="btn btn-sm btn-primary" onclick="insert('0')">
+							추가
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="execute" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="modal_title">
+					주소록 선택
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row" style="height: 55px">
+					<div class="col-sm-6"></div>
+					<div class="col-sm-6">
+						<div class="input-group">
+							<input type="text" name="keyword" id="keyword" class="form-control input-sm" size="5" /> <span class="input-group-btn">
+								<button type="button" class="btn btn-sm btn-primary" onclick="getTargets(0)">
+									검색
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<table class="table table-bordered" id="list">
+					<thead>
+						<tr class="active">
+							<th class="col-sm-1">번호</th>
+							<th class="col-sm-1">선택</th>
+							<th>이름</th>
+							<th class="col-sm-2">예상 인원수</th>
+							<th class="col-sm-2">타켓팅 방법</th>
+						</tr>
+					</thead>
+					<tbody id="tt_body">
+					</tbody>
+				</table>
+				<div class="row" style="height: 55px">
+					<div class="col-sm-12 text-center">
+						<button type="button" class="btn btn-sm btn-primary" id="arrowFirst" onclick="getTargets(-2)">
+							<i class="fa fa-angle-double-left"></i>
+						</button>
+						<button type="button" class="btn btn-sm btn-primary" id="arrowPrevious" onclick="getTargets(-1)">
+							<i class="fa fa-angle-left"></i>
+						</button>
+						<span id="current">0</span>
+						<button type="button" class="btn btn-sm btn-primary" id="arrowNext" onclick="getTargets(1)">
+							<i class="fa fa-angle-right"></i>
+						</button>
+						<button type="button" class="btn btn-sm btn-primary" id="arrowLast" onclick="getTargets(-3)">
+							<i class="fa fa-angle-double-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer" style="margin-top: 0;">
+				<button type="button" class="btn btn-sm btn-primary" onclick="selecttarget()">
+					복사하기
+				</button>
+				<button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">
+					닫기
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+function importTarget(targetId){
+
+	var url = "/target/importQueryAddr";
+	var data = {"id":targetId, "chk":"N"}
+	var result = fn_ajaxData(url, data);
+	if(result.result == 1){
+		$.toast({
+			text : "정상적으로 복사되었습니다.",
+			position : "bottom-right",
+			stack : false,
+			icon : "info",
+			hideAfter : 1500
+		  });
+			
+		setTimeout(() => location.reload(), 1500);
+	} else {
+		if(result.result == -2){
+			var text = "";
+			text += result.msg;
+			text += " \" : # \\ 이 특수문자는 복사 하실 수 없습니다. \n특수문자를 빈값으로 변경 후  입력 하시겠습니까?";
+			if (confirm(text)) {
+				var data = {"id":targetId, "chk":"Y"}
+				var finResult = fn_ajaxData(url, data);
+				if(finResult.result == 1){
+					$.toast({
+						text : "정상적으로 복사되었습니다.",
+						position : "bottom-right",
+						stack : false,
+						icon : "info",
+						hideAfter : 1500
+					  });
+						
+					setTimeout(() => location.reload(), 1500);
+				} else {
+					$.toast({
+						text : "통신 중 오류가 발생하었습니다! code : "+result.result,
+						position : "bottom-right",
+						stack : false,
+						icon : "error",
+						hideAfter : 3000
+					  });
+				}
+			}
+		} 
+		
+	}
+}
+
+
+	function load() {
+
+		jQuery.validator.addMethod('checkboxdelete', function(value, element) {
+
+			if (window.value == "merge") {
+				return ($("input[id^='del']:checked").length == 2);
+			} else if (window.value == "correction" || window.value == "copy") {
+
+				values = $("input:checkbox:checked").map(function() {
+					return $(this).val();
+				});
+
+				return ($("input[id^='del']:checked").length == 1 && $("#type" + values[0]).val() == "file");
+			} else {
+				return ($("input[id^='del']:checked").length > 0);
+			}
+		});
+
+		$("#alldel").change(function() {
+			$("input[id^='del']").prop("checked", $(this).prop("checked"));
+		});
+
+		$("#input").validate({
+			onfocusout : false,
+			errorPlacement : function(error, element) {
+
+				if (window.value == "delete") {
+
+					$.toast({
+						text : ($("input[id^='del']").length == 1 ? "삭제할 항목이 없습니다!" : "삭제할 항목을 선택해 주세요!"),
+						position : 'bottom-right',
+						stack : false,
+						icon : "info"
+					});
+				} else if (window.value == "copy") {
+
+					if ($("input[id^='del']:checked").length == 0) {
+						message = "복사될 주소록을 선택해 주세요!";
+					} else if ($("input[id^='del']:checked").length == 1) {
+
+						values = $("input:checkbox:checked").map(function() {
+							return $(this).val();
+						});
+
+						if ($("#type" + values[0]).val() != "file") {
+							message = "복사할 주소록은 파일 업로드 형식만 가능합니다!";
+						}
+					} else {
+						message = "주소록은 하나만 선택해 주세요!";
+					}
+					$.toast({
+						text : message,
+						position : 'bottom-right',
+						stack : false,
+						icon : "warning"
+					});
+				} else if (window.value == "copyselect") {
+
+					$.toast({
+						text : "복사할 주소록을 선택해 주세요!",
+						position : 'bottom-right',
+						stack : false,
+						icon : "warning"
+					});
+				} else if (window.value == "merge") {
+
+					$.toast({
+						text : "병합될 주소록 두개를 선택해 주세요!",
+						position : 'bottom-right',
+						stack : false,
+						icon : "warning"
+					});
+				} else if (window.value == "correction") {
+
+					$.toast({
+						text : "하나의 연락처를 선택하십시오! ( SQL 가져오기 유형이 잘못되었습니다! )",
+						position : 'bottom-right',
+						stack : false,
+						icon : "warning"
+					});
+				}
+
+				$("#action").find("option:first").prop("selected", "selected");
+			},
+			rules : {
+				del : {
+					checkboxdelete : true
+				}
+			},
+			messages : {
+				del : {
+					checkboxdelete : "제거할 목록 선택"
+				}
+			},
+			submitHandler : function(form) {
+
+				if (window.value == "copy") {
+
+					getTargets(0);
+
+					$("#execute").modal();
+				} else if (window.value == "copyselect") {
+
+					if ($("#id") != "") {
+
+						if ($("#id").val() == $("input[name='del']:checked").val()) {
+
+							$.toast({
+								text : "선택한 연락처가 동일합니다. 다른 연락처를 선택합니다.",
+								position : 'bottom-right',
+								stack : false,
+								icon : "warning"
+							});
+						} else {
+
+							if (confirm(window.message)) {
+
+								$("#check").val("0");
+								if (confirm("중복자를 제거 하시겠습니까?")) {
+									$("#check").val("1");
+								}
+
+								$("#action").prop("disabled", true);
+								$("#input").attr("action", "/target/" + window.value);
+								form.submit();
+							}
+						}
+					}
+				} else {
+					
+					var sum = 0;
+					
+					if (window.value != "delete") {
+
+						values = $("input:checkbox:checked").map(function() {
+							
+							sum += removeComma($("#count" + $("input[name='row']:checked").val()).text());
+							return $(this).val();
+						});
+	
+						if( -1 >= 0 && 0 > 0 ) {
+	
+							$.toast({
+								text : "등록 가능한 최대 주소록 수에 도달 하였습니다.",
+								position : "bottom-right",
+								stack : false,
+								icon : "info"
+							});
+							
+							return;
+						} else if( ( sum + -1 >= 0 ) && ( 0 > 0 ) ) {
+	
+							$.toast({
+								text : "등록 가능한 최대 이메일 수에 도달 하였습니다.",
+								position : "bottom-right",
+								stack : false,
+								icon : "info"
+							});
+							
+							return;
+						}
+					}
+
+					if (window.value == "merge") {
+
+						$("#kind").val($("#title" + values[0]).val() + ", " + $("#title" + values[1]).val());
+					}
+
+					if (confirm(window.message)) {
+
+						if (window.value == "merge") {
+
+							$("#check").val("0");
+							if (confirm("중복자를 제거 하시겠습니까?")) {
+								$("#check").val("1");
+							}
+						}
+						$("#alldel").attr("name", "delete");
+
+						$("#action").prop("disabled", true);
+						$("#input").attr("action", "/target/" + window.value);
+						form.submit();
+					}
+				}
+			}
+		});
+
+		$(".input-daterange").datepicker({
+			keyboardNavigation : false,
+			forceParse : false,
+			autoclose : true,
+			language : "ko"
+		});
+
+		var se3 = "";
+		var se4 = "";
+		var se5 = 0;
+		if ($.isNumeric(se3)) {
+			se5 = Number(se5) + Number(se3)
+		}
+
+		if ($.isNumeric(se4)) {
+			se5 = Number(se5) + Number(se4)
+		}
+
+		if (se5 > 0) {
+			$.toast({
+				text : '전체 '+se5+'개중 '+se3+'개가 올라갔습니다.<br>특수문자 및 오류DB '+se4+'개가 제외되었습니다. ',
+				position : "bottom-right",
+				stack : false,
+				icon : "warning"
+			});
+		}
+	}
+	// 목록 갯수 수정
+	function rowchange(object) {
+
+		location.href = "?pageCriteria.rows=" + object.value;
+	}
+	// 입력
+	function insert(id) {
+
+		if( -1 >= 0 && 0 > 0 ) {
+
+			$.toast({
+				text : "등록 가능한 최대 주소록 수에 도달 하였습니다.",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+			
+			return;
+		} else if( -1 >= 0 && 0 > 0 ) {
+
+			$.toast({
+				text : "등록 가능한 최대 이메일 수에 도달 하였습니다.",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+			
+			return;
+		}
+		
+		location.href = "/target/input/" + id;
+	}
+	// 이동
+	function go(link) {
+
+		location.href = link;
+	}
+	// 검색
+	function onSearch() {
+
+		document.search.submit();
+	}
+	// 이메일 확인
+	function email(id, value) {
+
+		if (value == "") {
+
+			$.toast({
+				text : "출력 가능한 데이터가 없습니다!",
+				position : "bottom-right",
+				stack : false,
+				icon : "warning"
+			});
+		} else {
+
+			location.href = "/target/email/" + id + "/1";
+		}
+	}
+	// action
+	function actionSelect(value) {
+
+		window.value = value;
+
+		if (value == "delete") {
+			window.message = "삭제 하시겠습니까?";
+			$("#input").submit();
+		} else if (value == "copy") {
+			window.message = "복사 하시겠습니까?";
+			$("#input").submit();
+		} else if (value == "copyselect") {
+			window.message = "복사 하시겠습니까?";
+			$("#input").submit();
+		} else if (value == "merge") {
+			window.message = "병합 하시겠습니까?";
+			$("#input").submit();
+		} else if (value == "correction") {
+			window.message = "이메일 오타수정을 하시겠습니까?";
+			$("#input").submit();
+		} else {
+		}
+	}
+
+	// 복사 시작
+	function selecttarget() {
+
+		if ($("input[name='row']:checked").length > 0) {
+			
+			// 이메일 수 확인하기
+			removeComma($("#count" + $("input[name='row']:checked").val()).text());
+			
+			if( ( removeComma($("#count" + $("input[name='row']:checked").val()).text()) + -1 >= 0 ) && ( 0 > 0 ) ) {
+
+				$.toast({
+					text : "등록 가능한 최대 이메일 수에 도달 하였습니다.",
+					position : "bottom-right",
+					stack : false,
+					icon : "info"
+				});
+				
+				return;
+			}
+			
+			$("#id").val($("input[name='row']:checked").val());
+
+			actionSelect("copyselect");
+		}
+	}
+	// 복사 종료
+
+	// 주소록 가져오기
+	function getTargets(page) {
+
+		if (Math.abs(page) == 1) {
+
+			window.page += page;
+		} else if (page == -2) {
+
+			window.page = 1;
+		} else if (page == -3) {
+
+			window.page = window.last;
+		} else {
+
+			window.page = 1;
+		}
+
+		$.ajax({
+			type : "get",
+			url : "/target/ajax/target/" + window.page,
+			data : {
+				query : $("#keyword").val(),
+				id : $("#del").val()
+			},
+			success : function(response) {
+
+				var result = JSON.parse(JSON.stringify(response));
+
+				var pagemaker = result.pageMaker;
+				var rows = pagemaker.number;
+				$("#current").text(pagemaker.page + " / " + pagemaker.last);
+				var i = 0;
+
+				if (window.page == 1) {
+					$("#arrowFirst").prop("disabled", true);
+					$("#arrowPrevious").prop("disabled", true);
+				} else {
+					$("#arrowFirst").prop("disabled", false);
+					$("#arrowPrevious").prop("disabled", false);
+				}
+
+				if (window.page == pagemaker.last) {
+					$("#arrowNext").prop("disabled", true);
+				} else {
+					$("#arrowNext").prop("disabled", false);
+				}
+
+				if (window.page == pagemaker.last) {
+					$("#arrowLast").prop("disabled", true);
+				} else {
+					$("#arrowLast").prop("disabled", false);
+				}
+
+				window.last = pagemaker.last;
+
+				$("#tt_body").children().remove();
+
+				var list = new Array();
+				for (prop in result) {
+
+					if (prop != "pageMaker") {
+
+						var target = result[prop];
+
+						list[prop.substring(6, prop.length)] = target;
+					}
+				}
+
+				for (prop in list) {
+
+					var target = list[i];
+
+					var cell = window.tt_body.insertRow(window.tt_body.rows.length);
+					var cell0 = cell.insertCell(0);
+					cell0.style.textAlign = "left";
+					cell0.innerHTML = rows - i;
+					var cell1 = cell.insertCell(1);
+					cell1.style.textAlign = "left";
+					var index = window.value.indexOf(target.targetId);
+					cell1.innerHTML = '<div class="radio" style="margin: 0; padding: 0px 0px 0px 20px"><input type="radio" name="row" id="row' + target.targetId + '" value="' + target.targetId + '" ' + ($("input[name='del']:checked").val() == target.targetId ? 'disabled' : '') + '><label></label></div>'
+					var cell2 = cell.insertCell(2);
+					cell2.innerHTML = target.name;
+					var cell3 = cell.insertCell(3);
+					cell3.style.textAlign = "left";
+					cell3.innerHTML = (target.rsCount == 0 || target.rsCount == "null" ? 0 : Number(target.rsCount).toLocaleString());
+					var cell4 = cell.insertCell(4);
+					cell4.style.textAlign = "left";
+					if (target.type == "import") {
+						cell4.innerHTML = target.importType;
+					} else {
+						cell4.innerHTML = target.type;
+					}
+
+					i++;
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+
+				$.toast({
+					text : "통신 중 오류가 발생하였습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+	// 주소록 가져오기
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

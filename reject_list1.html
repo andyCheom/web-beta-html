@@ -1,0 +1,1135 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+							
+							
+						
+					
+						
+					
+					<li class="active"><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/target/list/1">전체 주소록</a></li>
+							<li class="active"><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class=""><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+							<strong>수신자 &gt; 수신거부자</strong>
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5>title.reject.list1</h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong>title.reject.list1</strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-content">
+				<form id="search" name="search" action="/reject/list1/1" method="get">
+					<input id="pageCriteria.rows" name="pageCriteria.rows" type="hidden" value="10"/>
+					<div class="row">
+						<div class="col-sm-6"></div>
+						<div class="col-sm-3">
+							<select id="keyType" name="pageCriteria.keyType" class="form-control input-sm">
+								<option value="email">
+									이메일
+								</option>
+							</select>
+						</div>
+						<div class="col-sm-3">
+							<div class="input-group">
+								<input id="keyWord" name="pageCriteria.keyWord" class="form-control input-sm" type="text" value=""/>
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-sm btn-primary">
+										검색
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				<div>
+</div></form>
+			</div>
+			<div class="ibox-content">
+				<div class="table-responsive">
+					<form id="input" name="input" action="/reject/delete" method="post">
+						<input type="hidden" name="rows" id="rows" value="10" />
+						<input type="hidden" name="check" id="check" value="1" />
+						<div class="col-sm-6" style="padding-left: 0px"></div>
+						<div class="col-sm-6 text-right" style="padding-right: 0px">
+							<select id="pageCriteria.rows" name="pageCriteria.rows" onchange="rowchange(this)">
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+							</select>
+						</div>
+						<table class="table table-hover">
+							<thead>
+								<tr class="active">
+									
+										<th width="11%">
+											<div class="checkbox checkbox-warning inline" style="margin: 0">
+												<input type="checkbox" name="del" id="alldel" value="0"><label for="alldel"></label>
+											</div>
+											<button type="button" class="btn btn-danger btn-xs" onclick="actionSelect('delete', '0')">
+												<i class="fa fa-trash-o"> 선택 삭제</i>
+											</button>
+											<button type="button" class="btn btn-danger btn-xs" onclick="deleteAll()">
+												<i class="fa fa-trash-o"> 전체 삭제</i>
+											</button>
+										</th>
+									
+									<th>번호</th>
+									<th class="col-md-3">이메일</th>
+									<th>수신 거부 일시</th>
+									<th class="col-md-3">캠페인 명</th>
+									<th class="col-md-2">캠페인 그룹</th>
+									<th>추가 방법</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									
+										<td></td>
+									
+									<td></td>
+									<td><input type="text" name="email" id="email" style="width: 100%" /></td>
+									<td></td>
+									<td></td>
+									<td><select class="form-control" name="campaignGroupId" id="campaignGroupId">
+											<option></option>
+											
+												<option value="14" >dld (Default Group)</option>
+											
+												<option value="10" >dlfma (Default Group)</option>
+											
+												<option value="13" >dlfma (Default Group)</option>
+											
+												<option value="9" >dlfmadlqslek (Default Group)</option>
+											
+												<option value="2" >manager (Default Group)</option>
+											
+												<option value="8" >testtest (Default Group)</option>
+											
+												<option value="1" >디폴트 그룹</option>
+											
+												<option value="4" >박지연 (Default Group)</option>
+											
+												<option value="5" >송건우 (Default Group)</option>
+											
+												<option value="6" >웹취약점테스트계정01 (Default Group)</option>
+											
+												<option value="7" >웹취약점테스트계정02 (Default Group)</option>
+											
+												<option value="3" >이건우 (Default Group)</option>
+											
+												<option value="11" >이름 (Default Group)</option>
+											
+												<option value="12" >이름 (Default Group)</option>
+											
+												<option value="15" >이름 (Default Group)</option>
+											
+									</select></td>
+									<td><a href="javascript:actionSelect('insert', '0')" class="btn btn-xs btn-primary">개별등록</a></td>
+								</tr>
+							</tbody>
+						</table>
+					<div>
+</div></form>
+				</div>
+			</div>
+			<div class="ibox-content">
+				<div class="row">
+					<div class="col-sm-2">
+						<button type="button" class="btn btn-sm btn-primary" onclick="excel()">
+							대상자 내려받기
+						</button>
+					</div>
+					<div class="col-sm-8 text-center">
+						
+					</div>
+					<div class="col-sm-2 text-right">
+						
+							<button type="button" class="btn btn-sm btn-primary" onclick="insert('0')">
+								추가
+							</button>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function load() {
+
+		$("#campaignGroupId").select2({
+			placeholder : "캠페인 그룹",
+			allowClear : true,
+			width : "100%"
+		});
+
+		$("input[type='text']").keydown(function() {
+			if (event.keyCode === 13) {
+				event.preventDefault();
+			}
+		});
+
+		jQuery.validator.addMethod('checkinsert', function(value, element) {
+
+			if (window.kind != "insert") {
+				return true;
+			}
+
+			var regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+
+			if (!$("#email").val().match(regExp)) {
+
+				return false;
+			}
+			return true;
+		});
+
+		jQuery.validator.addMethod('checkboxdelete', function(value, element) {
+
+			if (window.kind != "delete") {
+				return true;
+			}
+			return ($("input[id^='del']:checked").length > 0);
+		});
+
+		jQuery.validator.addMethod('campaignGroupIdx', function(value, element) {
+
+			if (window.kind != "insert") {
+				return true;
+			}
+			return ($("#campaignGroupId option:selected").val() != "");
+		});
+
+		$("#alldel").change(function() {
+
+			$("input[id^='del']").prop("checked", $(this).prop("checked"));
+		});
+
+		$("#input").validate({
+			onfocusout : false,
+			errorPlacement : function(errorMap, errorList) {
+
+				text = "삭제할 이메일을 선택해 주세요!";
+				if (window.kind == "insert") {
+
+					if ($("#campaignGroupId option:selected").val() == "") {
+						text = "캠페인 그룹을 선택해 주세요!";
+					} else {
+						text = "이메일을 정확히 입력해 주세요!";
+					}
+				}
+
+				$.toast({
+					text : text,
+					position : 'bottom-right',
+					stack : false,
+					icon : "info"
+				});
+
+				$("#action").find("option:first").prop("selected", "selected");
+			},
+			rules : {
+				del : {
+					checkinsert : true,
+					checkboxdelete : true,
+					campaignGroupIdx : true
+				}
+			},
+			submitHandler : function(form) {
+
+				if (window.kind == "delete") {
+					if (!confirm("삭제 하시겠습니까?")) {
+						return;
+					}
+				}
+				form.submit();
+			}
+		});
+	}
+
+	// 목록 갯수 수정
+	function rowchange(object) {
+
+		location.href = "?pageCriteria.rows=" + object.value;
+	}
+	// 이동
+	function go(link) {
+
+		location.href = link;
+	}
+	// 검색
+	function onSearch() {
+
+		document.search.submit();
+	}
+	// 추가
+	function insert(id) {
+
+		location.href = "/reject/input/" + id;
+	}
+	// 캠페인 정보
+	function email(id) {
+
+		location.href = "/reject/email/" + id;
+	}
+	// submit
+	function actionSelect(kind, id) {
+
+		window.kind = kind;
+
+		$("#kind").val(kind);
+		$("#input").attr("action", "/reject/" + kind);
+		$("#input").submit();
+	}
+	// download
+	function excel() {
+
+		$("#search").attr("action", "/reject/excel/1");
+		$("#search").submit();
+		$("#search").attr("action", "/reject/list1/1");
+	}
+
+	function deleteAll() {
+		if (confirm("수신거부 대상자를 전체 삭제 하시겠습니까?")) {
+
+			$.ajax({
+				type: "POST",
+				url: "/reject/ajax/deleteAll",
+				contentType: "application/json; charset=UTF-8",
+				success: function (res) {
+					console.log("응답 : ", res);
+
+					if (res.result === "true") {
+						alert("삭제가 완료 되었습니다.");
+						location.reload();
+					}else {
+						alert("수신거부자 삭제가 실패 하였습니다. : " + res.message);
+					}
+				},
+				error: function (xhr, status, err) {
+					console.error("서버 오류가 발생하였습니다 : ", xhr.responseText);
+					try {
+						const res = JSON.parse(xhr.responseText);
+						alert("에러: " + (res.message || "알 수 없는 오류"));
+					} catch {
+						alert("요청 처리 중 오류가 발생했습니다.");
+					}
+				},
+			});
+		} else {
+			return;
+		}
+
+	}
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

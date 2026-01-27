@@ -1,0 +1,1551 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+							
+							
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class="active"><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class="active"><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class=""><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+							<strong>주소록 &gt; 전체 주소록 &gt; 추가</strong>
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5>title.target.input</h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong>title.target.input</strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-title">
+				<h5>
+					<i class="fa fa-user"></i>
+					주소록
+					&gt;
+					전체 주소록
+					&gt;
+					입력
+				</h5>
+			</div>
+			
+			<form id="input" class="form-horizontal" action="/target/insert" method="post" enctype="multipart/form-data">
+				<input id="targetId" name="targetId" type="hidden" value=""/>
+				<input id="type" name="type" type="hidden" value="import"/>
+				<input id="targetListImporttype" name="targetListImport.type" type="hidden" value="file"/>
+				<div class="ibox-content">
+					<div class="form-group">
+						<label class="col-sm-2 control-label">이름</label>
+						<div class="col-sm-5">
+							<input id="name" name="name" class="form-control" type="text" value=""/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">메모</label>
+						<div class="col-sm-10">
+							
+							
+								<input id="description" name="description" class="form-control" type="text" value=""/>
+							
+
+						</div>
+					</div>
+					<div class="form-group hidden">
+						<label class="col-sm-2 control-label">공유</label>
+						<div class="col-sm-10">
+							<input id="publicYn1" name="publicYn" type="radio" value="y"/><label for="publicYn1">공유</label>
+							<input id="publicYn2" name="publicYn" type="radio" value="n" checked="checked"/><label for="publicYn2">비공유</label>
+						</div>
+					</div>
+					<div class="form-group" style="display: none">
+						<label class="col-sm-2 control-label">유형</label>
+						<div class="col-sm-10">
+							<select id="targetType" name="targetType" class="form-control">
+								<option value="all">전사</option>
+								<option value="crm">CRM</option>
+								<option value="ticket">티켓</option>
+								<option value="event">이벤트</option>
+								<option value="ca">케이머스</option>
+								<option value="etc">기타</option>
+							</select>
+						</div>
+					</div>
+					
+						<div class="form-group">
+							<label class="col-sm-2 control-label">등록 방법</label>
+							<div class="col-sm-5">
+								<select name="importType" id="importType" class="form-control" onchange="importchange(this.value)">
+									<option value="1" label="파일 업로드" />
+									<option value="2" label="개별등록" />
+									<option value="3" label="SQL query 등록(외부 Database 연동)" />
+								</select>
+							</div>
+						</div>
+					
+					<div class="form-group" style="display: none">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-10">
+							<span class="label label-danger" id="max"></span>
+						</div>
+					</div>
+					<div id="import1" class="form-group">
+						<label class="col-sm-2 control-label">주소록 파일</label>
+						<div class="col-sm-5">
+							<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+								<div class="form-control" data-trigger="fileinput">
+									<i class="fa fa-file fileinput-exists"></i> <span class="fileinput-filename"></span>
+								</div>
+								<span class="input-group-addon btn btn-primary btn-file"> <span class="fileinput-new">선택</span> <span class="fileinput-exists">변경</span> <input type="file" name="file" id="file" />
+								</span> <a href="#" class="input-group-addon btn btn-primary fileinput-exists" data-dismiss="fileinput">삭제</a>
+							</div>
+						</div>
+						<div class="col-sm-5 hidden">
+							<div>
+								
+								
+								
+								<br> <br> <br>
+							</div>
+						</div>
+						<label class="col-sm-2 control-label hidden"></label>
+						<div class="col-sm-5">
+							<h4>
+								▶ 구분자
+								: <select name="separator" id="separator">
+									
+										<option value="," label="," selected />
+									
+										<option value="|" label="|"  />
+									
+										<option value=";" label=";"  />
+									
+										<option value="Æ" label="Æ"  />
+									
+										<option value="Ð" label="Ð"  />
+									
+										<option value="æ" label="æ"  />
+									
+										<option value="ð" label="ð"  />
+									
+										<option value="ø" label="ø"  />
+									
+										<option value="þ" label="þ"  />
+									
+								</select>
+								(구분자는 환경설정에서 변경가능함)
+							</h4>
+						</div>
+						<br> <br> <br> <label class="col-sm-2 control-label"></label>
+						<div class="col-sm-10">
+							<div class="panel panel-success">
+								<div class="panel-body">
+									▶ 메일 주소내 허용 가능한 특수문자
+									<br> <span class="text-danger"><strong>(-, _, .) 3개를 제외한 특수문자는 업로드가 불가능합니다.</strong></span> <br> <br>
+									▶ 업로드 가능한 파일 형식
+									<br>
+									*.CSV, *.TXT
+									<br> <br>
+									▶ 주소록 파일 업로드 안내
+									<br>
+									예제파일 사용을 권장합니다.<br>첫번째 행 : 주소록 데이터를 구분하는 필드명을 기술합니다. (필수항목)<br>두번째 행 : 첫번째 행에 설정된 필드명 순서대로 구분하여 입력합니다.
+									<br> <br>
+									▶ 주소록 양식 파일 내용
+									<button type="button" class="btn btn-sm btn-warning" onclick="location.href='/uploads/contacts/sample.csv'">
+										내려받기
+									</button>
+									<br>
+									<div class="panel panel-default">
+										<div class="panel-body">
+											[EMAIL],[NAME],[ETC1],[ETC2],[ETC3],[ETC4].[ETC5]<br>first@mail.com,Name01,etc001,etc002,etc003,etc004<br>second@mail.com,Name02,etc001,etc002,etc003,etc004
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="import2" class="form-group" style="display: none">
+						<label class="col-sm-2 control-label"></label>
+						<div class="col-sm-10 table-responsive">
+							<input type="hidden" name="checkemail" id="checkemail" />
+							<table class="table table-hover">
+								<thead>
+									<tr class="active">
+										<td class="text-center">번호</td>
+										<th class="text-center">[EMAIL]([$email])</th>
+										<th class="text-center">[NAME]([$name])</th>
+										<th class="text-center">[MOBILE]([$mobile])</th>
+										<th class="text-center">[ETC1]([$etc1])</th>
+										<th class="text-center">[ETC2]([$etc2])</th>
+										<th class="text-center">[ETC3]([$etc3])</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+										<tr>
+											<td class="text-center">1</td>
+											<td><input type="text" name="csvimports[0].email" id="email0" /></td>
+											<td><input type="text" name="csvimports[0].name" id="name0" /></td>
+											<td><input type="text" name="csvimports[0].mobile" id="mobile0" /></td>
+											<td><input type="text" name="csvimports[0].first" id="first0" /></td>
+											<td><input type="text" name="csvimports[0].second" id="second0" /></td>
+											<td><input type="text" name="csvimports[0].third" id="third0" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">2</td>
+											<td><input type="text" name="csvimports[1].email" id="email1" /></td>
+											<td><input type="text" name="csvimports[1].name" id="name1" /></td>
+											<td><input type="text" name="csvimports[1].mobile" id="mobile1" /></td>
+											<td><input type="text" name="csvimports[1].first" id="first1" /></td>
+											<td><input type="text" name="csvimports[1].second" id="second1" /></td>
+											<td><input type="text" name="csvimports[1].third" id="third1" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">3</td>
+											<td><input type="text" name="csvimports[2].email" id="email2" /></td>
+											<td><input type="text" name="csvimports[2].name" id="name2" /></td>
+											<td><input type="text" name="csvimports[2].mobile" id="mobile2" /></td>
+											<td><input type="text" name="csvimports[2].first" id="first2" /></td>
+											<td><input type="text" name="csvimports[2].second" id="second2" /></td>
+											<td><input type="text" name="csvimports[2].third" id="third2" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">4</td>
+											<td><input type="text" name="csvimports[3].email" id="email3" /></td>
+											<td><input type="text" name="csvimports[3].name" id="name3" /></td>
+											<td><input type="text" name="csvimports[3].mobile" id="mobile3" /></td>
+											<td><input type="text" name="csvimports[3].first" id="first3" /></td>
+											<td><input type="text" name="csvimports[3].second" id="second3" /></td>
+											<td><input type="text" name="csvimports[3].third" id="third3" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">5</td>
+											<td><input type="text" name="csvimports[4].email" id="email4" /></td>
+											<td><input type="text" name="csvimports[4].name" id="name4" /></td>
+											<td><input type="text" name="csvimports[4].mobile" id="mobile4" /></td>
+											<td><input type="text" name="csvimports[4].first" id="first4" /></td>
+											<td><input type="text" name="csvimports[4].second" id="second4" /></td>
+											<td><input type="text" name="csvimports[4].third" id="third4" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">6</td>
+											<td><input type="text" name="csvimports[5].email" id="email5" /></td>
+											<td><input type="text" name="csvimports[5].name" id="name5" /></td>
+											<td><input type="text" name="csvimports[5].mobile" id="mobile5" /></td>
+											<td><input type="text" name="csvimports[5].first" id="first5" /></td>
+											<td><input type="text" name="csvimports[5].second" id="second5" /></td>
+											<td><input type="text" name="csvimports[5].third" id="third5" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">7</td>
+											<td><input type="text" name="csvimports[6].email" id="email6" /></td>
+											<td><input type="text" name="csvimports[6].name" id="name6" /></td>
+											<td><input type="text" name="csvimports[6].mobile" id="mobile6" /></td>
+											<td><input type="text" name="csvimports[6].first" id="first6" /></td>
+											<td><input type="text" name="csvimports[6].second" id="second6" /></td>
+											<td><input type="text" name="csvimports[6].third" id="third6" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">8</td>
+											<td><input type="text" name="csvimports[7].email" id="email7" /></td>
+											<td><input type="text" name="csvimports[7].name" id="name7" /></td>
+											<td><input type="text" name="csvimports[7].mobile" id="mobile7" /></td>
+											<td><input type="text" name="csvimports[7].first" id="first7" /></td>
+											<td><input type="text" name="csvimports[7].second" id="second7" /></td>
+											<td><input type="text" name="csvimports[7].third" id="third7" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">9</td>
+											<td><input type="text" name="csvimports[8].email" id="email8" /></td>
+											<td><input type="text" name="csvimports[8].name" id="name8" /></td>
+											<td><input type="text" name="csvimports[8].mobile" id="mobile8" /></td>
+											<td><input type="text" name="csvimports[8].first" id="first8" /></td>
+											<td><input type="text" name="csvimports[8].second" id="second8" /></td>
+											<td><input type="text" name="csvimports[8].third" id="third8" /></td>
+										</tr>
+									
+										<tr>
+											<td class="text-center">10</td>
+											<td><input type="text" name="csvimports[9].email" id="email9" /></td>
+											<td><input type="text" name="csvimports[9].name" id="name9" /></td>
+											<td><input type="text" name="csvimports[9].mobile" id="mobile9" /></td>
+											<td><input type="text" name="csvimports[9].first" id="first9" /></td>
+											<td><input type="text" name="csvimports[9].second" id="second9" /></td>
+											<td><input type="text" name="csvimports[9].third" id="third9" /></td>
+										</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- SQL Query 입력 START -->
+					<div id="import31" class="form-group" style="display: none">
+						<label class="col-sm-2 control-label">Database 선택</label>
+						<div class="col-sm-5">
+							<select id="dbId" name="dbId" class="form-control" onchange="getQueryFromDatabase(this.value)">
+								
+									<option value="" label="==선택==" />
+									
+										<option value="2">wvs db</option>
+									
+								
+								
+							</select>
+						</div>
+					</div>
+					<div id="import32" class="form-group" style="display: none">
+						<label class="col-sm-2 control-label">이전 query</label>
+						<div class="col-sm-10">
+							<select name="query" id="query" class="form-control label-warning " onchange="addquery()">
+								<option value="" label="==선택==" />
+							</select>
+						</div>
+					</div>
+					<div id="import3" class="form-group" style="display: none">
+						<label class="col-sm-2 control-label"></label>
+						<div class="col-sm-10">
+							<input type="hidden" name="checkquery" id="checkquery" />
+							<textarea id="targetListImportquery" name="targetListImport.query" style="resize: none;" class="typeahead_1 form-control" rows="10">
+</textarea>
+							<br> <a href="javascript:query()" class="btn btn-success">쿼리 확인</a>
+						</div>
+					</div>
+					<!-- SQL Query 입력 END -->
+				</div>
+
+				<div class="ibox-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<button type="button" class="btn btn-sm btn-primary" onclick="history.back()">목록</button>
+						</div>
+
+						<div class="col-sm-6 text-right">
+							<button type="submit" id="submit" class="btn btn-sm btn-primary ladda-button" data-style="zoom-in" data-size="l">
+								입력
+							</button>
+						</div>
+
+					</div>
+				</div>
+			<div>
+</div></form>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function load() {
+
+		submit = $("#submit").ladda();
+
+		if ("query" == "file") {
+			importchange(3);
+			getQueryFromDatabase($("#dbId").val());
+		}
+
+		jQuery.validator.addMethod('file1', function(value, element) {
+
+			if ($("#importType").val() != "1") {
+				return true;
+			}
+			if ($("#file").val() == "") {
+				return false;
+			}
+
+			return sendFile($("#file").prop("files")[0]);
+		});
+
+		jQuery.validator.addMethod('file2', function(value, element) {
+
+			if ($("#importType").val() != "2") {
+				return true;
+			}
+
+			var regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+
+			check = true;
+			one = true;
+			$("input[id^='email']").each(function(index, element) {
+
+				if ($(this).val() != "") {
+					one = false;
+					if (!$(this).val().match(regExp)) {
+						check = false;
+					}
+				}
+			});
+
+			if (one) {
+				return false;
+			}
+			return check;
+		});
+
+		jQuery.validator.addMethod("file2count", function(value, element) {
+
+			if ($("#importType").val() != "2") {
+				return true;
+			}
+
+			var regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+
+			count = 0;
+			$("input[id^='email']").each(function(index, element) {
+
+				if ($(this).val() != "") {
+					count++;
+				}
+			});
+
+			if( count > 1 && 0 != 0 ) {
+				
+				window.email = count - 1;
+				return false;
+			}
+			return true;
+		});
+
+		jQuery.validator.addMethod('database', function(value, element) {
+
+			if ($("#importType").val() != "3") {
+				return true;
+			}
+
+			if ($("#dbId").val() == "") {
+				return false;
+			}
+
+			return true;
+		});
+
+		jQuery.validator.addMethod('query', function(value, element) {
+
+			if ($("#importType").val() != "3") {
+				return true;
+			}
+
+			if ($("#targetListImportquery").val() == "") {
+				return false;
+			}
+			return true;
+		});
+
+		$("#input").validate({
+			ignore : "",
+			onfocusout : false,
+			rules : {
+				name : {
+					required : true
+				},
+				description : {
+					required : false
+				},
+				file : {
+					file1 : true
+				},
+				checkemail : {
+					file2 : true,
+					file2count: true
+				},
+				dbId : {
+					database : true
+				},
+				checkquery : {
+					query : true
+				}
+			},
+			messages : {
+				name : {
+					required : "제목을 입력해 주세요!"
+				},
+				description : {
+					required : "★"
+				},
+				file : {
+					file1 : "파일을 선택해 주세요!"
+				},
+				checkemail : {
+					file2 : "이메일 형식이 잘 못 되었습니다!",
+					file2count: function() {
+
+						$("#max").text('이메일 ' + window.email + '개를 초과 하였습니다.');
+					}
+				},
+				dbId : {
+					database : "사용가능한 Database가 없습니다!"
+				},
+				checkquery : {
+					query : "쿼리 정보가 없거나, "*" 문자가 있습니다."
+				}
+			},
+			submitHandler : function(form) {
+
+				$("#max").text("");
+				submit.ladda("start");
+				form.submit();
+			}
+		});
+
+		$("input[id^='file']").change(function() {
+
+			if ($(this).val() != "") {
+
+				var mimeType = $("#file").prop("files")[0];
+
+				if (!(mimeType.type == "text/plain" || mimeType.type == "text/csv" || mimeType.type == "application/vnd.ms-excel")) {
+
+					$.toast({
+						text : "제한된 파일입니다!",
+						position : "bottom-right",
+						icon : "info"
+					});
+					$(this).val("");
+					return;
+				}
+
+				var extention = $(this).val().split(".").pop().toUpperCase();
+
+				if ($.inArray(extention, [ "CSV", "TXT" ]) == -1) {
+
+					$.toast({
+						text : "제한된 파일입니다!",
+						position : "bottom-right",
+						icon : "info"
+					});
+					$(this).val("");
+					return;
+				}
+				
+				countLine();
+			}
+		});
+
+		// 수정 이면
+		if( "file" == "query" ) {
+			importchange(3);
+		};
+		// 수정 이면
+	}
+
+	// 타겟팅 방법
+	function importchange(value) {
+
+		$("#max").text("");
+		
+		if (value == 3) {
+
+			$("#targetListImporttype").val("query");
+
+			$("#submit").attr("disabled", true);
+		} else {
+
+			$("#targetListImporttype").val("file");
+
+			$("#submit").attr("disabled", false);
+
+			// 첨부파일 일 때만 실행
+			if (value == 1 && $("input[id^='file']").val() != "" ) {
+				
+				countLine();
+			}
+		}
+
+		$("div[id^=import]").each(function(index, element) {
+
+			if ($(this).attr("id").indexOf("import" + value) == 0) {
+
+				$(this).show();
+			} else {
+
+				$(this).hide();
+			}
+		});
+	}
+	// 이전 query를 창에 넣기
+	function addquery() {
+
+		$("#targetListImportquery").val($("#query option:selected").text());
+	}
+	// 파일 종류 확인
+	function sendFile(file) {
+
+		var mimeType = file["type"];
+
+		if (mimeType == "text/plain" || mimeType == "application/vnd.ms-excel") {
+
+			return true;
+		}
+
+		if ($.inArray(file.name.toUpperCase(), [ "TXT", "CSV" ])) {
+			return true;
+		}
+
+		$.toast({
+			text : "문서 파일이 아닙니다!",
+			position : "bottom-right",
+			stack : false,
+			icon : "error"
+		});
+		$("#file").val("");
+		return false;
+	}
+
+	// DB에 따라 query 가져오기
+	function getQueryFromDatabase(idx) {
+
+		$.ajax({
+			type : "post",
+			url : "/target/ajax/query/database",
+			data : {
+				id : idx,
+			},
+			success : function(response) {
+
+				var arr = JSON.parse(JSON.stringify(response));
+
+				$("#query").find("option").remove();
+				$("#query").append('<option value="0">==선택==</option>');
+				for (var i = 0; i < arr.count; i++) {
+
+					$("#query").append('<option value="' + eval('arr.id' + i) + '">' + eval('arr.id' + i) + '</option>');
+				}
+
+				$.toast({
+					text : Number(arr.count).toLocaleString() + "개의 query가 조회되었습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "info"
+				});
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+
+				$.toast({
+					text : "통신 중 오류가 발생하였습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+
+	// DB에 따라 query 가져오기
+	// query 확인
+	function query() {
+
+		$.ajax({
+			type : "post",
+			url : "/target/ajax/query/check",
+			data : {
+				id : $("#dbId").val(),
+				query : $("#targetListImportquery").val()
+			},
+			dataType : "json",
+			success : function(response) {
+
+				var result = JSON.parse(JSON.stringify(response));
+				if (result.result == "-1") {
+
+					$.toast({
+						text : "오류가 발생하였습니다!<br>" + result.message,
+						position : "bottom-right",
+						stack : false,
+						icon : "error"
+					});
+				} else if (result.result == "0") {
+
+					$.toast({
+						text : "조회된 주소록이 없습니다. 쿼리를 다시 확인해 주시기 바랍니다.",
+						position : "bottom-right",
+						stack : false,
+						icon : "warning"
+					});
+				} else {
+					
+					if( Number(result.result) > 1 && 0 > 0 ) {
+						
+						window.email = Number(result.result) - 1;		
+
+						$("#max").text('이메일 ' + window.email + '개를 초과 하였습니다.');
+					} else {
+						
+						$("#max").text("");
+
+						$.toast({
+							text : Number(result.result).toLocaleString() + "개의 목록이 조회 되었습니다.",
+							position : "bottom-right",
+							stack : false,
+							icon : "info"
+						});
+						
+						$("#submit").attr("disabled", false);
+					}
+
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+
+				$.toast({
+					text : "통신 중 오류가 발생하였습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+		});
+	}
+	// query 확인
+
+	// text file을 줄 수 읽기
+	function countLine() {
+		
+		var reader = new FileReader();
+		var textFile = $("#file").get(0).files[0];
+		
+		reader.readAsText(textFile);
+		
+		reader.onload = function(e) {
+
+			var match = e.target.result.match(/\r?\n/g);
+			
+			if( match.length - 1 > 1 && 0 > 0 ) {
+				
+				window.email = match.length - 1 - 1;
+
+				$("#max").text('이메일 ' + window.email + '개를 초과 하였습니다.');
+				$(this).val("");
+				
+				$("#submit").prop("disabled", true);
+			} else {
+
+				$("#max").text("");
+				$("#submit").prop("disabled", false);
+			}
+		}
+	}
+	// test file의 줄 수 읽기
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

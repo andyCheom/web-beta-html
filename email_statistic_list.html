@@ -1,0 +1,2200 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class=""><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+							
+							
+						
+					
+						
+					
+					<li class="active"><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class="active"><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5></h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong></strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<!-- 기본 발송정보 요약 BOX STARRT-->
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="ibox">
+					<div class="ibox-title">
+						<span class="label label-success float-right">① 총 발송통수</span>
+					</div>
+					<div class="ibox-content">
+						<h1 class="no-margins">
+							
+						</h1>
+						<div class="stat-percent font-bold text-success">
+							0.00
+							%
+						</div>
+						<small>Total Sent</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="ibox">
+					<div class="ibox-title">
+						<span class="label label-info float-right">②성공 통수</span>
+					</div>
+					<div class="ibox-content">
+						<h1 class="no-margins">
+							
+						</h1>
+						<div class="stat-percent font-bold text-info">
+							0.00
+							%
+						</div>
+						<small>Success</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="ibox">
+					<div class="ibox-title">
+						<span class="label label-primary float-right">③오픈통수</span>
+					</div>
+					<div class="ibox-content">
+						<h1 class="no-margins">
+							
+						</h1>
+						<div class="stat-percent font-bold text-navy">
+							0.00
+							%
+						</div>
+						<small>Opened </small>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="ibox">
+					<div class="ibox-title">
+						<span class="label label-danger float-right">③클릭통수</span>
+
+					</div>
+					<div class="ibox-content">
+						<h1 class="no-margins">
+							
+						</h1>
+						<div class="stat-percent font-bold text-danger">
+							0.00
+							%
+						</div>
+						<small>Clicked</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 기본 발송요약정보 BOX END -->
+		<div class="ibox float-e-margins">
+			<!-- 리포트 요약 테이블 -->
+			<div class="ibox-title">
+				<h5>리포트 요약</h5>
+			</div>
+			<div class="ibox-content">
+				<div class="row">
+					<div class="col-sm-12">
+						<table class="table table-bordered">
+							<tr class="active">
+								<th>캠페인 제목</th>
+								<th>작성자</th>
+								<th>발송수단</th>
+								<th>대상인원</th>
+								<th>설문조사</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>
+
+
+
+없음 
+
+
+
+없음</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="active">
+								<th>캠페인 작성일시</th>
+								<th>발송일시</th>
+								<th>SMS 과금</th>
+								<th>재발송</th>
+								<th>Thread</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>sms 포인트</td>
+								<td>/회</td>
+								<td>개</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- 리포트 요약 테이블 -->
+			<div class="ibox-content">
+				<div class="tabs-container">
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#tabbasic">기본 정보</a></li>
+						<li class=""><a data-toggle="tab" href="#tablink">링크 분석</a></li>
+						<li class=""><a data-toggle="tab" href="#tabday">일자별</a></li>
+						<li class=""><a data-toggle="tab" href="#tabdomain">도메인별</a></li>
+						<li class=""><a data-toggle="tab" href="#tabfaildomain">실패도메인별</a></li>
+						<li class=""><a data-toggle="tab" href="#tabflow">발송추세별</a></li>
+						<li class=""><a data-toggle="tab" href="#tabfailreason">실패원인별</a></li>
+						<li class=""><a data-toggle="tab" href="#taboperation">운영체제별</a></li>
+					</ul>
+					<div class="tab-content">
+						<!-- ================================================== 기본 정보 ================================================== -->
+						<div class="tab-pane active" id="tabbasic">
+							<div class="alert alert-warning">
+
+								현재
+								
+								(
+								0.00
+								%)통 발송됨
+								<button class="btn btn-outline btn-sm" data-toggle="tooltip" data-placement="right" title="새로고침" onClick="history.go(0)">
+									<i class="fa fa-refresh"></i>
+								</button>
+							</div>
+
+							<div class="row">
+
+								<div class="col-sm-5">
+									<table class="table table-bordered">
+										<tr>
+											<th>구분</th>
+											<th>내용</th>
+										</tr>
+										<tr>
+											<th>메일제목</th>
+											<td></td>
+										</tr>
+										<tr>
+											<th>현재상태</th>
+											<td>
+
+
+
+없음<small class="label label-primary text-right"><i class="fa fa-clock-o"></i> 통 발송됨
+													<button class="btn btn-outline btn-sm" data-toggle="tooltip" data-placement="right" title="새로고침" onClick="history.go(0)">
+														<i class="fa fa-refresh"></i>
+													</button> </small></td>
+										</tr>
+										<tr>
+											<th>보내는 사람 이름</th>
+											<td></td>
+										</tr>
+										<tr>
+											<th>보내는 사람 주소</th>
+											<td></td>
+										</tr>
+										<tr>
+											<th>발송시작시간</th>
+											<td></td>
+										</tr>
+										<tr>
+											<th>발송종료시간</th>
+											<td></td>
+										</tr>
+										<tr>
+											<th>재발송종료시간</th>
+											<td></td>
+										</tr>
+										<tr>
+											<th>시간당 평균 발송량</th>
+											<td>0</td>
+										</tr>
+										<tr>
+											<th>메일크기</th>
+											<td>0.00 KB</td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-sm-7">
+									<table class="table table-bordered">
+										<tr>
+											<th>구분</th>
+											<th>대상자(비율)</th>
+											<th>비고</th>
+										</tr>
+										<tr>
+											<th>①전체 대상자</th>
+											<td>
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="email('basic', 'total', '')">
+													<i class="fa fa-search"></i>&nbsp;&nbsp;
+													
+												</button>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>②필터링 제외 대상자</th>
+											<td>
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="email('basic', 'total', '')">
+													<i class="fa fa-search"></i>&nbsp;&nbsp;
+													0
+												</button>
+											</td>
+											<td>※중복대상,영구실패,수신거부자로 제외된 대상자</td>
+										</tr>
+										<tr>
+											<th>③발송통수 (①/②)</th>
+											<td>
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="email('basic', 'total', '')">
+													<i class="fa fa-search"></i>&nbsp;&nbsp;
+													
+												</button>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>④성공통수 (④/③)</th>
+											<td>
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="email('basic', 'success', '')">
+													<i class="fa fa-search"></i>&nbsp;&nbsp;
+													
+												</button> (0.00 %)
+											</td>
+											<td></td>
+										<tr>
+											<th>⑤실패통수 (⑤/③)</th>
+											<td>
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="email('basic', 'fail', '')">
+													<i class="fa fa-search"></i>&nbsp;&nbsp;
+													
+												</button> (0.00 %)
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>⑥오픈통수 (⑥/④)</th>
+											<td>
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="email('basic', 'open', '')">
+													<i class="fa fa-search"></i>&nbsp;&nbsp;
+													
+												</button> (0.00 %)
+											</td>
+											<td>PC : 00통, Mobile : 00통, ETC :00통</td>
+										</tr>
+										<tr>
+											<th>⑦클릭통수 (⑦/⑥)</th>
+											<td>
+												<button type="button" class="btn btn-xs btn-outline btn-success" onclick="email('basic', 'click', '')">
+													<i class="fa fa-search"></i>&nbsp;&nbsp;
+													
+												</button> (0.00 %)
+											</td>
+											<td></td>
+										</tr>
+
+									</table>
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 기본 정보 ================================================== -->
+						<!-- ================================================== 링크 분석 ================================================== -->
+						<div class="tab-pane" id="tablink">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="chart-container">
+										<canvas id="chartlink" style="height: 300px; width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<table class="footable table table-bordered" data-paging="false" data-sorting="true">
+										
+										
+										
+										
+										<thead>
+											<tr>
+												<th class="col-sm-1" data-type="number">번호</th>
+												<th class="col-sm-2" data-type="html" data-sorted="true" data-direction="ASC">이름</th>
+												<th>주소</th>
+												<th class="col-sm-1" data-type="number" data-formatter="percentage_format">비율</th>
+												<th class="col-sm-2" data-type="html">클릭/오픈 (0/ )</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+										</tbody>
+									</table>
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 링크 분석 ================================================== -->
+						<!-- ================================================== 일자별 ================================================== -->
+						<div class="tab-pane" id="tabday">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="chart-container">
+										<canvas id="chartday" style="height: 300px; width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<table class="footable table table-bordered">
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th>날짜</th>
+												<th>① 전체 ()</th>
+												<th>(②/①) ② 오픈</th>
+												<th>(③/①) ③ 인지</th>
+												<th>(④/①) ④ 클릭</th>
+												<th>(⑤/①) ⑤ 거부</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</tbody>
+										<tfoot>
+											
+											
+											
+											
+											<tr>
+												<th>합계</th>
+												<th></th>
+												<th></th>
+												<th>(0.00 %) </th>
+												<th>(0.00 %) </th>
+												<th>(0.00 %) </th>
+												<th>(0.00 %) </th>
+											</tr>
+										</tfoot>
+									</table>
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 일자별 ================================================== -->
+						<!-- ================================================== 도메인별 ================================================== -->
+						<div class="tab-pane" id="tabdomain">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="chart-container">
+										<canvas id="chartdomain" style="height: 300px; width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<table class="footable table table-bordered">
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th>도메인</th>
+												<th>① 전체 ()</th>
+												<th>(②/①) ② 오픈</th>
+												<th>(③/①) ③ 인지</th>
+												<th>(④/①) ④ 클릭</th>
+												<th>(⑤/①) ⑤ 거부</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</tbody>
+										<tfoot>
+											
+											
+											
+											
+											<tr>
+												<th>합계</th>
+												<th></th>
+												<th></th>
+												<th>(0.00 %) </th>
+												<th>(0.00 %) </th>
+												<th>(0.00 %) </th>
+												<th>(0.00 %) </th>
+											</tr>
+										</tfoot>
+									</table>
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 도메인별 ================================================== -->
+						<!-- ================================================== 실패 도메인별 ================================================== -->
+						<div class="tab-pane" id="tabfaildomain">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="chart-container">
+										<canvas id="chartfaildomain" style="height: 300px; width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th>도메인</th>
+												<th>① 발송</th>
+												<th>(②/①) ② 실패</th>
+												<th>(③/①) ③ 영구적 오류</th>
+												<th>(④/①) ④ 일시적 오류</th>
+												<th>재발송</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</tbody>
+										<tfoot>
+											
+											
+											
+											
+											<tr>
+												<th>합계</th>
+												<th></th>
+												<th>0</th>
+												<th>(0.00 %) 0</th>
+												<th>(0.00 %) 0</th>
+												<th>(0.00 %) 0</th>
+												<th></th>
+											</tr>
+										</tfoot>
+									</table>
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 실패 도메인별 ================================================== -->
+						<!-- ================================================== 발송추세별 ================================================== -->
+						<div class="tab-pane" id="tabflow">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="chart-container">
+										<canvas id="chartflowbasicaccure" style="width: 80vw"></canvas>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="chart-container">
+										<canvas id="chartflowbasictime" style="width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="chart-container">
+										<canvas id="chartflowerroraccure" style="width: 80vw"></canvas>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="chart-container">
+										<canvas id="chartflowerrortime" style="width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 발송추세별 ================================================== -->
+						<!-- ================================================== 실패원인별 ================================================== -->
+						<div class="tab-pane" id="tabfailreason">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="chart-container">
+										<canvas id="chartfailreason" style="height: 300px; width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="alert"></div>
+									<table class="table table-bordered">
+										<thead>
+											
+											
+											
+											
+											<tr>
+												<th>구분</th>
+												<th>상태원인</th>
+												<th>설명</th>
+												<th>이메일수 (0)
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+											
+										</tbody>
+									</table>
+									
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 실패원인별 ================================================== -->
+						<!-- ================================================== 운영체제별 ================================================== -->
+						<div class="tab-pane" id="taboperation">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="chart-container">
+										<canvas id="chartoperation" style="height: 300px; width: 80vw"></canvas>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<table class="table table-bordered">
+										<thead>
+											
+											
+											
+											
+											<tr>
+												<th>번호</th>
+												<th>운영체제</th>
+												<th>전체 (0)
+												</th>
+												<th>비율</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+										</tbody>
+									</table>
+									<!--div class="wrapper_bottom">
+										<span class="btn_bottom right"><a href="javascript:printPage();">출력</a></span> <span class="btn_bottom right"><a href="javascript:excelPage();">Excel로 저장</a></span> <span class="btn_bottom right"><a href="javascript:OpenwindowWithSize('report_backup.jsp?id=','yes',300,300,0,0);">리포트 백업</a></span>
+									</div-->
+								</div>
+							</div>
+						</div>
+						<!-- ================================================== 운영체제별 ================================================== -->
+					</div>
+				</div>
+
+				<div class="ibox-content">
+					<div class="row">
+						
+							<div class="col-sm-6">
+								<button type="button" class="btn btn-sm btn-primary" onclick="history.back()">목록</button>
+							</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function load() {
+
+		$(".footable").footable({
+			"empty" : "목록 없음"
+		});
+
+		$(".imageurltooltip").tooltipster();
+		
+        new Chart(document.getElementById("chartlink").getContext("2d"), configlink);
+        new Chart(document.getElementById("chartday").getContext("2d"), configday);
+        new Chart(document.getElementById("chartdomain").getContext("2d"), configdomain);
+        new Chart(document.getElementById("chartfaildomain").getContext("2d"), configfaildomain);
+        new Chart(document.getElementById("chartflowbasicaccure").getContext("2d"), configflowbasicaccure);
+        new Chart(document.getElementById("chartflowbasictime").getContext("2d"), configflowbasictime);
+        new Chart(document.getElementById("chartflowerroraccure").getContext("2d"), configflowerroraccure);
+        new Chart(document.getElementById("chartflowerrortime").getContext("2d"), configflowerrortime);
+        new Chart(document.getElementById("chartfailreason").getContext("2d"), configfailreason);
+        new Chart(document.getElementById("chartoperation").getContext("2d"), configoperation);
+	}
+	
+    function percentage_format(value){
+        return value + " %";
+    }
+    
+    function email(tab, kind, value) {
+    	
+    	if( value == "0" ) {
+    		
+			$.toast({
+				text : "출력가능한 데이터가 없습니다!",
+				position : "bottom-right",
+				stack : false,
+				icon : "warning"
+			});
+    	} else {
+    		
+    		location.href="/email/statistics//" + tab + "/" + kind + "/1";
+    	}
+    }
+
+	window.chartColors = {
+		red: 'rgb(255, 99, 132)',
+		orange: 'rgb(255, 159, 64)',
+		yellow: 'rgb(255, 205, 86)',
+		green: 'rgb(75, 192, 192)',
+		blue: 'rgb(54, 162, 235)',
+		purple: 'rgb(153, 102, 255)',
+		grey: 'rgb(201, 203, 207)'
+	};
+
+    var configlink = {
+        type: "pie",
+        data: {
+            datasets: [{
+                data: [],
+                backgroundColor: [
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue
+	            ]
+            }],
+            labels: []
+        },
+        options: {
+            title: {
+                display: true,
+                text: "링크 분석"
+            },
+            legend: {
+            	display: true,
+            	position: "left"
+            },
+            responsive: true,
+            tooltips: {
+                mode: "index",
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.labels[tooltipItem.datasetIndex];
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            }
+        }
+    };
+    
+	var configday = {
+		type : "bar",
+		data : {
+			labels : [],
+			datasets : [ {
+				label : '오픈',
+				backgroundColor : window.chartColors.red,
+				data : []
+			}, {
+				label : '인지',
+				backgroundColor : window.chartColors.blue,
+				data : []
+			}, {
+				label : '클릭',
+				backgroundColor : window.chartColors.green,
+				data : []
+			}, {
+				label : '거부',
+				backgroundColor : window.chartColors.blue,
+				data : []
+			} ]
+
+		},
+		options : {
+            title: {
+                display: true,
+                text: "일자별"
+            },
+			scales : {
+				xAxes : [ {
+					stacked : true,
+					maxBarThickness : 30
+				} ],
+				yAxes : [ {
+					stacked : true,
+	                ticks: {
+	                    callback: function(value, index, values) {
+	                        return value.toLocaleString();
+	                    }
+	                }
+				} ]
+			},
+            tooltips: {
+                mode: "index",
+                intersect: false,
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            }
+		}
+	};
+    
+	var configdomain = {
+		type : "bar",
+		data : {
+			labels : [],
+			datasets : [ {
+				label : '오픈',
+				backgroundColor : window.chartColors.red,
+				data : []
+			}, {
+				label : '인지',
+				backgroundColor : window.chartColors.blue,
+				data : []
+			}, {
+				label : '클릭',
+				backgroundColor : window.chartColors.green,
+				data : []
+			}, {
+				label : '거부',
+				backgroundColor : window.chartColors.blue,
+				data : []
+			} ]
+
+		},
+		options : {
+            title: {
+                display: true,
+                text: "도메인별"
+            },
+			scales : {
+				xAxes : [ {
+					stacked : true,
+					maxBarThickness : 30
+				} ],
+				yAxes : [ {
+					stacked : true,
+	                ticks: {
+	                    callback: function(value, index, values) {
+	                        return value.toLocaleString();
+	                    }
+	                }
+				} ]
+			},
+            tooltips: {
+                mode: "index",
+                intersect: false,
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            }
+		}
+	};
+    
+	var configfaildomain = {
+		type : "bar",
+		data : {
+			labels : [],
+			datasets : [{
+				label : '실패',
+				backgroundColor : window.chartColors.blue,
+                borderColor: window.chartColors.blue,
+                borderWidth: 1,
+				data : []
+			}]
+
+		},
+		options : {
+            title: {
+                display: true,
+                text: "실패도메인별"
+            },
+			scales : {
+				xAxes : [ {
+					stacked : true,
+					maxBarThickness : 30
+				} ],
+				yAxes : [ {
+					stacked : true,
+	                ticks: {
+	                    callback: function(value, index, values) {
+	                        return value.toLocaleString();
+	                    }
+	                }
+				} ]
+			},
+            tooltips: {
+                mode: "index",
+                intersect: false,
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            }
+		}
+	};
+    
+    var configflowbasicaccure = {
+        type: 'line',
+        data: {
+            labels: ["0분", ],
+            datasets: [{
+                label: "총 발송",
+                backgroundColor: window.chartColors.grey,
+                borderColor: window.chartColors.grey,
+                data: ['0',],
+                fill: false,
+            }, {
+                label: "성공",
+                fill: false,
+                backgroundColor: window.chartColors.blue,
+                borderColor: window.chartColors.blue,
+                data: ['0',],
+            }, {
+                label: "실패",
+                fill: false,
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
+                data: ['0',],
+            }]
+        },
+        options: {
+            responsive: true,
+            title:{
+                display:true,
+                text:'발송 추세 - 누적분포'
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            scales: {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: true,
+	                ticks: {
+	                    callback: function(value, index, values) {
+	                        return value.toLocaleString();
+	                    }
+	                }
+                }]
+            }
+        }
+    };
+    
+    var configflowbasictime = {
+        type: 'line',
+        data: {
+            labels: ["0분", ],
+            datasets: [{
+                label: "총 발송",
+                backgroundColor: window.chartColors.grey,
+                borderColor: window.chartColors.grey,
+                data: ['0',],
+                fill: false,
+            }, {
+                label: "성공",
+                fill: false,
+                backgroundColor: window.chartColors.blue,
+                borderColor: window.chartColors.blue,
+                data: ['0',],
+            }, {
+                label: "실패",
+                fill: false,
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
+                data: ['0',],
+            }]
+        },
+        options: {
+            responsive: true,
+            title:{
+                display:true,
+                text:'발송 추세 - 시간대 분포'
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            scales: {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: true,
+	                ticks: {
+	                    callback: function(value, index, values) {
+	                        return value.toLocaleString();
+	                    }
+	                }
+                }]
+            }
+        }
+    };
+
+    var configflowerroraccure = {
+        type: 'line',
+        data: {
+            labels: ["0분", ],
+            datasets: [{
+                label: "251",
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
+                data: ['0',],
+                fill: false,
+            }, {
+                label: "421",
+                fill: false,
+                backgroundColor: window.chartColors.orange,
+                borderColor: window.chartColors.orange,
+                data: ['0',],
+            }, {
+                label: "450",
+                fill: false,
+                backgroundColor: window.chartColors.yellow,
+                borderColor: window.chartColors.yellow,
+                data: ['0',],
+            }, {
+                label: "451",
+                fill: false,
+                backgroundColor: window.chartColors.green,
+                borderColor: window.chartColors.green,
+                data: ['0',],
+            }, {
+                label: "452",
+                fill: false,
+                backgroundColor: window.chartColors.blue,
+                borderColor: window.chartColors.blue,
+                data: ['0',],
+            }, {
+                label: "44x, 499, 500",
+                fill: false,
+                backgroundColor: window.chartColors.purple,
+                borderColor: window.chartColors.purple,
+                data: ['0',],
+            }, {
+                label: "512",
+                fill: false,
+                backgroundColor: window.chartColors.grey,
+                borderColor: window.chartColors.grey,
+                data: ['0',],
+            }, {
+                label: "550, 554",
+                fill: false,
+                backgroundColor: window.chartColors.black,
+                borderColor: window.chartColors.black,
+                data: ['0',],
+            }, {
+                label: "나머지",
+                fill: false,
+                backgroundColor: 'rgb(100, 100, 100)',
+                borderColor: 'rgb(100, 100, 100)',
+                data: ['0',],
+            }]
+        },
+        options: {
+            responsive: true,
+            title:{
+                display:true,
+                text:'발송 오류 추세 - 누적분포'
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true,
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            },
+            scales: {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: true,
+	                ticks: {
+	                    callback: function(value, index, values) {
+	                        return value.toLocaleString();
+	                    }
+	                }
+                }]
+            }
+        }
+    };
+    
+    var configflowerrortime = {
+        type: 'line',
+        data: {
+            labels: ["0분", ],
+            datasets: [{
+                label: "251",
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
+                data: ['0',],
+                fill: false,
+            }, {
+                label: "421",
+                fill: false,
+                backgroundColor: window.chartColors.orange,
+                borderColor: window.chartColors.orange,
+                data: ['0',],
+            }, {
+                label: "450",
+                fill: false,
+                backgroundColor: window.chartColors.yellow,
+                borderColor: window.chartColors.yellow,
+                data: ['0',],
+            }, {
+                label: "451",
+                fill: false,
+                backgroundColor: window.chartColors.green,
+                borderColor: window.chartColors.green,
+                data: ['0',],
+            }, {
+                label: "452",
+                fill: false,
+                backgroundColor: window.chartColors.blue,
+                borderColor: window.chartColors.blue,
+                data: ['0',],
+            }, {
+                label: "44x, 499, 500",
+                fill: false,
+                backgroundColor: window.chartColors.purple,
+                borderColor: window.chartColors.purple,
+                data: ['0',],
+            }, {
+                label: "512",
+                fill: false,
+                backgroundColor: window.chartColors.grey,
+                borderColor: window.chartColors.grey,
+                data: ['0',],
+            }, {
+                label: "550, 554",
+                fill: false,
+                backgroundColor: window.chartColors.black,
+                borderColor: window.chartColors.black,
+                data: ['0',],
+            }, {
+                label: "나머지",
+                fill: false,
+                backgroundColor: 'rgb(100, 100, 100)',
+                borderColor: 'rgb(100, 100, 100)',
+                data: ['0',],
+            }]
+        },
+        options: {
+            responsive: true,
+            title:{
+                display:true,
+                text:'발송 오류 추세 - 시간대 분포'
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label;
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            scales: {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: true,
+	                ticks: {
+	                    callback: function(value, index, values) {
+	                        return value.toLocaleString();
+	                    }
+	                }
+                }]
+            }
+        }
+    };
+
+    var configfailreason = {
+        type: "pie",
+        data: {
+            datasets: [{
+                data: [],
+                backgroundColor: [
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue
+	            ]
+            }],
+            labels: []
+        },
+        options: {
+            title:{
+                display:true,
+                text: "실패원인별"
+            },
+            legend: {
+            	display: true,
+            	position: "left"
+            },
+            responsive: true,
+            tooltips: {
+                mode: "index",
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.labels[tooltipItem.datasetIndex];
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            }
+        }
+    };
+    
+	var configoperation = {
+	    type: "pie",
+	    data: {
+	        datasets: [{
+	            data: [],
+	            backgroundColor: [
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue,
+	                window.chartColors.red,
+	                window.chartColors.orange,
+	                window.chartColors.yellow,
+	                window.chartColors.green,
+	                window.chartColors.blue
+	            ],
+	            label: 'Dataset 1'
+	        }],
+	        labels: []
+	    },
+	    options: {
+            title:{
+                display:true,
+                text: "운영체제별"
+            },
+            legend: {
+            	display: true,
+            	position: "left"
+            },
+	        responsive: true,
+            tooltips: {
+                mode: "index",
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var datasetLabel = data.labels[tooltipItem.index];
+                        var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                        return datasetLabel + ': ' + Number(value).toLocaleString();
+                    }
+                }
+            }
+	    }
+	};
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

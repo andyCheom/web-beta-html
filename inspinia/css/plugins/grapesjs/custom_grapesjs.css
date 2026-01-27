@@ -1,0 +1,123 @@
+/*템플릿 선택창*/
+
+/*color picker css*/
+.sp-container {
+    top: 30% !important;
+    left: unset !important;
+    right: 0 !important;
+}
+
+/*block svg를 위한 font*/
+@font-face {
+    font-family: "font_custom";
+    src: url("/inspinia/css/plugins/fonts/main-fonts.woff") format("woff");
+    src: url("/inspinia/css/plugins/fonts/glyphicons-halflings-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*template 선택창*/
+.d-flex-wrap{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    overflow-x: auto;
+}
+
+.d-flex-wrap-item-title-ck,
+.d-flex-wrap-item-title-temp,
+.d-flex-wrap-item{
+    flex: 0 0 18vw;
+    min-width: 15vw;
+    margin: 10px;
+    border: 1px solid #ccc;
+    height: 90%;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    overflow-y: auto;
+}
+
+.clicked {
+    outline: -webkit-focus-ring-color auto 1px !important;
+}
+
+/* editor container */
+.gjs-cv-canvas {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gjs-one-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.panel__top {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    position: initial;
+    justify-content: center;
+    height: 40px;
+}
+
+.panel__buttons{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 40px;
+}
+
+.panel__devices{
+    left: 180px;
+}
+
+.panel__controller{
+    right: 180px;
+}
+
+.editor-row {
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    height: 780px;
+}
+
+.editor-canvas {
+    flex-grow: 1;
+}
+
+.panel__left, .panel__right {
+    /*flex-basis: 9.375vw;*/
+    flex-basis: 250px;
+    position: relative;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.editor_wrapper{
+    position: relative;
+}
+
+/*	tooltip 구현*/
+[data-title] {
+    position: relative;
+    z-index: 10;
+}
+[data-title]:hover::after,
+[data-title]:focus::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    width: auto;
+    white-space: nowrap;
+    background: #888888;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+    font-size: 14px;
+    padding: 3px 5px;
+}

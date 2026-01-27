@@ -1,0 +1,1226 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+							
+							
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class="active"><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class="active"><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5></h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong></strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-content" style="display: flex;">
+				<div class="ibox-title" style="display: flex; justify-content: flex-start; font-size: 18px; font-weight: 600; width: 100%;">
+					템플릿
+				</div>
+				<div style="display: flex; justify-content: flex-end; width: 100%;">
+					<div style="display: flex; background-color: #f17d7d; padding: 5px 25px; margin-right: 25px; border-radius: 40px; justify-content: center; align-items: center;">
+						<a href="#" id="btn_basic" style="color: white; font-weight: 600;">기본 템플릿</a>
+					</div>
+					<div style="display: flex; background-color: rgb(77, 61, 218); padding: 5px 25px; margin-right: 25px; border-radius: 40px; justify-content: center; align-items: center;">
+						<a href="#" id="btn_custom" style="color: white; font-weight: 600;">내 템플릿</a>
+					</div>
+				</div>
+			</div>
+			<div class="ibox-content" id="list_basic" style="padding: 0;">
+				<div class="d-flex-wrap" style="overflow-y: auto;">
+					<div class="row-wrapper" style="display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap;">
+						<div id="template-basic" class="template-box" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+							
+								<div style="margin: 15px; width: 133px; height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);">
+									<div>
+										<img width="60" height="60" src="images/plus.svg">
+									</div>
+									<div>
+										<span style="font-size: 15px; font-weight: 600;">추가</span>
+									</div>
+								</div>
+								<div style="height: 50px; margin-bottom: 15px;">
+									<span>템플릿</span>
+								</div>
+							
+						</div>
+						
+							<div id="template-2" class="template-items template-box" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+								<div style="margin: 15px; display: flex; width: 138px; height: 160px; background-color: white; margin-left: 10px; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025); justify-content: center;">
+									<a> <img style="width: 100%; height: 100%; object-fit: contain;" src="images/template/tempimage02.png">
+									</a>
+								</div>
+								<div style="height: 50px; margin-bottom: 15px;">
+									<span>신제품 샘플</span>
+								</div>
+							</div>
+						
+							<div id="template-1" class="template-items template-box" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+								<div style="margin: 15px; display: flex; width: 138px; height: 160px; background-color: white; margin-left: 10px; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025); justify-content: center;">
+									<a> <img style="width: 100%; height: 100%; object-fit: contain;" src="images/template/tempimage01.png">
+									</a>
+								</div>
+								<div style="height: 50px; margin-bottom: 15px;">
+									<span>1단+1단+2단 템플릿</span>
+								</div>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="ibox-content" id="list_custom" style="padding: 0; display: none;">
+				<div class="d-flex-wrap" style="overflow-y: auto;">
+					<div class="row-wrapper" style="display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap;">
+						<div id="template-custom" class="template-box" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+							
+								<div style="margin: 15px; width: 133px; height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);">
+									<div>
+										<img width="60" height="60" src="images/plus.svg">
+									</div>
+									<div>
+										<span style="font-size: 15px; font-weight: 600;">추가</span>
+									</div>
+								</div>
+								<div style="height: 50px; margin-bottom: 15px;">
+									<span>템플릿</span>
+								</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="ibox-content">
+				<div class="row">
+					<div class="col-sm-2 text-center">
+						<button class="btn btn-w-m btn-danger disabled">
+							이전
+						</button>
+					</div>
+					<div class="col-sm-7 text-center"></div>
+					<div class="col-sm-1 text-right" id="del_btn_container">
+						
+							<button class="del_btn_admin del_btn_user btn btn-w-m" style="display: none;" onclick="delete_choosen()">
+								삭제
+							</button>
+						
+					</div>
+					<div class="col-sm-2 text-center">
+						<button class="btn btn-w-m btn-primary" onclick="get_choosen()">
+							다음
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<link rel="stylesheet" href="inspinia/css/plugins/grapesjs/custom_grapesjs.css">
+<style>
+@font-face {
+	font-family: "font_custom";
+	src:
+		url("/inspinia/css/plugins/fonts/glyphicons-halflings-regular.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.d-flex-wrap {
+	height: 780px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.d-flex-wrap-item {
+	flex: 0 0 18vw;
+	min-width: 15vw;
+	margin: 10px;
+	border: 1px solid #ccc;
+	height: 250px;
+	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	overflow-y: auto;
+}
+</style>
+
+<script type="text/javascript">
+    function load() {
+    	
+        // 템플릿을 삭제했을때, list.jsp로 이동하면서 전달된 parameter에 대해 값을 받아 serachParams에 입력
+        // searchParams가 custom 이라면, default인 basic으로 가지않고, custom페이지에 남는다.
+        let searchParams = new URLSearchParams(window.location.search);
+        if(searchParams.has('template_type')){
+            template_type = searchParams.get('template_type')
+            if(template_type === 'custom'){
+                document.querySelector("#list_custom").style.display=""
+                document.querySelector("#list_basic").style.display="none"
+            }
+        }
+        
+        click_init();
+    }
+
+    let choosen;
+    let choosen_list = $(".template-box");
+    let template_type = "basic"
+
+    function handleClick(event){
+        if (event.target.classList.contains("clicked")){
+            event.target.classList.remove("clicked");
+        }else {
+            for (let i=0;i<choosen_list.length;i++){
+                choosen_list[i].classList.remove("clicked");;
+            }
+        }
+        this.classList.add("clicked");
+
+
+    }
+
+    function click_init(){
+
+        for(let i=0;i<choosen_list.length;i++){
+            choosen_list[i].addEventListener('click', handleClick);
+            if(`1`!=='1'){
+                choosen_list[i].addEventListener('click',delete_style_display_user);
+            }else{
+                choosen_list[i].addEventListener('click',delete_style_display_admin);
+            }
+        }
+
+        // 기본 템플릿, 내 템플릿 분류버튼
+        let btn_basic = document.querySelector('#btn_basic');
+        let btn_custom = document.querySelector('#btn_custom');
+
+        btn_basic.addEventListener('click', btn_divider_listener);
+        btn_custom.addEventListener('click', btn_divider_listener);
+    }
+
+    // load_template func 내에서 처리가 완료되면 동작하라
+    let load_flag = false;
+
+    function get_choosen(){
+        for(let i=0;i<choosen_list.length;i++){
+            if(choosen_list[i].classList.contains("clicked")){
+                choosen = choosen_list[i];
+            }
+        }
+
+        console.log(choosen)
+
+        // list에서 선택된 template이 있다면
+        if(choosen){
+
+            // localStorage "template" 초기화
+            localStorage.removeItem("template");
+            localStorage.removeItem("id");
+            localStorage.removeItem("userId");
+            localStorage.removeItem("user.groupIdxForeign");
+            localStorage.removeItem("templateType");
+            localStorage.removeItem("modify");
+            localStorage.removeItem("title");
+
+            let choose_id = choosen.id.substr(9);
+
+            localStorage.setItem("user.groupIdxForeign", "1");
+            localStorage.setItem("userId", "");
+            localStorage.setItem("templateType", template_type);
+
+            // admin
+            if("1"==='1'){
+                if(choosen.id === "template-basic"){
+                    localStorage.setItem("modify", false);
+                    localStorage.setItem("title", "");
+                    go("input/"+choosen.id)
+                }else if(template_type === "basic" && choosen.classList.contains("template-items")){
+                    localStorage.setItem("id", choose_id);
+                    // localStorage.setItem("template", )
+                    localStorage.setItem("modify", true);
+                    localStorage.setItem("title", choosen.children[1].innerText);
+                    load_template(choose_id, ()=>{
+                        go("input/"+choose_id);
+                    })
+                }else if(choosen.id === "template-custom"){
+                    localStorage.setItem("modify", false);
+                    localStorage.setItem("title", "");
+                    go("input/"+choosen.id);
+                }else if(template_type === "custom" && choosen.classList.contains("template-items")){
+                    localStorage.setItem("id", choose_id);
+                    localStorage.setItem("modify", true);
+                    localStorage.setItem("title", choosen.children[1].innerText);
+                    load_template(choose_id, ()=>{
+                        go("input/"+choose_id);
+                    })
+                }
+            }
+            // manager, user
+            else{
+                // 유저와 매니저는 기본 템플릿은 건드릴 수 없음으로
+                // 저장된 템플릿을 추가할때의 접근만 다룬다.
+                if(choosen.id === "template-custom"){
+                    localStorage.setItem("modify", false);
+                    localStorage.setItem("title", "");
+                    localStorage.setItem("templateType", "custom");
+                    go("input/"+choosen.id);
+                }else if(template_type === "basic"){
+                    localStorage.setItem("modify", false);
+                    localStorage.setItem("title", choosen.children[1].innerText);
+                    localStorage.setItem("templateType", "basic");
+                    load_template(choose_id, ()=>{
+                        go("input/"+choose_id);
+                    })
+                }
+                else{
+                    localStorage.setItem("id", choose_id);
+                    localStorage.setItem("modify", true);
+                    localStorage.setItem("title", choosen.children[1].innerText);
+                    localStorage.setItem("templateType", "custom");
+                    load_template(choose_id, ()=>{
+                        go("input/"+choose_id);
+                    })
+                }
+            }
+
+            // load_flag는 load_template() 내에서 변화한다.
+            // 비동기 작업으로 인해 시간을 늦추어 함수를 호출한다.
+
+        }else{
+        	
+			$.toast({
+				text : "템플릿을 선택해 주세요!",
+				position : 'bottom-right',
+				stack : false,
+				icon : "info"
+			});
+        }
+    }
+
+    function load_template(id, success){
+        let body = {
+            "id":id
+        }
+        $.ajax({
+            type: "post",
+            url: "/template/ajax/template/file",
+            data : JSON.stringify(body),
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function(response){
+
+                let result = JSON.parse(JSON.stringify(response))
+                localStorage.setItem("template", result.template.templateFile)
+                
+                
+                
+                
+                
+                
+                // load_flag = true
+
+                if(success != null){
+                    success();
+                }
+            }, error : function(jqXHR, textStatus, errorThrown) {
+
+                console.log(jqXHR.status);
+                console.log(jqXHR.statusText);
+                console.log(jqXHR.responseText);
+                console.log(jqXHR.readyState);
+
+                $.toast({
+                    text : "템플릿을 로드하지 못했습니다.",
+                    position : "bottom-right",
+                    stack : false,
+                    icon : "error"
+                });
+            }
+        });
+    }
+
+    function delete_choosen(){
+        for(let i=0;i<choosen_list.length;i++) {
+            if (choosen_list[i].classList.contains("clicked")) {
+                choosen = choosen_list[i];
+            }
+        }
+        if(choosen){
+            if(!confirm("삭제하시겠습니까?")){
+
+            }else{
+                // 골라진 id를 추출
+                let choosen_id = choosen.id.substr(9);
+
+                let body = {
+                    id: parseInt(choosen_id)
+                }
+
+                $.ajax({
+                    type : "POST",
+                    url: "/template/delete",
+                    data: JSON.stringify(body),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: (response) => {
+						alert("삭제 되었습니다.");
+                        go('list/1?template_type='+template_type);
+                    }
+                })
+            }
+        }else{
+        	
+			$.toast({
+				text : "선택된 사항이 없습니다!",
+				position : 'bottom-right',
+				stack : false,
+				icon : "info"
+			});
+        }
+    }
+
+    function go(link){
+        location.href = `/template/`+link;
+    }
+
+    function delete_style_display_admin(){
+        if(this.id === "template-basic" || this.id === "template-custom"){
+            document.querySelector(".del_btn_admin").style.display = "none";
+        }else{
+            document.querySelector(".del_btn_admin").style.display = "";
+        }
+    }
+
+    function delete_style_display_user(){
+        if(template_type === "basic" || this.id === "template-custom"){
+            document.querySelector(".del_btn_user").style.display = "none";
+        }else{
+            document.querySelector(".del_btn_user").style.display = "";
+        }
+    }
+
+    function btn_divider_listener(){
+        if(this.id === "btn_basic"){
+            document.querySelector("#list_basic").style.display="";
+            document.querySelector("#list_custom").style.display="none";
+            template_type = "basic";
+        }else if(this.id === "btn_custom"){
+            document.querySelector("#list_custom").style.display="";
+            document.querySelector("#list_basic").style.display="none";
+            template_type = "custom";
+        }
+    }
+
+    // 스크롤바 3개 생겨서 wrapper의 overflow 제거
+    document.querySelector('#wrapper').style.overflowX = "unset";
+    
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,1177 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class=""><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+							<strong>대용량 파일 첨부관리</strong>
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5>menu.attachments</h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong>menu.attachments</strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<input type="hidden" id="result" value="N" />
+			<div class="ibox-content" style="margin-bottom: 30px;">
+				<form action="/attachments/save" method="post" id="smit">
+					<input type="hidden" id="idx" name="idx" value="0" /> <input type="hidden" id="fileNameAlias" name="fileNameAlias" />
+					<table class="table table-bordered" style="margin-bottom: 0; width: 60%;">
+						<tr>
+							<th class="col-sm-2">제목</th>
+							<td>
+								<div class="col-sm-10">
+									<input type="text" id="title" name="title" value="" class="form-control" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>설명</th>
+							<td>
+								<div class="col-sm-10">
+									<input type="text" id="explanation" name="explanation" value="" class="form-control" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>사용한 용량 <span>/</span> 전체 용량</th>
+							<td>
+								<div class="col-sm-10">
+									<span id="vol">0 Byte(s)</span> <span>/</span> <span>2GB</span> <span style="margin-left: 30px; font-size: 12px;">※ 첨부한 용량이 보여집니다.</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div class="ibox-content" style="margin-bottom: 30px;">
+				<!-- 				<table class="table table-bordered" style="width:60%;"> -->
+				
+				<!-- 					<tr> -->
+				
+				<!-- 						<td> -->
+				<!-- 							<div class="col-sm-8"> -->
+				<!-- 								<div class="fileinput fileinput-new input-group" data-provides="fileinput"> -->
+				<!-- 									<div class="form-control" data-trigger="fileinput"> -->
+				<!-- 										<i class="fa fa-file fileinput-exists"></i> <span class="fileinput-filename"></span> -->
+				<!-- 									</div> -->
+				
+				
+				<!-- 								</div> -->
+				<!-- 							</div> -->
+				<!-- 						</td> -->
+				<!-- 					</tr> -->
+				
+				<!-- 				</table> -->
+
+
+				<div class="clsbox-1" runat="server">
+					<div class="dropzone clsbox" id="mydropzone" style="width: 60%; margin-top: 20px;">
+						<input type="hidden" id="title1" /> <input type="hidden" id="explanation1" /> <input type="hidden" id="idxing" value="0" />
+					</div>
+				</div>
+				<div class="attached_box">
+					<h6 style="font-size: 12px; margin-top: 40px;">※ 첨부한 파일이 자동으로 스타일 변환됩니다. 스타일복사하여 그대로 붙여넣으시거나, 코드 복사 후 스타일을 직접 수정할 수 있습니다.</h6>
+					<div class="panel panel-default" style="width: 60%;">
+						<div class="panel-heading">
+							<strong>첨부파일 변환</strong>
+							<button type="copy" id="a" class="btn btn-sm btn-primary" style="margin-left: 15px;">
+								스타일 복사
+							</button>
+						</div>
+						<div id="changeFile" class="panel-body" style="height: auto;">
+							<div id="group1" style="margin-top: 15px;">
+								<table cellspacing='0' cellpadding='0' border='0' border:1px solid #eee;'><tbody id='tempChange'><tr><td colspan="2" style="padding:7px 26px 4px 26px; background:#f9f9f9 no-repeat 15px 7px; color:#444"><i class="fa fa-files-o"></i> (2026-01-22 ~ 2026-02-01)</td></tr><tr><td colspan="2" height="10"></td></tr>
+								
+								</tbody></table>
+							</div>
+						</div>
+					</div>
+					<!-- 					<div class="panel panel-default" style="width:30%; margin-left:15px;">	 -->
+					<!-- 						<div class="panel-heading"> -->
+					<!-- 							<strong>첨부파일 변환 style code</strong> -->
+					<!-- 							<button type="copy" class="btn btn-sm btn-primary" style="margin-left:15px;"> -->
+					
+					<!-- 							</button> -->
+					<!-- 						</div> -->
+					<!-- 						<div class="panel-body" style="background-color: rgba(18, 36, 64, 0.95); height:220px;"> -->
+					<!-- 							<div class="code-copy" style="line-height: 1.62;"> -->
+					<!-- 								<textarea rows="10" cols="50" style="width: 373px; height: 187px;"> -->
+					
+					
+					
+					
+					
+					
+					
+					<!-- 								</textarea> -->
+
+					<!-- 							</div> -->
+					<!-- 						</div>	 -->
+					<!-- 					</div> -->
+				</div>
+			</div>
+			<div class="text-right">
+				<button type="button" id="go_list" onclick="history.back()" class="btn btn-sm btn-primary">
+					목록
+				</button>
+
+				<button type="button" id="subButton" onclick="save();" class="btn btn-sm btn-primary">
+					저장
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function load(){
+		
+		if('0' == 0 || $("#tempChange").children('tr:eq(2)').length == 0){
+			$(".attached_box").hide();
+			$("#group1").hide();
+		}
+		
+	}
+	
+	function save(){
+		
+		var result = true;
+	// 	if($("#fileNameAlias").val().trim() != ""){
+	// 		result = confirm('삭제할 파일들이 있습니다.\n저장 하시겠습니까? ');
+	// 	}
+		var idx = $("#idxing").val();
+		if(result){
+			
+			var data = {"idx" : idx, "fileName" : $("#fileNameAlias").val()};
+			var re = fn_ajaxData("/attachments/fileDelete/"+idx, data);
+			
+			if(re.result == 1){
+				$.toast({
+					text : "성공적으로저장 하였습니다.",
+					position : "bottom-right",
+					stack : false,
+					icon : "info",
+					hideAfter : 1500
+				  });
+				
+				var form = $( "#smit" );		
+				setTimeout(() => form.submit(), 1500);
+			} else {
+				$.toast({
+					text : "통신 중 오류가 발생하었습니다! code : "+re.result,
+					position : "bottom-right",
+					stack : false,
+					icon : "error",
+					hideAfter : 3000
+				  });
+			}
+		}
+		
+	}
+	
+	// function deleteFile(idx, fileName, type){
+		
+	// 	var result = confirm('정말 삭제하시겠습니까?');
+		
+	// 	if(result){
+	// 		var data = {"idx" : idx, "fileName" : fileName, "type" : type};
+	// 		var re = fn_ajaxData("/attachments/fileDelete/"+idx, data);
+	// 		if(re.result == 1){
+	// 			$.toast({
+	// 				text : "정상적으로 삭제 되었습니다!",
+	// 				position : "bottom-right",
+	// 				stack : false,
+	// 				icon : "info",
+	// 				hideAfter : 1500
+	// 			  });
+	// 		 setTimeout(() => location.href='/attachments/attachments/input/'+$("#idxing").val(), 1500);
+	// 		} else {
+	// 			$.toast({
+	// 				text : "통신 중 오류가 발생하었습니다! code : "+re.result,
+	// 				position : "bottom-right",
+	// 				stack : false,
+	// 				icon : "error",
+	// 				hideAfter : 3000
+	// 			  });
+	// 		}
+	// 	} else {
+	// 		alert("취소");
+	// 	}
+		
+	// }
+	
+	function sizeToBytes(vol){
+		
+		const volum = vol.split(" ");
+		var vol = 0;
+		
+		if(volum[1] == "GB"){
+			vol = volum[0] * 1024;
+			vol += vol*1024;
+			vol += vol*1024;
+		} else if(volum[1] == "MB"){
+			vol = volum[0] * 1024;
+			vol += vol*1024;
+		} else if(volum[1] == "KB"){
+			vol = volum[0] * 1024;
+		}
+		
+		return vol;
+	}
+	
+	function sizeToGB(vol){
+		
+		var fileGBsize = "";
+			if (vol < 1024) {
+				fileGBsize = vol + " Byte(s)";
+			} else if (vol < 1024 * 1000) {
+				fileGBsize = (vol / 1024) + " KB";
+			} else if (vol < (1024 * 1000 * 1000)) {
+				fileGBsize = (vol / (1024 * 1000)) + " MB";
+			} else {
+				fileGBsize = (vol / (1024 * 1000 * 1000)) + " GB";
+			}
+		return fileGBsize;
+	}
+	
+	function deleteFile(fileName, size){
+		var result = confirm('삭제한 파일은 복구할 수 없습니다. \n정말 삭제하시겠습니까?\n(파일 삭제 후 저장을 클릭하셔야 적용됩니다.)');
+		if(result){
+			if($("#fileNameAlias").val() == ""){
+				$("#fileNameAlias").val(fileName+"|");
+			} else {
+				$("#fileNameAlias").val($("#fileNameAlias").val()+fileName+"|");
+			}
+			
+			$("."+fileName).remove();
+			if($("#tempChange").children('tr:eq(2)').length == 0){
+				$(".attached_box").hide();
+			}
+		}
+		
+	// 	var used = sizeToBytes($("#vol").html());
+	// 	var check = sizeToBytes(size);
+	// 	console.log(used);
+	// 	console.log(sizeToGB(Number(used-check))); 
+		
+	}
+	
+	
+	
+	$(function () {
+		
+	    $('#a').click(function () {
+	    	$(".deleteKey").hide();
+	    	window.getSelection().removeAllRanges();
+	    	let range = document.createRange();
+	    	range.selectNode(document.getElementById("group1")); // 복사할 이미지 영역 선택
+	    	window.getSelection().addRange(range);
+	    	document.execCommand('copy');
+	    	window.getSelection().removeAllRanges();
+	    	$(".deleteKey").show();
+	    	
+	    	$.toast({
+				text : "정상적으로 복사되었습니다.",
+				position : "bottom-right",
+				stack : false,
+				icon : "info",
+				hideAfter : 1500
+			  });
+	    	
+	    });
+	});
+	
+	$("#title").change(function (){
+		$("#title1").val($("#title").val());
+	});
+	
+	$("#explanation").change(function (){
+		$("#explanation1").val($("#explanation").val());
+	});
+
+
+// $("#changeFile").
+Dropzone.autoDiscover = false;
+var myDropzone = new Dropzone("div#mydropzone", {
+		  url: '/attachments/save/0', //업로드할 url (ex)컨트롤러) 
+		  
+		  init: function () { /* 최초 dropzone 설정시 init을 통해 호출 */ 
+		    let myDropzone = this; //closure
+		    
+		    this.on('sendingmultiple', function (data, xhr, formData) {
+                formData.append("title", $("#title").val());
+                formData.append("explanation", $("#explanation").val());
+                formData.append("idxing", $("#idxing").val());
+            });
+		  },
+		  
+		  success: function(file, response){
+			  if(response.result == 1){
+				  if(response.insert == "Y"){
+					  $("#idxing").val(response.idxing);
+					  $("#idx").val(response.idxing);
+					  $(".attached_box").show();
+					  $("#group1").show();
+					  $("#title").val(response.title);
+					  $("#explanation").val(response.explanation);
+				  }
+				  $(".attached_box").show();
+				  $("#group1").show();
+				  $("#vol").html(response.usedVolume);
+				  $("#tempChange").append(response.change);
+				  
+				  $.toast({
+	    			text : "성공적으로저장 하였습니다.",
+	    			position : "bottom-right",
+	    			stack : false,
+	    			icon : "info",
+	    			hideAfter : 1500
+	    		  });
+				  
+// 				  if(response.insert == "Y"){
+// 					  setTimeout(() => location.href='/attachments/input/'+response.idx, 1500);
+// 				  } else {
+// 					  $("#tempChange").append(response.change);
+// 				  }
+				    
+			  } else {
+				  $.toast({
+		    			text : "통신 중 오류가 발생하었습니다! code : "+response.result,
+		    			position : "bottom-right",
+		    			stack : false,
+		    			icon : "error",
+		    			hideAfter : 3000
+		    		  });  
+			  }
+			  
+		  },
+		  
+		  error: function(file, response){
+			  $.toast({
+    			text : response.result+"\n 통신 중 오류가 발생하었습니다!",
+    			position : "bottom-right",
+    			stack : false,
+    			icon : "error",
+    			hideAfter : 1500
+    		  });
+		  },
+		  
+		  autoProcessQueue: true, // 자동업로드 여부 (true일 경우, 바로 업로드 되어지며, false일 경우, 서버에는 올라가지 않은 상태임 processQueue() 호출시 올라간다.)
+		  clickable: true, // 클릭가능여부
+		  thumbnailHeight: 120, // Upload icon size 
+		  thumbnailWidth: 120, // Upload icon size
+		  maxFilesize: 100, // 최대업로드용량 : 100MB
+// 		  paramName: 'image', // formdata 이름 설정
+		  parallelUploads: 1, // 동시파일업로드 수(이걸 지정한 수 만큼 여러파일을 한번에 컨트롤러에 넘긴다.)
+		  uploadMultiple: true, // 다중업로드 기능 
+// 		  acceptedFiles: ".txt",
+		});
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

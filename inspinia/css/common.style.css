@@ -1,0 +1,35 @@
+.ibox-search {
+    background-color: #f5f5f5;
+  }
+  
+  .attachment-add-style {
+    margin-top:-20px;
+    width:60%;
+    padding:8px;
+    line-height:1.42857143;
+    vertical-align: top;
+    border-top:1px solid transparent;
+    text-align:center;
+    cursor: pointer;
+    background-color: #F5F5F6;
+  }
+  .attachment-add-style:hover {
+    background-color: #004EA2;
+    color:#fff;
+    transition: all 0.2s;
+  }
+  .attached_box:after {
+    content: '';
+    clear: both;
+    display: block;
+  
+  }
+  .attached_box > div {
+    float:left;
+  }
+  .code-copy {
+    color:#eee;
+  }
+  .tab {
+    white-space: pre;
+  }

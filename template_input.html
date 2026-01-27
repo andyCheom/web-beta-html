@@ -1,0 +1,1695 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+							
+							
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class="active"><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class="active"><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class=""><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5></h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong></strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12n p0">
+		<div class="ibox float-e-margins">
+			<div class="ibox-title" style="background-color: #1CC09F; padding: 10px;">
+				<h5 style="color: white;">
+					편집
+				</h5>
+			</div>
+			<div class="ibox-content" style="height: 850px; padding: 0px; border:none;">
+				<div class="form-group">
+					<div class="editor_wrapper">
+						<div class="panel__top">
+							<div class="panel__buttons panel__devices gjs-one-bg gjs-two-color">
+								<div class="button_desktop gjs-pn-btn fa fa-desktop gjs-two-color" data-title="테스크탑"></div>
+								<div class="button_tablet gjs-pn-btn fa fa-tablet gjs-two-color" data-title="태블릿"></div>
+								<div class="button_phone gjs-pn-btn fa fa-mobile gjs-two-color" data-title="핸드폰"></div>
+							</div>
+							<div class="panel__buttons panel__controller gjs-one-bg gjs-two-color">
+								<div class="button_visible gjs-pn-btn fa fa-square-o gjs-two-color" data-title="컴포넌트 보기"></div>
+								
+									<div class="button_export gjs-pn-btn fa fa-code gjs-two-color" data-title="코드 보기"></div>
+								
+								
+									<div class="button_import gjs-pn-btn fa fa-download gjs-two-color" data-title="불러 오기"></div>
+								
+								<div class="button_undo gjs-pn-btn fa fa-undo gjs-two-color" data-title="이전 작업"></div>
+								<div class="button_repeat gjs-pn-btn fa fa-repeat gjs-two-color" data-title="이후 작업"></div>
+							</div>
+						</div>
+						<div class="editor-row" style="height: 818px;">
+							<div id="blocks" class="panel__left">
+								<div class="block-container"></div>
+							</div>
+							<div class="editor-canvas">
+								<div id="gjs" style="position: relative;"></div>
+							</div>
+							
+							<div class="panel__right">
+								<div class="traits-container"></div>
+								<div class="styles-container"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ibox-content" style="padding: 10px 0 5px;">
+				<div class="row" style="display: flex; align-items: center;">
+					<div class="col-sm-2 text-center">
+						<button class="btn btn-w-m btn-danger" onclick="check_prev_button()">
+							이전
+						</button>
+					</div>
+					<div class="col-sm-2 text-center"></div>
+					
+						<div class="col-sm-10"></div>
+					
+					
+					<div class="col-sm-2 text-center">
+						<input id="template_title" type="text" placeholder='메일 제목'>
+					</div>
+					
+					<div class="btn-edit-groupidx col-sm-1 text-center"></div>
+					&nbsp;
+					<div class="btn-edit-groupidx2 col-sm-1 text-center"></div>
+					<div class="btn-edit-groupidx3 col-sm-1 text-center"></div>
+					<div class="col-sm-2 text-center">
+						<button class="btn btn-w-m" onclick="overview_open()">
+							미리보기
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="inspinia/js/plugins/html2canvas/html2canvas.min.js"></script>
+
+<script src="inspinia/js/plugins/grapesjs/grapesjs.min.js"></script>
+<script src="inspinia/js/plugins/grapesjs/grapesjs-preset-newsletter.min.js"></script>
+<script src="inspinia/vendor/plugins/ckeditor/ckeditor.js"></script>
+<script src="inspinia/js/plugins/grapesjs/grapesjs-plugin-ckeditor.min_0.0.10_.js"></script>
+<script src="inspinia/js/plugins/grapesjs/ko.js"></script>
+<script src="inspinia/js/plugins/juice.4.1.1/juice.4.1.1.js"></script>
+<script src="inspinia/js/plugins/grapesjs/custom_editor.js"></script>
+<link href="inspinia/css/plugins/grapesjs/grapesjs.css" rel="stylesheet" />
+<link href="inspinia/css/plugins/grapesjs/grapesjs-preset-newsletter.css" rel="stylesheet" />
+<link href="inspinia/css/plugins/grapesjs/custom_grapesjs.css" rel="stylesheet">
+
+
+<style>
+.link {
+	color: rgb(217, 131, 166);
+}
+
+.row {
+	vertical-align: top;
+}
+
+.main-body {
+	min-height: 150px;
+	padding: 5px;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(234, 236, 237);
+}
+
+.c926 {
+	color: rgb(158, 83, 129);
+	width: 100%;
+	font-size: 50px;
+}
+
+.cell.c849 {
+	width: 11%;
+}
+
+.c1144 {
+	padding: 10px;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.card {
+	min-height: 150px;
+	padding: 5px;
+	margin-bottom: 20px;
+	height: 0px;
+}
+
+.card-cell {
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+	border-radius: 3px;
+	padding: 0;
+	text-align: center;
+}
+
+.card.sector {
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+	border-collapse: separate;
+}
+
+.c1271 {
+	width: 100%;
+	margin: 0 0 15px 0;
+	font-size: 50px;
+	color: rgb(120, 197, 214);
+	line-height: 250px;
+	text-align: center;
+}
+
+.table100 {
+	width: 100%;
+}
+
+.c1357 {
+	min-height: 150px;
+	padding: 5px;
+	margin: auto;
+	height: 0px;
+}
+
+.darkerfont {
+	color: rgb(65, 69, 72);
+}
+
+.button_template {
+	font-size: 12px;
+	padding: 10px 20px;
+	background-color: rgb(217, 131, 166);
+	color: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 3px;
+	font-weight: 300;
+}
+
+.table100.c1437 {
+	text-align: left;
+}
+
+.cell.cell-bottom {
+	text-align: center;
+	height: 51px;
+}
+
+.card-title {
+	font-size: 25px;
+	font-weight: 300;
+	color: rgb(68, 68, 68);
+}
+
+.card-content {
+	font-size: 13px;
+	line-height: 20px;
+	color: rgb(111, 119, 125);
+	padding: 10px 20px 0 20px;
+	vertical-align: top;
+}
+
+.container {
+	font-family: Helvetica, serif;
+	min-height: 150px;
+	padding: 5px;
+	margin: auto;
+	height: 0px;
+	width: 90%;
+	max-width: 550px;
+}
+
+.cell.c856 {
+	vertical-align: middle;
+}
+
+.container-cell {
+	vertical-align: top;
+	font-size: medium;
+	padding-bottom: 50px;
+}
+
+.c1790 {
+	min-height: 150px;
+	padding: 5px;
+	margin: auto;
+	height: 0px;
+}
+
+.table100.c1790 {
+	min-height: 30px;
+	border-collapse: separate;
+	margin: 0 0 10px 0;
+}
+
+.browser-link {
+	font-size: 12px;
+}
+
+.top-cell {
+	text-align: right;
+	color: rgb(152, 156, 165);
+}
+
+.table100.c1357 {
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.c1769 {
+	width: 30%;
+}
+
+.c1776 {
+	width: 70%;
+}
+
+.c1766 {
+	margin: 0 auto 10px 0;
+	padding: 5px;
+	width: 100%;
+	min-height: 30px;
+}
+
+.cell.c1769 {
+	width: 11%;
+}
+
+.cell.c1776 {
+	vertical-align: middle;
+}
+
+.c1542 {
+	margin: 0 auto 10px auto;
+	padding: 5px;
+	width: 100%;
+}
+
+.card-footer {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.c2280 {
+	height: 150px;
+	margin: 0 auto 10px auto;
+	padding: 5px 5px 5px 5px;
+	width: 100%;
+}
+
+.c2421 {
+	padding: 10px;
+}
+
+.c2577 {
+	padding: 10px;
+}
+
+.footer {
+	margin-top: 50px;
+	color: rgb(152, 156, 165);
+	text-align: center;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.quote {
+	font-style: italic;
+}
+
+.list-item {
+	height: auto;
+	width: 100%;
+	margin: 0 auto 10px auto;
+	padding: 5px;
+}
+
+.list-item-cell {
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+	overflow: hidden;
+	padding: 0;
+}
+
+.list-cell-left {
+	width: 30%;
+	padding: 0;
+}
+
+.list-cell-right {
+	width: 70%;
+	color: rgb(111, 119, 125);
+	font-size: 13px;
+	line-height: 20px;
+	padding: 10px 20px 0px 20px;
+}
+
+.list-item-content {
+	border-collapse: collapse;
+	margin: 0 auto;
+	padding: 5px;
+	height: 150px;
+	width: 100%;
+}
+
+.list-item-image {
+	color: rgb(217, 131, 166);
+	font-size: 45px;
+	width: 100%;
+}
+
+.grid-item-image {
+	line-height: 150px;
+	font-size: 50px;
+	color: rgb(120, 197, 214);
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.grid-item-row {
+	margin: 0 auto 10px;
+	padding: 5px 0;
+	width: 100%;
+}
+
+.grid-item-card {
+	width: 100%;
+	padding: 5px 0;
+	margin-bottom: 10px;
+}
+
+.grid-item-card-cell {
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+	border-radius: 3px;
+	text-align: center;
+	padding: 0;
+}
+
+.grid-item-card-content {
+	font-size: 13px;
+	color: rgb(111, 119, 125);
+	padding: 0 10px 20px 10px;
+	width: 100%;
+	line-height: 20px;
+}
+
+.grid-item-cell2-l {
+	vertical-align: top;
+	padding-right: 10px;
+	width: 50%;
+}
+
+.grid-item-cell2-r {
+	vertical-align: top;
+	padding-left: 10px;
+	width: 50%;
+}
+</style>
+<script type="text/javascript">
+	function load() {
+		init_template();
+	}
+	
+    // 저장을 눌렀는지 안눌렀는지 확인하기 위한 flag
+    let button_flag = false;
+	let admin_save_custom_button_flag = false;
+
+	// localStorage에서 template을 받아와 입력시킨다.
+	function init_template() {
+		let template_file = localStorage.getItem("template");
+		let template_type = localStorage.getItem("templateType");
+
+		editor.setHtml(template_file)
+
+        // title값 localStorage 로 저장(나중에 저장할때 사용)
+        document.querySelector('#template_title').value = localStorage.getItem("title")
+
+
+        //기본 템플릿일 때
+        if(template_type == "basic"){
+        	$(".btn-edit-groupidx2").remove();
+        	$(".btn-edit-groupidx3").remove();
+        	let button_save = document.createElement('button')
+            button_save.className = "btn btn-w-m btn-primary"
+        	button_save.id = "button_save"
+            button_save.onclick = function() { saveCheck("save");}
+            button_save.innerText = "내 템플릿으로 저장"
+            document.querySelector('.btn-edit-groupidx').appendChild(button_save)
+
+        //내 템플릿일 때
+        } else if(template_type == "custom"){
+
+            if(null == localStorage.getItem("id")){
+            	$(".btn-edit-groupidx2").remove();
+            	$(".btn-edit-groupidx3").remove();
+            	let button_save = document.createElement('button')
+                button_save.className = "btn btn-w-m btn-primary"
+            	button_save.id = "button_save"
+                button_save.onclick = function() { saveCheck("save");}
+                button_save.innerText = "저장"
+                document.querySelector('.btn-edit-groupidx').appendChild(button_save)
+
+            } else {
+            	//수정
+            	let button_edit = document.createElement('button')
+                button_edit.className = "btn btn-w-m btn-primary"
+                button_edit.id = "button_edit"
+                button_edit.onclick = function() { saveCheck("edit");}
+                button_edit.innerText = "수정"
+            	document.querySelector('.btn-edit-groupidx2').appendChild(button_edit)
+
+            	//복사
+                let button_copy = document.createElement('button')
+                button_copy.className = "btn btn-w-m btn-primary"
+                button_copy.id = "button_copy"
+                button_copy.onclick = function() { saveCheck("copy");}
+                button_copy.innerText = "복사";
+            	document.querySelector('.btn-edit-groupidx3').appendChild(button_copy)
+
+            	$(".btn-edit-groupidx").remove();
+            }
+
+        }
+
+
+
+		// admin인 경우
+/* 		if(localStorage.getItem("groupIdxForeign") === '1') {
+			button_save.innerText = "저장"
+		}
+		// manager user 인 경우
+        else {
+            if (localStorage.getItem("templateType") === "basic") {
+                button_save.innerText = "내 템플릿으로 저장"
+                localStorage.setItem("templateType", "custom")
+            } else {
+                button_save.innerText = "저장"
+            }
+        } */
+
+        // 저장 버튼 한번 누르고, 저장되면 버튼을 누를수 있게 함
+  //      let template_check_btn = document.querySelector('#my_template_check');
+        //if(template_check_btn != null && localStorage.getItem('templateType') === 'custom') {
+            //template_check_btn.disabled = true
+        //}
+
+        getAssetsToManager()
+
+	}
+
+	// assetmanager에 template사진들을 넣어주기
+	function getAssetsToManager() {
+        // let target = `html...`
+        let target = editor.getInlinedHtml()
+        let reg = /src="([^\s]*)"|src='([^\s]*)'|url\("([^\s]*)"\)|url\('([^\s]*)'\)/g
+        let urlList = [];
+
+        let l = true
+        while(l) {
+            let m = reg.exec(target)
+            l = m != null
+            if(l) {
+                // 0은 원본이라 무시.
+                for(let i = 1; i < m.length; i++) {
+                    let url = m[i]
+                    if(url) {
+                        if(urlList.indexOf(url) > -1) {
+                            continue;
+                        }
+                        urlList.push(m[i])
+                    }
+                }
+            }
+        }
+
+        urlList.forEach(e=>{
+            editor.AssetManager.add(e)
+        })
+    }
+
+	// 이전 버튼 누를때 나오는 창
+	function check_prev_button() {
+		
+        if(button_flag) {
+        	
+            if( confirm("지금까지 수정한것들이 삭제됩니다.\n저장 하시겠습니까?") ) {
+            	
+                localStorage.removeItem("template")
+                go("list/1")
+            }
+        } else {
+        	
+            go("list/1")
+        }
+
+	}
+
+	// 다음 버튼 누를때 동작
+	function overview_open() {
+	    let template_html = editor.getInlinedHtml()
+		let win = window.open("", "미리보기", "_blank")
+        win.document.write(template_html)
+    }
+
+	// 페이지 이동하는 함수
+	function go(link) {
+		location.href = `/template/`+link
+	}
+
+    function image_proxy(flag) {
+	    // convert origin src to proxy
+	    if(flag) {
+            document.querySelector('.gjs-frame').contentWindow.document.querySelectorAll('img').forEach((ele)=>{
+                if(!ele.src.startsWith('data:') && ele.src.indexOf('giphy.com') === -1) {
+                    ele.src = window.location.origin+`/template/imageproxy?src=`+ele.src
+                }
+            })
+        }
+	    // convert proxy to origin src
+	    else {
+            document.querySelector('.gjs-frame').contentWindow.document.querySelectorAll('img').forEach((ele) => {
+                if (!ele.src.startsWith('data:') && ele.src.indexOf('giphy.com') === -1) {
+                    ele.src = ele.src.substr(ele.src.lastIndexOf('http'))
+                }
+            })
+        }
+
+    }
+
+    function saveCheck(type) {
+        let template_title = document.querySelector('#template_title').value
+
+        if(template_title==="") {
+					alert("템플릿 제목을 설정해주세요")
+   			$.toast({
+   				text : "템플릿 제목을 입력해 주세요.",
+   				position : 'bottom-right',
+   				stack : false,
+   				icon : "info"
+   			});
+        }else{
+            let insert_or_update_confirm;
+
+			if(type == "edit"){
+				insert_or_update_confirm = "템플릿을 수정 하시겠습니까?"
+				localStorage.setItem("modify", "true");
+			} else if(type == "copy"){
+				insert_or_update_confirm = "템플릿을 복사 하시겠습니까?"
+				localStorage.setItem("modify", "false");
+			} else {
+				insert_or_update_confirm = "템플릿을 생성 하시겠습니까?"
+				localStorage.setItem("modify", "false");
+			}
+
+            if (confirm(insert_or_update_confirm) === true) {
+                screenshot_toFile(template_title, "custom")
+                document.querySelector('#button_save').disabled = true
+            }
+        }
+    }
+
+    function saveCheckAdminCustom() {
+    	
+        let templateType = localStorage.getItem("templateType")
+        let modify = localStorage.getItem("modify")
+
+        let template_title = document.querySelector('#template_title').value
+
+        if(template_title==="") {
+            alert("템플릿 제목을 설정해주세요")
+        }else{
+            // else 안에 넣으려고 했지만 밖으로 뺀 이유는
+            // confirm 에 대한 content를 바꿔주기 위함이다.
+            localStorage.setItem("templateType","basic")
+            localStorage.setItem("modify", "false")
+
+            let insert_or_update_confirm;
+
+            if (localStorage.getItem('modify') === 'true') {
+            	insert_or_update_confirm = "템플릿을 수정 하시겠습니까?"
+            } else {
+            	insert_or_update_confirm = "템플릿을 생성 하시겠습니까?"
+            }
+
+            if (confirm(insert_or_update_confirm) === true) {
+                screenshot_toFile(template_title,"basic")
+                document.querySelector('#my_template_check').disabled = true
+            }else{
+                localStorage.setItem("templateType",templateType)
+                localStorage.setItem("modify", modify)
+            }
+        }
+    }
+
+	// function duplicateTitle(title) {
+	//     let body={
+	//         "template_title":title,
+    //     }
+    //     $.ajax({
+    //         url: "/template/ajax/title/check",
+    //         type: "POST",
+    //         data: JSON.stringify(body),
+    //         dataType: "json",
+    //         contentType: "application/json; charset=utf-8",
+    //         success: function(response) {
+    //             var result = JSON.parse(JSON.stringify(response));
+    //             if(result.result) {
+    //                 alert("같은 이름의 제목이 있습니다.\n다시 설정해 주세요.")
+    //             }else{
+    //                 screenshot_toFile(title)
+    //             }
+    //         }, error: function(request, status, error) {
+    //             // 에러 출력을 활성화 하려면 아래 주석을 해제한다.
+    //
+    //             console.log(request + "/" + status + "/" + error);
+    //             console.log("에러")
+    //         }
+    //     })
+    // }
+
+    function screenshot_toFile(title, saveType) {
+
+        image_proxy(true);
+
+        // sw-visibility는 componenet의 요소들을 보게 해주는 명령어이다.
+        // 이때, 계속 보이게 되면 html2Canvas할때 원하는 섬네일이 나오지 않게 되니, 삭제한다.
+        editor.stopCommand('sw-visibility')
+        // component selected 제거방법
+        editor.select()
+        editor.runCommand("set-device-desktop")
+
+        let gjs_frame = document.querySelector('.gjs-frame')
+        // scroll을 아래로 내렸을때 캡처가 이상하게 되는 경우가 있음
+        gjs_frame.contentWindow.window.scrollTo(0,0)
+        try{
+            setTimeout(html2canvas(gjs_frame.contentWindow.document.body, {useCORS:true}).then(function(canvas) {
+                let dataURL = canvas.toDataURL("image/png")
+
+                let blobBin = atob(dataURL.split(',')[1])
+                let array = []
+                for(let i=0;i<blobBin.length;i++) {
+                    array.push(blobBin.charCodeAt(i))
+                }
+                let file = new Blob([new Uint8Array(array)], {type:"image/png"})
+                file = new File([file], title+".png", {type: file["type"]})
+
+                image_proxy(false)
+
+                sendFileEdit(title, file, saveType)
+            }), 3000)
+        }catch (e) {
+            throw "html2canvas error"
+        }
+    }
+
+    function sendFileEdit(title, file, saveType) {
+
+        var form_data = new FormData();
+        form_data.append("file", file);
+        var mimeType = file["type"];
+        // form_data.append("heloDomainIdxForeign", $("#heloDomainIdxForeign").val());
+
+        // let insert_or_update_comfirm;
+        //
+        // if (localStorage.getItem('modify') === 'true') insert_or_update_comfirm = "수정"
+        // else insert_or_update_comfirm = "템플릿을 추가"
+        //
+        // if (confirm(insert_or_update_comfirm + "하시겠습니까?") === true) {
+            if (mimeType.split('/')[0] === 'image') {
+
+                $.ajax({
+                    type: "post",
+                    url: "/compose/ajax/file/upload",
+                    data: form_data,
+                    cache: false,
+                    contentType: false,
+                    enctype: "multipart/form-data",
+                    processData: false,
+                    success: function (response) {
+                        var result = JSON.parse(JSON.stringify(response));
+
+                        if (result.result === "1") {
+
+                            //let thumbnail = result.host + "/email/image?filename=" + result.filename
+                            let thumbnail = "/email/image?filename=" + result.filename
+                            save(title, thumbnail, saveType)
+
+                        } else {
+
+                            $.toast({
+                                text: "이미지 업로드에 오류가 발생 하였습니다!",
+                                position: "bottom-right",
+                                stack: false,
+                                icon: "error"
+                            });
+                        }
+                    }
+                })
+            } else {
+
+                $.toast({
+                    text: "유효한 파일이 아닙니다!",
+                    position: "bottom-right",
+                    stack: false,
+                    icon: "error"
+                });
+            }
+        // } else{
+        //     console.log("실패")
+        // }
+    }
+
+	function save(title, thumbnail, saveType) {
+
+		// template파일이 손상될수 있으니, 재생성해서 localStorage에 넣어주는 동작
+		let inlined_html_code = editor.getInlinedHtml()
+		let template_type = localStorage.getItem("templateType");
+		localStorage.removeItem("template")
+		localStorage.setItem("template", inlined_html_code)
+
+        let insert_or_update;
+
+        // 수정할때
+        if (localStorage.getItem('modify') === 'true') insert_or_update = "update"
+        // 저장할때
+        else insert_or_update = "insert"
+
+
+        let body = {
+            "id" : localStorage.getItem("id"),
+            "template_file" : localStorage.getItem("template"),
+            "user_id" : localStorage.getItem('userId'),
+            "group_idx_foreign" : localStorage.getItem("groupIdxForeign"),
+            "template_type" : saveType,
+            "template_title" : title,
+            "thumbnail_src" : thumbnail
+        }
+        
+        $.ajax({
+            url: "/template/"+insert_or_update,
+            type: "POST",
+            data: JSON.stringify(body),
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function(result) {
+            	console.dir("result.result : " + result.result);
+//                 if(insert_or_update == "insert") {
+//                     localStorage.setItem("modify", "true");
+//                     localStorage.setItem("id", result.id);
+//                 }
+				if(result.result === "1") {
+					console.log(result+"\n성공")
+					button_flag = true
+
+					$.toast({
+						text : "성공적으로저장 하였습니다.",
+						position : "bottom-right",
+						stack : 2,
+						icon : "info"
+					});
+					$("#button_save").disabled(true);
+	//                 document.querySelector('#button_save').disabled = false;
+				} else {
+					$.toast({
+						text: result.message,
+						position: "bottom-right",
+						stack: false,
+						icon: "error"
+					});
+
+				}
+            }, error: function(request, status, error) {
+                // 에러 출력을 활성화 하려면 아래 주석을 해제한다.
+
+                console.log(request + "/" + status + "/" + error);
+                console.log("에러")
+            }
+        })
+
+
+	}
+
+	function sendFile(file, element) {
+
+		var form_data = new FormData();
+		form_data.append("file", file);
+		var mimeType = file["type"];
+
+        if(`txt, csv, xls, xlsx, pdf, bmp, gif, jpg, jpeg, png, hwp, pdf, ppt, pptx`.indexOf(file.name.split('.')[1]) !== -1 &&
+            `application/vnd.microsoft.portable-executable`!== mimeType) {
+
+			$.ajax({
+				type : "post",
+				url : "/compose/ajax/file/upload",
+				data : form_data,
+				cache : false,
+				contentType : false,
+				enctype : "multipart/form-data",
+				processData : false,
+				success : function(response) {
+					var result = JSON.parse(JSON.stringify(response));
+
+					if( result.result === "1" ) {
+
+						// grapesjs 사용시 image처리
+                        console.log("이미지 처리")
+						editor.AssetManager.add(result.host + "/email/image?filename=" + result.filename);
+						//editor.AssetManager.add("/email/image?filename=" + result.filename);
+					} else {
+
+						$.toast({
+							text : "이미지 업로드에 오류가 발생 하였습니다!",
+							position : "bottom-right",
+							stack : false,
+							icon : "error"
+						});
+					}
+
+					form_data = null;
+				}
+			});
+		} else {
+
+			form_data = null;
+
+			$.toast({
+				text : "유효한 파일이 아닙니다!",
+				position : "bottom-right",
+				stack : false,
+				icon : "error"
+			});
+		}
+	}
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

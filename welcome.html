@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- 드래그 앤 드롭 -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll 왼쪽 메뉴 고정 -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- 개발함수 -->
+<script src="inspinia/js/bsScript.js"></script>
+<!-- C3 Chart -->
+<link href="inspinia/css/plugins/c3/c3.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/d3/d3.min.js"></script>
+<script src="inspinia/js/plugins/c3/c3.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- menu 시작 -->
+		<nav class="navbar-default navbar-static-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav metismenu" id="side-menu">
+					<li class="nav-header">
+						<div class="dropdown profile-element">
+							<span><img alt="image" src="images/mymailer/logo.png"></span>
+						</div>
+						<div class="logo-element">
+							<img src="images/mymailer/logo_s.png" class="img-responsive">
+						</div>
+					</li>
+
+					<!-- 홈 -->
+					<li class="active"><a href="welcome.html"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+
+					<!-- 주소록 -->
+					<li class=""><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="target_list.html">전체 주소록</a></li>
+							<li class=""><a href="reject_list1.html">수신 거부자</a></li>
+							<li class=""><a href="reject_list2.html">영구 실패자</a></li>
+						</ul>
+					</li>
+
+					<!-- 대량메일 -->
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="compose_compose.html">이메일</a></li>
+							<li class=""><a href="#">API 연동 목록</a></li>
+							<li class=""><a href="template_list.html">디자인 템플릿</a></li>
+						</ul>
+					</li>
+
+					<!-- 보고서 -->
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="email_list.html">발송 목록</a></li>
+							<li class=""><a href="#">비교분석</a></li>
+							<li class=""><a href="#">월간보고서</a></li>
+							<li class=""><a href="email_status_list.html">현황 보고서</a></li>
+						</ul>
+					</li>
+
+					<!-- 자동 메일 -->
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="event_list.html">연동 목록</a></li>
+							<li class=""><a href="#">수신자</a></li>
+						</ul>
+					</li>
+
+					<!-- 인보이스 대량전송 -->
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="#">메일 발송</a></li>
+							<li class=""><a href="invoice_list.html">메일 목록</a></li>
+						</ul>
+					</li>
+
+					<!-- SMTP 연동 -->
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="smtp_list.html">발송 목록</a></li>
+							<li class=""><a href="smtp_statistics.html">발송 요약</a></li>
+						</ul>
+					</li>
+
+					<!-- 대용량 파일 첨부 관리 -->
+					<li class=""><a href="attachments_list.html"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리</a></li>
+
+					<!-- 환경 설정 -->
+					<li class=""><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="board_list.html">공지사항</a></li>
+							<li class=""><a href="campaigngroup_list.html">캠페인 그룹</a></li>
+							<li class=""><a href="database_list.html">외부 DB</a></li>
+							<li class=""><a href="emailcorrection_list.html">이메일 오타수정</a></li>
+							<li class=""><a href="user_list.html">계정관리</a></li>
+						</ul>
+					</li>
+
+					<!-- 시스템 환경 설정 -->
+					<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="group_list.html">계정 그룹 관리</a></li>
+							<li class=""><a href="config_list.html">시스템 환경 설정</a></li>
+							<li class=""><a href="event_settings_list.html">자동 메일 환경 설정</a></li>
+							<li class=""><a href="helodomain_list.html">발신 도메인 설정</a></li>
+							<li class=""><a href="domainconfig_list.html">수신 도메인 설정</a></li>
+							<li class=""><a href="dkim_list.html">DKIM 제외 도메인 설정</a></li>
+						</ul>
+					</li>
+
+					<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- menu 끝 -->
+
+		<div id="page-wrapper" class="gray-bg">
+			<!-- header 시작 -->
+			<div class="row border-bottom">
+				<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+					<div class="navbar-header">
+						<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+						<div class="minimalize-styl-2" style="margin-left: 0px"></div>
+					</div>
+					<ul class="nav navbar-top-links navbar-right">
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+						<li><a href="login.html"> <i class="fa fa-sign-out"></i> Log out</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- header 끝 -->
+
+			<!-- body 시작 -->
+			<div class="wrapper wrapper-content animated fadeIn">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="row"></div>
+					</div>
+					<div class="col-sm-12">
+						<div class="ibox float-e-margins">
+							<div class="ibox-content">
+								<div class="row">
+									<div class="col-sm-8">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<!-- 현재 상태 -->
+												현재 상태
+											</div>
+											<div class="panel-body">
+												<div class="col-sm-12" style="margin-bottom: 30px;">
+													<div class="col-sm-6">
+														<div class="chart-container">
+															<h3 style="margin-bottom: 5px;">시스템 사용량</h3>
+															<div style="font-size: 14px; margin-bottom: 10px; color: #999;">
+																(OS 시스템 사용량)
+															</div>
+															<div id="gauge_system"></div>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="chart-container">
+															<h3 style="margin-bottom: 5px;">디스크 사용량</h3>
+															<div style="font-size: 14px; margin-bottom: 10px; color: #999;">
+																(발송 로그 및 발송 데이터 용량)
+															</div>
+															<div id="gauge_disk"></div>
+															<div style="font-size: 14px; margin-top: 10px; color: #aaa; text-align: center;">
+																※솔루션 프로그램 용량이 기본 포함되어 있습니다.
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<!-- 발송 요약 -->
+												발송 요약
+											</div>
+											<div class="panel-body">
+												<div class="col-sm-12" style="margin-bottom: 30px;">
+													<div>
+														<!-- 대량메일 요약 -->
+														<h3 style="display: inline-block;">대량메일 요약</h3>
+														<a class="btn btn-xs btn-primary" href="email_list.html" style="float: right; margin-top: 5px;">더보기</a>
+													</div>
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<tr class="active">
+																<th class="text-left" rowspan="2">캠페인 번호</th>
+																<th class="text-left" rowspan="2">캠페인 명</th>
+																<th class="text-left" rowspan="2">발송일시</th>
+																<th class="text-left" colspan="5">이메일</th>
+																<th class="text-left" rowspan="2">통계</th>
+															</tr>
+															<tr class="active">
+																<th class="text-left">총 발송</th>
+																<th class="text-left">성공</th>
+																<th class="text-left">실패</th>
+																<th class="text-left">오픈</th>
+																<th class="text-left">클릭</th>
+															</tr>
+															<tr class="">
+																<td class="text-left">264</td>
+																<td>ai agent서버 연동</td>
+																<td class="text-left">2026-01-17 22:35</td>
+																<td class="text-left">100</td>
+																<td class="text-left">100</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">
+																	<button type="button" class="btn btn-xs btn-primary" onclick="statisticid('264')">완료 / 통계</button>
+																</td>
+															</tr>
+															<tr class="">
+																<td class="text-left">263</td>
+																<td>ai agent서버 연동</td>
+																<td class="text-left">2026-01-17 22:33</td>
+																<td class="text-left">100</td>
+																<td class="text-left">100</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">
+																	<button type="button" class="btn btn-xs btn-primary" onclick="statisticid('263')">완료 / 통계</button>
+																</td>
+															</tr>
+															<tr class="">
+																<td class="text-left">262</td>
+																<td>ai agent서버 연동</td>
+																<td class="text-left">2026-01-17 14:50</td>
+																<td class="text-left">100</td>
+																<td class="text-left">100</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">
+																	<button type="button" class="btn btn-xs btn-primary" onclick="statisticid('262')">완료 / 통계</button>
+																</td>
+															</tr>
+															<tr class="">
+																<td class="text-left">261</td>
+																<td>ai agent서버 연동</td>
+																<td class="text-left">2026-01-17 14:50</td>
+																<td class="text-left">100</td>
+																<td class="text-left">100</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">
+																	<button type="button" class="btn btn-xs btn-primary" onclick="statisticid('261')">완료 / 통계</button>
+																</td>
+															</tr>
+															<tr class="">
+																<td class="text-left">260</td>
+																<td>ai agent서버 연동</td>
+																<td class="text-left">2026-01-17 04:23</td>
+																<td class="text-left">100</td>
+																<td class="text-left">100</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">0</td>
+																<td class="text-left">
+																	<button type="button" class="btn btn-xs btn-primary" onclick="statisticid('260')">완료 / 통계</button>
+																</td>
+															</tr>
+														</table>
+													</div>
+												</div>
+
+												<div class="col-sm-12">
+													<div>
+														<!-- 자동메일 요약 -->
+														<h3 style="display: inline-block;">자동메일 요약</h3>
+														<a class="btn btn-xs btn-primary" href="event_list.html" style="float: right; margin-top: 5px;">더보기</a>
+													</div>
+													<table class="table table-bordered">
+														<tr class="active">
+															<th class="text-left">메일 제목</th>
+															<th class="text-left">수신자</th>
+															<th class="text-left">발송시간</th>
+															<th class="text-left">발송결과</th>
+														</tr>
+														<tr class="">
+															<td class="text-left"></td>
+															<td class="text-left">user@example.com</td>
+															<td class="text-left"></td>
+															<td class="text-left">실패</td>
+														</tr>
+														<tr class="">
+															<td class="text-left">[마이메일러] admin(su)님의 2026-01-21 데일리리포트입니다.</td>
+															<td class="text-left">user@example.com</td>
+															<td class="text-left">2026-01-20 23:00</td>
+															<td class="text-left">성공</td>
+														</tr>
+														<tr class="">
+															<td class="text-left">인보이스 메일제목 테스트aaa</td>
+															<td class="text-left">user@example.com</td>
+															<td class="text-left">2026-01-20 05:42</td>
+															<td class="text-left">성공</td>
+														</tr>
+														<tr class="">
+															<td class="text-left">인보이스 메일제목 테스트aaa</td>
+															<td class="text-left">user@example.com</td>
+															<td class="text-left">2026-01-20 05:42</td>
+															<td class="text-left">성공</td>
+														</tr>
+														<tr class="">
+															<td class="text-left">[마이메일러] admin(su)님의 2026-01-20 데일리리포트입니다.</td>
+															<td class="text-left">user@example.com</td>
+															<td class="text-left">2026-01-19 23:00</td>
+															<td class="text-left">성공</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="row bg-muted" style="margin: 0px">
+											<div class="col-sm-6">
+												<span class="hidden">Flag Icons by <a href="https://www.whoishostingthis.com" target="new">WhoIsHostingThis.com</a></span>
+											</div>
+											<div class="col-sm-6 text-right">
+												<a href="?locale=ko"><img src="images/Flags-Icon-Set/24x24/KR.png" border="0"></a>
+												<a href="?locale=en"><img src="images/Flags-Icon-Set/24x24/US.png" border="0"></a>
+												<a href="?locale=zh"><img src="images/Flags-Icon-Set/24x24/CN.png" border="0"></a>
+												<a href="?locale=jp"><img src="images/Flags-Icon-Set/24x24/JP.png" border="0"></a>
+												<a href="?locale=vi"><img src="images/Flags-Icon-Set/24x24/VN.png" border="0"></a>
+											</div>
+										</div>
+										<br>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<!-- 시스템 정보 -->
+												<span onclick="secret()">시스템 정보</span>
+											</div>
+											<div class="panel-body">
+												<ul>
+													<li>서비스명 : MyMailer Enterprise Edition 6.0</li>
+													<li>라이센스 정보 : 전용서버</li>
+													<li>접속자 IP : 127.0.0.1</li>
+													<li>서버 IP 또는 Domain : demo.example.com</li>
+												</ul>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<!-- 메뉴얼 -->
+											<div class="panel-heading">매뉴얼</div>
+											<div class="panel-body">
+												<ul>
+													<li><a href="https://mymailer.io?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=19">마이메일러_제품소개서</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=25">[대량메일](필수)Gmail보안 강화 - DNS 설정 가이드</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=24">[IP block] 스팸하우스 spamhaus IP 차단 해제 가이드</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=23">[자동메일] 자동메일 API SDK</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=22">[대량메일] 대량메일 API SDK</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=21">[자동메일 API Json] API 결과조회 가이드</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=20">디스크 용량 확보 매뉴얼</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=18">[자동메일 API Json] API 연동메일 호출 테스트 예시_json형식</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=17">[대량메일 연동] 마이메일러 대량메일 API 연동 매뉴얼_json형식(v.3.3)</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=16">[자동메일 연동] 마이메일러 자동메일 API 연동 매뉴얼_json형식(v.3.2)</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=15">[대량메일 주소록] 마이메일러 주소록 DB연동 매뉴얼</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=14">[대량메일 주소록] 마이메일러 주소록 API 연동 매뉴얼_json형식(v.3.2)</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=2">[대량메일 WEB] 마이메일러 대량메일 발송 &amp; 통계 매뉴얼</a></li>
+													<li><a href="https://mymailer.io/kor/manual/view2?viewMode=view&ca=&sel_search=&txt_search=&page=1&idx=1">[대량메일 WEB] 마이메일러 주소록 등록 매뉴얼</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<!-- 공지사항 -->
+											<div class="panel-heading">공지사항</div>
+											<div class="panel-body">
+												<div class="table-responsive">
+													<table class="table table-hover">
+														<tr>
+															<td><a href="javascript:board('1')">공지사항 테스트</a></td>
+															<td class="text-left">2025-11-13</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- body 끝 -->
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		// 대시보드 디스크 사용량
+		let gauge_system = ['시스템 사용량'];
+		let gauge_disk = ['디스크 사용량'];
+		let color_data1 = ['#1ab394'];
+		let color_data2 = ['#1ab394'];
+		let system_used = [31, 500];
+		let disk_used = [31, 500];
+		let system_perc;
+		let disk_perc;
+		let system_volume = 500;
+		let disk_volume = 500;
+		let maxSystemVolume;
+		let maxDiskVolume;
+
+		if (system_volume == 0 || disk_volume == 0) {
+			system_perc = system_used[0] / system_used[1] * 100;
+			disk_perc = disk_used[0] / disk_used[1] * 100;
+			maxSystemVolume = system_used[1];
+			maxDiskVolume = disk_used[1];
+		} else {
+			system_perc = system_used[0] / system_volume * 100;
+			disk_perc = disk_used[0] / disk_volume * 100;
+			maxSystemVolume = system_volume;
+			maxDiskVolume = disk_volume;
+		}
+		gauge_system[1] = system_used[0];
+		gauge_disk[1] = disk_used[0];
+
+		if (system_perc >= 90) {
+			color_data1[0] = '#ff2929';
+		} else if (system_perc >= 80) {
+			color_data1[0] = '#ffc629';
+		}
+		if (disk_perc >= 90) {
+			color_data2[0] = '#ff2929';
+		} else if (disk_perc >= 80) {
+			color_data2[0] = '#ffc629';
+		}
+
+		function load() {
+			// 시스템 사용량
+			c3.generate({
+				bindto: '#gauge_system',
+				data: {
+					columns: [gauge_system],
+					type: 'gauge'
+				},
+				gauge: {
+					max: maxSystemVolume,
+					units: system_used[0] + " GB 사용"
+				},
+				color: { pattern: color_data1 },
+				padding: {
+					bottom: 10
+				},
+				tooltip: {
+					show: false
+				}
+			});
+
+			// 디스크 사용량
+			c3.generate({
+				bindto: '#gauge_disk',
+				data: {
+					columns: [gauge_disk],
+					type: 'gauge'
+				},
+				gauge: {
+					max: maxDiskVolume,
+					units: disk_used[0] + " GB 사용"
+				},
+				color: { pattern: color_data2 },
+				padding: {
+					bottom: 10
+				},
+				tooltip: {
+					show: false
+				}
+			});
+			document.querySelector("#gauge_system path").style.fill = "#d9d9d9";
+			document.querySelector("#gauge_disk path").style.fill = "#d9d9d9";
+			document.querySelector("#gauge_system .c3-chart-arcs-gauge-unit").style.transform = "translateY(5px)";
+			document.querySelector("#gauge_disk .c3-chart-arcs-gauge-unit").style.transform = "translateY(5px)";
+		}
+
+		function board(boardIdx) {
+			location.href = "board_input.html";
+		}
+
+		function secret() {
+			location.href = "?locale=code";
+		}
+
+		// 통계 보기
+		function statisticid(id) {
+			location.href = "email_statistic_list.html";
+		}
+
+		// 통계 보기
+		window.onload = () => {
+			if (disk_perc >= 90) {
+				alert("※경고 : 디스크 사용량이 90% 이상입니다. 용량을 추가하거나 데이터를 정리하여 공간을 확보해 주시길 바랍니다.");
+			}
+		}
+
+		$().ready(function() {
+			load();
+			alignVertical();
+		});
+
+		function alignVertical() {
+			$('.align-vertical').each(function() {
+				var that = $(this);
+				var height = that.height();
+				var parentHeight = that.parent().height();
+				var padAmount = (parentHeight / 2) - (height / 2);
+				that.css('padding-top', padAmount);
+			});
+		}
+
+		function removeComma(value) {
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+
+		function dateFormat(date, fstr, utc) {
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace(/%[YmdHMS]/g, function(m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear']();
+					case '%m': m = 1 + date[utc + 'Month'](); break;
+					case '%d': m = date[utc + 'Date'](); break;
+					case '%H': m = date[utc + 'Hours'](); break;
+					case '%M': m = date[utc + 'Minutes'](); break;
+					case '%S': m = date[utc + 'Seconds'](); break;
+					default: return m.slice(1);
+				}
+				return ('0' + m).slice(-2);
+			});
+		}
+	</script>
+</body>
+</html>

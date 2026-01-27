@@ -1,0 +1,1502 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/mymailer/mymailer_favicon.ico">
+<title>Mymailer 6.0</title>
+<link href="inspinia/css/bootstrap.min.css" rel="stylesheet">
+<link href="inspinia/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+<link href="inspinia/mymailer_css/animate.css" rel="stylesheet">
+<link href="inspinia/mymailer_css/style.css" rel="stylesheet">
+<link href="inspinia/vendor/cheom.css" rel="stylesheet">
+<link href="inspinia/vendor/style_mymailer.css" rel="stylesheet">
+<!-- ëëê·¸ ì¤ ëë -->
+<link href="inspinia/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+<script src="inspinia/js/plugins/dropzone/dropzone.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/jquery-3.1.1.min.js"></script>
+<script src="inspinia/js/bootstrap.min.js"></script>
+<script src="inspinia/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<!-- SlimScroll ì¼ìª½ ë©ë´ ê³ ì  -->
+<script src="inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="inspinia/js/inspinia.js"></script>
+<script src="inspinia/js/plugins/pace/pace.min.js"></script>
+<!-- FooTable -->
+<link href="inspinia/css/plugins/footable/footable.bootstrap.css" rel="stylesheet">
+<script src="inspinia/js/plugins/footable/footable.js"></script>
+<!-- Ladda style -->
+<link href="inspinia/css/plugins/ladda/ladda-themeless.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/ladda/spin.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.min.js"></script>
+<script src="inspinia/js/plugins/ladda/ladda.jquery.min.js"></script>
+<!-- Tokeninput -->
+<link href="inspinia/css/plugins/tokeninput/token-input.css" rel="stylesheet" />
+<script src="inspinia/js/plugins/tokeninput/jquery.tokeninput.js"></script>
+<!-- Comma -->
+<script src="inspinia/js/plugins/vendor/comma.js"></script>
+<!-- Jasny file upload -->
+<link href="inspinia/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!-- Data picker -->
+<link href="inspinia/vendor/plugins/datepicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.js"></script>
+<script src="inspinia/vendor/plugins/datepicker/js/bootstrap-datepicker.ko.js" charset="UTF-8"></script>
+<!-- Select2 -->
+<link href="inspinia/css/plugins/select2/select2.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/select2/select2.full.min.js"></script>
+<!-- Summber note -->
+<link href="inspinia/css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="inspinia/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<script src="inspinia/js/plugins/summernote/summernote.min.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-ko-KR.js"></script>
+<script src="inspinia/js/plugins/summernote/summernote-image-attributes.js"></script>
+<script src="inspinia/js/plugins/summernote/lang/ko-KR.js"></script>
+<!-- Chart.js -->
+<script src="inspinia/js/plugins/chartJs/Chart.min.js"></script>
+<!-- Toast.js -->
+<link href="inspinia/css/plugins/toast/jquery.toast.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/toast/jquery.toast.min.js"></script>
+<!-- Fromajax -->
+<script src="inspinia/vendor/plugins/formajax/jquery.form.min.js"></script>
+<!-- Tooltip -->
+<link href="inspinia/css/plugins/tooltipster/tooltipster.bundle.min.css" rel="stylesheet">
+<script src="inspinia/js/plugins/tooltipster/tooltipster.bundle.min.js"></script>
+<!-- Calendar -->
+<link href="inspinia/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<script src="inspinia/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="inspinia/js/plugins/fullcalendar/locale-all.js"></script>
+<!-- Dual List Box -->
+<link href="inspinia/vendor/plugins/duallistbox/css/bootstrap-duallistbox.min.css" rel="stylesheet">
+<script src="inspinia/vendor/plugins/duallistbox/js/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- Validate -->
+<script src="inspinia/vendor/plugins/validate@1.19.3/jquery.validate.min.js"></script>
+<script src="inspinia/vendor/plugins/validate@1.19.3/additional-methods.min.js"></script>
+<!-- MultiFile -->
+<script src="inspinia/vendor/plugins/multifile/jquery.MultiFile.min.js"></script>
+<!-- ---------- wrapbootstrap ---------- -->
+<script src="inspinia/js/plugins/vendor/fastclick.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.maskedinput-1.4.1.min.js"></script>
+<script src="inspinia/js/plugins/vendor/jquery.priceformat.js"></script>
+<!-- ê°ë°í¨ì -->
+<script src="inspinia/js/bsScript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+
+		
+
+			
+			
+				<!-- menu ìì -->
+				
+
+
+
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav metismenu" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img alt="image" src="images/mymailer/logo.png"></span>
+				</div>
+				<div class="logo-element">
+					<img src="images/mymailer/logo_s.png" class="img-responsive">
+				</div>
+			</li>
+
+			
+			
+
+			
+			
+			
+			
+
+			
+
+				
+					<!-- 홈 -->
+					<li class=""><a href="/home"> <i class="fa fa-th-large"></i> <span class="nav-label">홈</span></a></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+					<!-- 주소록 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-address-book-o"></i> <span class="nav-label">주소록</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/target/list/1">전체 주소록</a></li>
+							<li class=""><a href="/reject/list1/1">수신 거부자</a></li>
+							<li class=""><a href="/reject/list2/1">영구 실패자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+					<!-- 대량메일 -->
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">대량메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/compose/1/0">이메일</a></li>
+							
+								<li class=""><a href="/compose/massive/list/1">API 연동 목록</a></li>
+							
+						<li class=""><a href="/template/list/1">디자인 템플릿</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+					<!-- 보고서 -->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-signal"></i> <span class="nav-label">보고서</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/email/email/list/1">발송 목록</a></li>
+							<li class=""><a href="/email/compare/list/1">비교분석</a></li>
+							<li class=""><a href="/email/month/list/1">월간보고서</a></li>
+							<li class=""><a href="/email/status/list/1">현황 보고서</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 자동 메일 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-paper-plane"></i> <span class="nav-label">자동메일</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/event/event/list/1">연동 목록</a></li>
+							<li class=""><a href="/event/target/list/1">수신자</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 인보이스 대량전송 -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-money"></i> <span class="nav-label">인보이스 대량전송</span><span class="fa arrow"></span>
+					</a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/invoice/compose/step/compose">메일 발송</a></li>
+							<li class=""><a href="/invoice/invoice/list/1">메일 목록</a></li>
+						</ul></li>
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- SMTP 연동 -->
+					
+					
+					
+					
+					
+					
+						
+					
+						
+					
+					<li class=""><a href="#"> <i class="fa fa-envelope"></i> <span class="nav-label">SMTP 연동</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li class=""><a href="/smtp/list/1">발송 목록</a></li>
+							<li class=""><a href="/smtp/summary/1">발송 요약</a></li>
+						</ul></li>
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<!-- 대용량 파일 첨부 관리 -->
+					
+					
+					
+					
+					
+						
+					
+					<li class=""><a href="/attachments/list/1"> <i class="fa fa-folder-open"></i> 대용량 파일 첨부관리
+					</a>
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+				
+
+				
+					
+				
+			
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					
+						<!-- 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+								
+								
+							
+						
+							
+						
+							
+						
+						<li class="active"><a href="#"> <i class="fa fa-desktop"></i> <span class="nav-label">환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+								<li class=""><a href="/board/list/1">공지사항</a></li>
+								<li class=""><a href="/campaigngroup/list/1">캠페인 그룹</a></li>
+								<li class=""><a href="/database/list/1">외부 DB</a></li>
+								<li class=""><a href="/emailcorrection/list/1">이메일 오타수정</a></li>
+								<li class="active"><a href="/user/list/1">계정관리</a></li>
+
+							</ul></li>
+					
+				
+
+				
+					
+						<!-- 시스템 환경 설정 -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						<li class=""><a href="#"> <i class="fa fa-cog"></i> <span class="nav-label">시스템 환경 설정</span><span class="fa arrow"></span>
+						</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li class=""><a href="/group/list/1">계정 그룹 관리</a></li>
+								<li class=""><a href="/config/list/1">시스템 환경 설정</a></li>
+								<li class=""><a href="/event/settings/list/1">자동 메일 환경 설정</a></li>
+								<li class=""><a href="/helodomain/list/1">발신 도메인 설정</a></li>
+								<li class=""><a href="/domainconfig/list/1">수신 도메인 설정</a></li>
+								<li class=""><a href="/dkim/list/1">DKIM 제외 도메인 설정</a></li>
+							</ul></li>
+					
+				
+			
+
+			<li class="landing_link bottom" style="padding-top: 30px"><a target="_blank" href="https://mymailer.io/board/notice"><i class="fa fa-star"></i> <span class="nav-label">고객센터</span> <span class="label label-warning float-right">HELP</span></a></li>
+		</ul>
+	</div>
+</nav>
+				<!-- menu ë -->
+				<div id="page-wrapper" class="gray-bg">
+					<!-- header ìì -->
+					
+
+
+
+<!-- Header 시작 -->
+<div class="row border-bottom">
+	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			
+				
+				
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+					<div class="minimalize-styl-2" style="margin-left: 0px">
+						
+							<strong>사용자</strong>
+						
+					</div>
+				
+
+			
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<!-- 회원 권한이 없을 때 -->
+			
+				<!--li>회원가입</li>
+					<li>로그인</li-->
+			
+
+			<!-- 회원 권한이 있을 때 -->
+			
+				
+				
+					
+						<li><span class="m-r-sm text-muted welcome-message">admin(su) (SUPER ADMIN:ADMIN)</span></li>
+					
+					
+				
+				<li><a href="/logout"> <i class="fa fa-sign-out"></i> Log out
+				</a></li>
+			
+
+			<!-- 여러 권한 체크 -->
+			
+		</ul>
+
+	</nav>
+</div>
+<!--div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h5>title.user.input</h5>
+		<ol class="breadcrumb" style="padding-top: 20px">
+			<li class="active"><strong>title.user.input</strong></li>
+		</ol>
+	</div>
+	<div class="col-lg-2"></div>
+</div-->
+<!-- Header 끝 -->
+
+<!-- 내용 -->
+					<!-- header ë -->
+					<!-- body ìì -->
+					<div class="wrapper wrapper-content animated fadeIn">
+						
+
+
+
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-title">
+				<h5>
+					<i class="fa fa-cog"></i>
+					환경 설정
+					&gt;
+					계정관리
+					&gt;
+					입력
+				</h5>
+			</div>
+			<form id="input" name="input" class="form-horizontal" action="/user/insert" method="post" enctype="multipart/form-data">
+				<input id="id" name="id" type="hidden" value=""/>
+				<input id="userIdxForeign" name="userIdxForeign" type="hidden" value=""/>
+				<input type="hidden" id="user" name="user" value="" />
+
+				<div class="ibox-content">
+					계정 정보
+				</div>
+				<div class="ibox-content">
+					
+					
+					
+						<div class="form-group">
+							<label class="col-sm-2 control-label">계정 그룹</label>
+							<div class="col-sm-5">
+								<select id="groupIdxForeign" name="groupIdxForeign" class="form-control">
+									
+										<option value="6">샘플 연동 템플릿</option>
+									
+										<option value="5">자동메일서버</option>
+									
+										<option value="4">대량메일서버</option>
+									
+										<option value="2">MANAGER</option>
+									
+								</select>
+							</div>
+						</div>
+					
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label">아이디</label>
+						<div class="col-sm-3">
+							<input id="userId" name="userId" class="form-control" type="text" value=""/>
+						</div>
+						<div class="col-sm-5"></div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">암호</label>
+						<div class="col-sm-3">
+							<input type="password" name="pass1" id="pass1" class="form-control" minlength="6" maxlength="20"> <input type="hidden" name="password" id="password" class="form-control">
+						</div>
+						<div class="col-sm-5"></div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">암호(확인)</label>
+						<div class="col-sm-3">
+							<input type="password" name="password_check" id="password_check" class="form-control" />
+						</div>
+						<div class="col-sm-5"></div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">이름</label>
+						<div class="col-sm-3">
+							<input id="name" name="name" class="form-control" type="text" value=""/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">메모</label>
+						<div class="col-sm-10">
+							<input id="description" name="description" class="form-control" type="text" value=""/>
+						</div>
+					</div>
+					
+						
+							<div class="form-group hidden_group">
+								<label class="col-sm-2 control-label">1회 이메일 발송수</label>
+								<div class="col-sm-2">
+									<div class="radio radio-inline">
+										<input type="radio" name="userMaxOnceCount" id="userMaxOnceCount1" value="0" checked /> <label for="userMaxOnceCount1"><strong>무제한</strong></label>
+									</div>
+									<div class="radio radio-inline">
+										<input type="radio" name="userMaxOnceCount" id="userMaxOnceCount2" value="1"  /> <label for="userMaxOnceCount2"><strong>제한</strong></label>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<input type="text" name="userMaxOnceCountValue" id="userMaxOnceCountValue" value="0" class="form-control text-right price" />
+								</div>
+								<div class="col-sm-4">
+									<input type="text" value="1회당 최대 발송 가능 이메일 수 입력" class="form-control" readonly>
+								</div>
+							</div>
+							<div class="form-group hidden_group">
+								<label class="col-sm-2 control-label">최대 이메일 수</label>
+								<div class="col-sm-2">
+									<div class="radio radio-inline">
+										<input type="radio" name="userMaxEmailCount" id="userMaxEmailCount1" value="0" checked /> <label for="userMaxEmailCount1"><strong>무제한</strong></label>
+									</div>
+									<div class="radio radio-inline">
+										<input type="radio" name="userMaxEmailCount" id="userMaxEmailCount2" value="1"  /> <label for="userMaxEmailCount2"><strong>제한</strong></label>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<input type="text" name="userMaxEmailCountValue" id="userMaxEmailCountValue" value="0" class="form-control text-right price" />
+								</div>
+								<div class="col-sm-4">
+									<input type="text" value="최대 등록 가능한 이메일 수" class="form-control" readonly>
+								</div>
+							</div>
+							<div class="form-group hidden_group">
+								<label class="col-sm-2 control-label">최대 주소록 수</label>
+								<div class="col-sm-2">
+									<div class="radio radio-inline">
+										<input type="radio" name="userMaxTargetCount" id="userMaxTargetCount1" value="0" checked /> <label for="userMaxTargetCount1"><strong>무제한</strong></label>
+									</div>
+									<div class="radio radio-inline">
+										<input type="radio" name="userMaxTargetCount" id="userMaxTargetCount2" value="1"  /> <label for="userMaxTargetCount2"><strong>제한</strong></label>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<input type="text" name="userMaxTargetCountValue" id="userMaxTargetCountValue" value="0" class="form-control text-right price" />
+								</div>
+								<div class="col-sm-4">
+									<input type="text" value="최대 등록 가능한 주소록 수" class="form-control" readonly>
+								</div>
+							</div>
+						
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label">API용 KEY</label>
+						<div class="col-sm-6">
+							<div class="input-group">
+								<input id="userApiKey" name="userApiKey" class="form-control" readonly="readonly" type="text" value=""/>
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-danger" onclick="copyKEY('userApiKey')">
+										복사
+									</button>
+								</span> <span class="input-group-btn">
+								@@<br/>
+								1##
+									
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ibox-content">
+					발송 정보
+				</div>
+				<div class="ibox-content">
+					<div class="form-group">
+						<label class="col-sm-2 control-label">보내는 사람 이름</label>
+						<div class="col-sm-4">
+							<input id="fromName" name="fromName" class="form-control" type="text" value=""/>
+						</div>
+						<label class="col-sm-2 control-label">보내는 사람 이메일</label>
+						<div class="col-sm-4">
+							<input id="fromMail" name="fromMail" class="form-control" type="text" value=""/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">문자 발신 번호</label>
+						<div class="col-sm-4">
+							<input id="userSenderPhone" name="userSenderPhone" class="form-control" type="text" value=""/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">수신 동의 문구</label>
+						<div class="col-sm-10">
+							<textarea id="userAgree" name="userAgree" style="resize: none" class="form-control" rows="5">
+</textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">수신 거부 문구</label>
+						<div class="col-sm-10">
+							<textarea id="userUnsubscribe" name="userUnsubscribe" style="resize: none" class="form-control" rows="5">
+</textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">발신자 정보</label>
+						<div class="col-sm-10">
+							<textarea id="userSign" name="userSign" style="resize: none" class="form-control" rows="5">
+</textarea>
+						</div>
+					</div>
+				</div>
+				<div class="ibox-content">
+					시스템 정보
+				</div>
+				<div class="ibox-content">
+					<div class="form-group">
+						<label class="col-sm-2 control-label">발신 도메인</label>
+						<div class="col-sm-8">
+							<select id="userHeloDomain" name="userHeloDomain" class="form-control" multiple="multiple"><option value="2">[postfix] wvs.mailclouds.kr</option><option value="1">[java] wvs.mailclouds.kr</option></select><input type="hidden" name="_userHeloDomain" value="1"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">데이터베이스</label>
+						<div class="col-sm-8">
+							<select id="dbId" name="dbId" class="form-control" multiple="multiple"><option value="2">wvs db</option></select><input type="hidden" name="_dbId" value="1"/>
+						</div>
+					</div>
+				</div>
+				<div class="ibox-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<button type="button" class="btn btn-sm btn-primary" onclick="history.back()">
+								목록
+							</button>
+						</div>
+						<div class="col-sm-6 text-right">
+							<button type="button" class="btn btn-sm btn-primary" onclick="checkDuplication()">
+								입력
+							</button>
+						</div>
+					</div>
+				</div>
+			<div>
+</div></form>
+		</div>
+	</div>
+</div>
+<script src="inspinia/js/plugins/sha256/sha256.js"></script>
+<script type="text/javascript">
+	function load() {
+
+		
+
+		
+		
+		
+		
+		
+		$("form").submit(function(event) {
+			
+			var pw = $("#pass1").val();
+			$("#password").val(SHA256(pw));
+		});
+	    
+		$("#userHeloDomain > option").each(function() {
+
+			var userHeloDomain = [];
+			for( var i = 0; i < userHeloDomain.length; i++ ) {
+
+				if( userHeloDomain[i] == Number($(this).val()) ) {
+				    $(this).prop("selected", true);
+				    break;
+				}
+			}
+		});
+
+		$("#dbId > option").each(function() {
+
+			var dbId = [];
+			for( var i = 0; i < dbId.length; i++ ) {
+
+				if( dbId[i] == Number($(this).val()) ) {
+				    $(this).prop("selected", true);
+				    break;
+				}
+			}
+		});
+		
+		$("#userHeloDomain").bootstrapDualListbox({
+			nonSelectedListLabel : "<span class=\"text-danger\">선택 가능한 목록</span>",
+			selectedListLabel : "<span class=\"text-success\">선택된 목록</span>",
+			selectorMinimalHeight : 100,
+			infoText : "",
+			showFilterInputs : false
+		});
+		
+		$("#dbId").bootstrapDualListbox({
+			nonSelectedListLabel : "<span class=\"text-danger\">선택 가능한 목록</span>",
+			selectedListLabel : "<span class=\"text-success\">선택된 목록</span>",
+			selectorMinimalHeight : 100,
+			infoText : "",
+			showFilterInputs : false
+		});
+
+		jQuery.validator.addMethod("identity", function(value, element) {
+			return this.optional(element) || /^[a-zA-Z0-9]{5,15}$/.test(value);
+		});
+
+		$("input[name='userMaxOnceCount']").on("click", function() {
+
+			changeProp("userMaxOnceCountValue", "readonly", $(this).val());
+		});
+
+		$("input[name='userMaxSendCount']").on("click", function() {
+
+			changeProp("userMaxSendCountValue", "readonly", $(this).val());
+		});
+
+		$("input[name='userMaxMonthCount']").on("click", function() {
+
+			changeProp("userMaxMonthCountValue", "readonly", $(this).val());
+		});
+
+		$("input[name='userMaxEmailCount']").on("click", function() {
+
+			changeProp("userMaxEmailCountValue", "readonly", $(this).val());
+		});
+
+		$("input[name='userMaxTargetCount']").on("click", function() {
+
+			changeProp("userMaxTargetCountValue", "readonly", $(this).val());
+		});
+
+		jQuery.validator.addMethod("checkcontinious", function(value, element) {
+			
+			// ASCII로 연속된 문자가 있는지 확인
+			var o, d, p, n = 0, l = 3; 
+			for(var i=0; i<value.length; i++) { 
+				var c = value.charCodeAt(i); 
+				if(i > 0 && (p = o - c) >-2 && p < 2 && (n = p == d ? n+1 : 0) > l-3)
+					return false; 
+				d = p, o = c; 
+			}
+						
+			return true;
+		});
+
+		jQuery.validator.addMethod("checkreserved", function(value, element) {
+			
+			// 아이다와 동일하거나 특정 담어 있는지
+			var words = ["love", "happy", "qwer", "asdf", "zxcv", "test", "gpin", "ipin", $("#userId").val()];
+			for( i = 0; i < words.length; i++ ) {
+				if( value.indexOf(words[i]) != -1 ) {
+					return false;
+				}
+			}
+			
+			return true;
+		});
+
+		jQuery.validator.addMethod("checksymbol", function(value, element) {
+			
+			return !(/[\>\<\(\)#\`\'\\\\\"\\/\|]|(\w)\1\1/.test(value));
+		});
+
+		jQuery.validator.addMethod("checkZero", function(value, element) {
+
+			var value = removeComma(value);
+			
+			return ( value == 0 ? false : true );
+		});
+
+		$("#input").validate({
+			rules : {
+				groupId : {
+					required : true
+				},
+				userId : {
+					required : true,
+					identity : true
+				},
+				pass1 : {
+					required : function(element) {
+						
+						if( element.value != "" ) {
+							return true;
+						}
+						return true;
+					},
+					checksymbol : true,
+					checkreserved : true,
+					checkcontinious : true,
+					minlength : 10,
+					maxlength : 20
+				},
+				password_check : {
+					required : function(element) {
+						
+						if( element.value != "" ) {
+							return true;
+						}
+						return true;
+					},
+					equalTo : "#pass1"
+				},
+				name : {
+					required : true
+				},
+				description : {
+					required : false
+				},
+				userMaxOnceCountValue : {
+					required : function(element) {
+						
+						if( $("input[name='userMaxOnceCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					},
+					checkZero: function(element) {
+						
+						if( $("input[name='userMaxOnceCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					}
+				},
+				userMaxSendCountValue : {
+					required : function(element) {
+						
+						if( $("input[name='userMaxSendCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					},
+					checkZero: function(element) {
+						
+						if( $("input[name='userMaxSendCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					}
+				},
+				userMaxMonthCountValue : {
+					required : function(element) {
+						
+						if( $("input[name='userMaxMonthCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					},
+					checkZero: function(element) {
+						
+						if( $("input[name='userMaxMonthCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					}
+				},
+				userMaxEmailCountValue : {
+					required : function(element) {
+						
+						if( $("input[name='userMaxEmailCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					},
+					checkZero: function(element) {
+						
+						if( $("input[name='userMaxEmailCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					}
+				},
+				userMaxTargetCountValue : {
+					required : function(element) {
+						
+						if( $("input[name='userMaxTargetCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					},
+					checkZero: function(element) {
+						
+						if( $("input[name='userMaxTargetCount']:checked").val() > 0 ) {
+							return true;
+						}
+						return false;
+					}
+				},
+				fromName : {
+					required : false
+				},
+				fromMail : {
+					required : false,
+					email : true
+				}
+			},
+			messages : {
+				groupId : {
+					required : "그룹을 선택해 주세요!"
+				},
+				userId : {
+					required : "아이디를 입력해 주세요!",
+					identity : "아이디 형식이 잘 못 되었습니다!"
+				},
+				pass1 : {
+					required : "암호를 입력해 주세요!",
+					checksymbol : "특수문자 또는 연속된 같은 문자가 있습니다!",
+					checkreserved : "입력하신 단어는 등록이 불가합니다!",
+					minlength : "10-20 자 사이로 입력해 주세요!",
+					maxlength : "10-20 자 사이로 입력해 주세요!",
+					checkcontinious : "연속된 문자가 있습니다!"
+				},
+				password_check : {
+					required : "암호를 입력해 주세요!",
+					equalTo : "비밀번호가 다릅니다!"
+				},
+				name : {
+					required : "이름을 입력해 주세요!"
+				},
+				description : {
+					required : "설명을 입력해 주세요!"
+				},
+				userMaxOnceCountValue : {
+					required : "1회 Email 발송수를 입력해 주세요!",
+					checkZero : "1이상을 입력해 주세요!"
+				},
+				userMaxSendCountValue : {
+					required : "최대 캠페인 발송 수를 입력해 주세요!",
+					checkZero : "1이상을 입력해 주세요!"
+				},
+				userMaxMonthCountValue : {
+					required : "★",
+					checkZero : "★"
+				},
+				userMaxEmailCountValue : {
+					required : "최대 이메일 수를 입력해 주세요!",
+					checkZero : "1이상을 입력해 주세요!"
+				},
+				userMaxTargetCountValue : {
+					required : "최대 주소록 수를 입력해 주세요!",
+					checkZero : "1이상을 입력해 주세요!"
+				},
+				fromName : {
+					required : "발송자 이름을 입력해 주세요!"
+				},
+				fromMail : {
+					required : "발송자 이메일을 입력해 주세요!",
+					email : "이메일 형식이 아닙니다!"
+				}
+			}
+		});
+		
+		changeProp("userMaxOnceCountValue", "readonly", $("input[name='userMaxOnceCount']:checked").val());
+		changeProp("userMaxSendCountValue", "readonly", $("input[name='userMaxSendCount']:checked").val());
+		changeProp("userMaxMonthCountValue", "readonly", $("input[name='userMaxMonthCount']:checked").val());
+		changeProp("userMaxEmailCountValue", "readonly", $("input[name='userMaxEmailCount']:checked").val());
+		changeProp("userMaxTargetCountValue", "readonly", $("input[name='userMaxTargetCount']:checked").val());
+	}
+	
+	// 중복 확인
+	function checkDuplication() {
+
+		if ("insert" == "insert") {
+
+			var querystring = $("form[id=input]").serialize();
+
+			$.ajax({
+				type : "post",
+				url : "/user/ajax/checkDuplication",
+				data : querystring,
+				dataType : "json",
+				success : function(response) {
+
+					var result = JSON.parse(JSON.stringify(response));
+					if (result.result == "-1") {
+
+						$.toast({
+							text : "사용할 수 없는 아이디입니다!",
+							position : "bottom-right",
+							stack : false,
+							icon : "info"
+						});
+					} else {
+						
+						$("#input").submit();
+					}
+				},
+				error : function(jqXHR, textStatus, errorThrown) {
+
+					console.log(jqXHR.status);
+					console.log(jqXHR.statusText);
+					console.log(jqXHR.responseText);
+					console.log(jqXHR.readyState);
+
+					$.toast({
+						text : "통신 중 오류가 발생하었습니다!",
+						position : "bottom-right",
+						stack : false,
+						icon : "error"
+					});
+				}
+			});
+		} else {
+			
+			$("#input").submit();
+		}
+	}
+	// 중복 확인
+
+	function changeProp(id, prop, value) {
+
+		if (value == "0") {
+
+			$("#" + id).val("0");
+			$("#" + id).trigger("keyup");
+			$("#" + id).prop(prop, true);
+		} else {
+
+			$("#" + id).prop(prop, false);
+		}
+	}
+	
+	// API 발행
+	function updateUser(kind) {
+		
+		if( confirm("재발행 시 기존 API KEY는 폐기 되며, 변경 전 API KEY로 사용된 모든 서비스가 중단됩니다. 신규 발행 후 이전 API KEY로 복구 할 수 없으니 이점 유의하시기 바랍니다. \nAPI KEY 신규 발행 하시겠습니까?") ){
+			
+			newAPIKEY(kind);
+		}
+	}
+	
+	function newAPIKEY(kind) {
+
+		var querystring = $("form[id=input]").serialize();
+		
+		$.ajax({
+			type : "post",
+			url : "/user/ajax/" + kind,
+			data : querystring,
+			dataType : "json",
+			success : function(response) {
+
+				var result = JSON.parse(JSON.stringify(response));
+				if (result.result == "1") {
+					
+					$("#userApiKey").val(result.apikey);
+					
+					$.toast({
+						text : "Key가 새롭게 발급되었습니다!",
+						position : "bottom-right",
+						stack : false,
+						icon : "info"
+					});	
+				} else {
+					
+					$.toast({
+						text : "오류가 발생하였습니다!",
+						position : "bottom-right",
+						stack : false,
+						icon : "warning"
+					});
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+				console.log(jqXHR.status);
+				console.log(jqXHR.statusText);
+				console.log(jqXHR.responseText);
+				console.log(jqXHR.readyState);
+
+				$.toast({
+					text : "통신 중 오류가 발생하었습니다!",
+					position : "bottom-right",
+					stack : false,
+					icon : "error"
+				});
+			}
+			
+		});
+	}
+	
+	function copyKEY(id){
+		
+		$("#" + id).select();
+		 
+	    if( document.execCommand("copy") ) {
+	    	
+	    	$.toast({
+				text : "정상적으로 복사되었습니다.",
+				position : "bottom-right",
+				stack : false,
+				icon : "info"
+			});
+	    }
+	}
+	
+</script>
+					</div>
+					<!-- body ë -->
+				</div>
+				<!-- footer ìì -->
+				
+				<!-- footer ë -->
+			
+
+			
+
+		
+
+		
+
+	</div>
+	<script type="text/javascript">
+		$().ready(function() {
+
+			load();
+			 
+			alignVertical();
+		});
+		
+		function alignVertical() {
+			
+		    $('.align-vertical').each(function() {
+		        var that = $(this);
+		        var height = that.height();
+		        var parentHeight = that.parent().height();
+		        var padAmount = (parentHeight / 2) - (height/2);
+		        that.css('padding-top', padAmount);
+		    });   
+		}
+		function removeComma(value) {
+	
+			if (typeof value == "string") {
+				return Number(value.replace(/,/g, ""));
+			}
+			return Number(value)
+		}
+		
+		function dateFormat (date, fstr, utc) {
+			
+			utc = utc ? 'getUTC' : 'get';
+			return fstr.replace (/%[YmdHMS]/g, function (m) {
+				switch (m) {
+					case '%Y': return date[utc + 'FullYear'] (); // no leading zeros required
+					case '%m': m = 1 + date[utc + 'Month'] (); break;
+					case '%d': m = date[utc + 'Date'] (); break;
+					case '%H': m = date[utc + 'Hours'] (); break;
+					case '%M': m = date[utc + 'Minutes'] (); break;
+					case '%S': m = date[utc + 'Seconds'] (); break;
+					default: return m.slice (1); // unknown code, remove %
+				}
+				// add leading zero if required
+				return ('0' + m).slice (-2);
+			});
+		}
+	</script>
+</body>
+</html>

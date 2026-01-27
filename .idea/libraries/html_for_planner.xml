@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="html_for_planner">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/html_for_planner/html_export.zip!/" />
+      <root url="jar://$PROJECT_DIR$/html_for_planner/html_export (2).zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
